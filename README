@@ -1,0 +1,8 @@
+# doe_protocols
+
+* The markdown files (*.md) serve as the template files for all of the other formats (e.g., html or docx).
+    * This is why only the *.md files can be edited. 
+* The bash scripts (e.g., md2html.sh) will convert all files ending in '.md' to a specified format.
+    * NOTE: use those scripts to update the html, docx, etc. versons of each script.
+        * This insures that only the markdown files have write permissions.
+
