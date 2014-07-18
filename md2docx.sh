@@ -1,5 +1,19 @@
 #!/bin/bash
 
-find . -name "*.md" | \
-    perl -pe 's/\.md$//' | \
-    xargs -I % bash -c "echo '%.md --> %.docx'; pandoc -f markdown -t docx -o %.docx %.md; chmod a-w %.docx"
+for file in `find . -name "*.md" | perl -pe 's/\.md$//'`
+do
+    # status
+    echo "$file.md --> $file.docx"; 
+
+    # removing old file version
+    if [ -e $file.docx ]; then 
+	rm -f $file.docx; 
+    fi; 
+
+    # pandoc conversion
+    pandoc -f markdown -t docx -o $file.docx $file.md; 
+    
+    # change permissions
+    chmod a-w $file.docx
+
+done

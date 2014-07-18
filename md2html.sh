@@ -1,5 +1,19 @@
 #!/bin/bash
 
-find . -name "*.md" | \
-    perl -pe 's/\.md$//' | \
-    xargs -I % bash -c "echo '%.md --> %.html'; pandoc --webtex -f markdown -t html -o %.html %.md; chmod a-w %.html"
+for file in `find . -name "*.md" | perl -pe 's/\.md$//'`
+do
+    # status
+    echo "$file.md --> $file.html";
+
+    # removing old file version
+    if [ -e $file.html ]; then
+	rm -f $file.html;
+    fi;
+
+    # pandoc conversion
+    pandoc --webtex -f markdown -t html -o $file.html $file.md;
+
+    # change permissions
+    chmod a-w $file.html
+
+done
