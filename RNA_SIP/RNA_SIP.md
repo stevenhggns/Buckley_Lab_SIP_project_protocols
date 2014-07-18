@@ -27,17 +27,19 @@ Gradients are run in CsTFA (RNA) dissolved in gradient buffer.
 	* 15mM Tris-HCL, pH 8.0
 	* 15mM EDTA
 	* 15mM KCl
+	
 2. Decide on the average density you desire for your gradient.
 	* Typical RNA run: 1.8 g/ml gradient; 62,000 rpm; 69 hrs; 20 deg. C (adapted from Whitley et al Nature Protocols RNA SIP paper)
+	
 3. Prepare Gradient Media solution (ie: gradient buffer + CsTFA)
 
 	* When you add your nucleic acid it will dilute your gradient media solution, thus your gradient media solution should be dense enough to hit your target density after adding your nucleic acid sample.
 
 	* The tubes we use are 4.7 to 4.75 ml volume. Let's say we wanted to leave room for 0.4 – 0.45 ml of nucleic acids in TE while achieving a final gradient density of 1.8 g/ml. We would figure the density of our gradient media solution as follows:
 
->__Total mass of gradient (without tube):__ $1.8 (g/ml) X 4.75 (ml) = 8.5500 (g)$
+>__Total mass of gradient (without tube):__ $1.8 (g/ml) * 4.75 (ml) = 8.5500 (g)$
 
->__Subtract the mass of the RNA solution:__ $8.5 (g) – 0.45 (g) = 8.1000 (g)$
+>__Subtract the mass of the RNA solution:__ $8.5 (g) - 0.45 (g) = 8.1000 (g)$
 
 >__The desired density for solution:__ $8.1000 (g) / 4.3 (ml) = 1.8837 (g/ml)$
 
@@ -49,35 +51,41 @@ Gradients are run in CsTFA (RNA) dissolved in gradient buffer.
 
 4. Fine tune the density of your gradient media solution
 
->Use the digital refractometer to achieve the __EXACT__ gradient media density that you desire. To use: add 5 ul solution to sample well, making sure it covers completely the prism surface (it usually does).  Press “read,” and it will give you the RI and temperature.  The RI of water should be 1.3333.  Wipe well with kimwipe after each sample.  At the end of use add some water and then wipe clean. We have modified the surface of the prism with a piece of black electrical tape cut into the shape of a doughnut (cut with 2 cork borers of different radius). 
+>Use the digital refractometer to achieve the __EXACT__ gradient media density that you desire. To use: add 5 ul solution to sample well, making sure it covers completely the prism surface (it usually does).  
+Press "read" and it will give you the RI and temperature. The RI of water should be 1.3333.  
+Wipe well with kimwipe after each sample. At the end of use add some water and then wipe clean. 
+We have modified the surface of the prism with a piece of black electrical tape cut into the shape of a doughnut (cut with 2 cork borers of different radius). 
 
 
 >First correct for the refractive index of your gradient buffer:
-All salts will cause refraction, in measuring the CsTFA density of our gradient media we need to first account for the refraction due to the gradient buffer (ie: the Tris, EDTA, and KCl). We do this by measuring the refractive index of the gradient buffer and then using the following equation:
+All salts will cause refraction, in measuring the CsTFA density of our gradient media 
+we need to first account for the refraction due to the gradient buffer (ie: the Tris, EDTA, and KCl). 
+We do this by measuring the refractive index of the gradient buffer and then using the following equation:
 
->$R_{I corrected} = R_{I observed} - (R_{I buffer} - 1.3333)$
+>$R_{I corrected} = R_{I_observed} - (R_{I_buffer} - 1.3333)$
 
 >__Ri observed:__ Either the gradient buffer +CsTFA OR fractions (one correction before running gradient and one after)
 
 >__Ri buffer:__ Gradient buffer with formamide and NOT CsTFA
 
 
->Then to convert refractive index (R<sub>I</sub>) to CsTFA density:
+>Then to convert refractive index (R<sub>I</sub>) to CsTFA density: 
 
-$$\rho = 163.559 - 262.271 (R_I) + 105.281 (R_I)^2 at 25^oC$$
+>$\rho = 163.559 - 262.271 (R_I) + 105.281 (R_I)^2 [at 25^oC]$
 
 
-	* Note CsTFA gets cold when it goes into solution. The equation above is only valid at 20C. Hence, you need to wait until the solution is near room temperature before measuring R<sub>I</sub>.
+>Note CsTFA gets cold when it goes into solution. The equation above is only valid at 20C. Hence, you need to wait until the solution is near room temperature before measuring R<sub>I</sub>.
 
-	* The [R<sub>I</sub> corrected] of a 1.8000 CsTFA solution is 1.3713
+>The [R<sub>I</sub> corrected] of a 1.8000 CsTFA solution is 1.3713
 
-	* The above equation may not be universal for all batches of CsTFA and gradient buffer, due to differences in chemical batches and buffer concentration (correspondence between Chantal Koechli and Tillmann Lueders). Therefore, a single point standardization must also be done when preparing each batch of CsTFA solution This is done by weighing a fixed volume of solution as accurately as possible to determine the density. The best method is to use a small volumetric flask (1-5mL). Weigh a flask, fill, and cover with stopper to prevent evaporation (weigh stopper first). Then weigh the CsTFA as accurately as possible to determine density. Then measure the refractive index and calculate density from the equation. The difference between the two density values can be used as our correction factor (when converting from RI to density). 
+>The above equation may not be universal for all batches of CsTFA and gradient buffer, due to differences in chemical batches and buffer concentration (correspondence between Chantal Koechli and Tillmann Lueders). Therefore, a single point standardization must also be done when preparing each batch of CsTFA solution This is done by weighing a fixed volume of solution as accurately as possible to determine the density. The best method is to use a small volumetric flask (1-5mL). Weigh a flask, fill, and cover with stopper to prevent evaporation (weigh stopper first). Then weigh the CsTFA as accurately as possible to determine density. Then measure the refractive index and calculate density from the equation. The difference between the two density values can be used as our correction factor (when converting from RI to density). 
 
 
 
 ## Setting up the gradients
 
-1. Dissolve CsTFA in gradient buffer to make CsTFA solution of density 1.8000g/ml, which has a [RI corrected] of 1.3713 (will need to solve the RI corrected/RI observed equation to know the value of RI observed you will measure with the refractrometer).
+1. Dissolve CsTFA in gradient buffer to make CsTFA solution of density 1.8000g/ml, 
+which has a [RI corrected] of 1.3713 (will need to solve the RI corrected/RI observed equation to know the value of RI observed you will measure with the refractrometer).
 	1. The solution gets cold, so you need to wait until it is near room temperature before measuring RI. 
 	2. Filter sterilize if needed
 	3. Add buffer or CsTFA in small increments until RI = R<sub>I_corrected</sub>
@@ -118,7 +126,8 @@ $$\rho = 163.559 - 262.271 (R_I) + 105.281 (R_I)^2 at 25^oC$$
 - Hook syringe up to autopump and press run several times until there are no air bubbles in tubing
 - Set up ring stand with cored stopper in it (this holds the tube for fractionation)
 - Using a 21G $1\frac{1}{2}$ needle, cut off the plastic base of the needle\*
-	- Do not cut into the medal shaft of the needle, cut the plastic as close as you can to the base of the needle. This minimizes sample loss from it getting stuck inside the shaft of the plastic part during fractionation
+	- Do not cut into the medal shaft of the needle, cut the plastic as close as you can to the base of the needle. 
+	  This minimizes sample loss from it getting stuck inside the shaft of the plastic part during fractionation
 - With modified needle, puncture modified silicone (clear) stopper through the middle on its longest side. 
 
 ### Fractionation:
@@ -138,7 +147,7 @@ $$\rho = 163.559 - 262.271 (R_I) + 105.281 (R_I)^2 at 25^oC$$
 
 1. Ribogreen quantification of fractions. 
 
-1. Reverse Transcribe RNA to cDNA via Invitrogen SuperScript® III First-Strand Synthesis SuperMix ($391.30 for 50 rxns,)
+1. Reverse Transcribe RNA to cDNA via Invitrogen SuperScript III First-Strand Synthesis SuperMix ($391.30 for 50 rxns,)
 
 1. PCR (16s rRNA) of cDNA products and gel to ensure product from RT reactions.
 
