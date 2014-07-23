@@ -1,6 +1,8 @@
 #!/bin/bash
 
-for file in `find . -name "*.md" | perl -pe 's/\.md$//'`
+ScriptDir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+for file in `find $ScriptDir -name "*.md" | perl -pe 's/\.md$//'`
 do
     # status
     echo "$file.md --> $file.docx"; 
