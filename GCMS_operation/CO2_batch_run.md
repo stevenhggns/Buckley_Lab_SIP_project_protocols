@@ -1,6 +1,8 @@
 Protocol for quantifying CO2 in headspace samples with the Shimadzu GCMS-QP2010
 ===============================================================================
 
+***
+
 # Equipment 
 
 * GCMS 
@@ -9,11 +11,7 @@ Protocol for quantifying CO2 in headspace samples with the Shimadzu GCMS-QP2010
 * Autosampler
   * Shimadzu AOC-5000 Auto Injector
 
-
-
-# Materials
-
-
+***
 
 # GCMS start up
 
@@ -53,7 +51,7 @@ This can be done using the GCMS software.
   * Make sure that GC and MS are heating up to the method's specified temps
   * A batch file can then be created if needed
 
-
+***
 
 # GCMS tuning
 
@@ -71,7 +69,7 @@ wait ~1 day prior to tuning.
 
 * Follow procedure outlined on Page 19 of the GCMS-QP2010 Operation Guide.
 
-
+***
 
 # GCMS sample processing
 
@@ -81,14 +79,14 @@ wait ~1 day prior to tuning.
 The carrier gas flow will just need to be turned
 off very briefly prior to changing the septum.
 
-
+***
 
 # GCMS shut down
 
 * Use auto shutdown or manual shutdown.
 * Wait for the GC to cool before turning off the carrier gas.
 
-
+***
 
 # General notes
 
