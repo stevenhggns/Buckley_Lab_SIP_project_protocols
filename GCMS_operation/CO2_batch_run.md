@@ -43,9 +43,11 @@ This can be done using the GCMS software.
   * Manual startup:
     1. Close vent valve
     1. Turn on rotory pump
-       * less pressure drop to <10 pascals
-    1. AFTER pressure is <10 pascals: turn on rotary pump
+       * Let the pressure drop to <3.1 pascals 
+    1. AFTER pressure is <3.1 pascals: turn on high pressure pump
+       * A sound resembling a jet engine is normal, as long as it only lasts < a minute.
     1. Turn on ion source heater
+       * GC and MS indicators in top right of screen should say 'ready'
      
 1. Load a method or create a new method
   * Make sure that GC and MS are heating up to the method's specified temps
@@ -59,7 +61,7 @@ This can be done using the GCMS software.
 
 * If the GCMS has not been used in a long time (e.g., a year),
 wait ~1 day prior to tuning.
-  * TODO: why is wait needed?
+  * This wait provides time for the column to be purged of contaminants.
 
 ## Procedure:
 
