@@ -8,16 +8,24 @@ Basic soil sampling protocol
 #### Required
 
 * Soil corers
-* Butter knife
+* Butter knife (or similar)
 * Ruler
 * Ziplock bags
-* Cooler 
+* Cooler
+* Ice (for cooler)
+* GPS device
+* All-weather paper
+* Clipboard
+* Soil moisture probe
+* Temperature probe
+* Back-up batteries
 
 #### Optional
 
-* Ice (for cooler)
 * Map of field(s)
-* Rain poncho
+* Rain poncho(s)
+* Sunscreen 
+
 
 ### Method
 
