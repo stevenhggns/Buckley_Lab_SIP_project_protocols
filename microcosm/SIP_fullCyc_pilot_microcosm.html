@@ -23,7 +23,7 @@
 <li>13C-Na-Lactate</li>
 <li>13C-Na-Oxalate</li>
 <li>12C</li>
-<li>H2O (see general effect of C addition)</li>
+<li>H2O (to see general effect of C addition)</li>
 </ul>
 <h3 id="notes">Notes:</h3>
 <ul>
@@ -35,16 +35,34 @@
 </ul></li>
 </ul>
 <h2 id="sample-collection">Sample collection</h2>
-<h3 id="soil-sieving">Soil sieving</h3>
+<h3 id="penn-yan-soils">Penn Yan soils:</h3>
 <ul>
-<li>Sieved soil stored over night while soil moisture levels were determined.</li>
-<li>15g of soil dry weight added to each microcosm.</li>
+<li>Pasture (PAS)</li>
+<li>Conventional (CON)</li>
+<li>10 yr Organic (XYO)
+<ul>
+<li>Crop rotation 1 (mowed oats)</li>
+<li>Crop rotation 2 (clover)</li>
+</ul></li>
+<li>20 yr Organic (XXO)
+<ul>
+<li>Crop rotation 1 (corn)</li>
+<li>Crop rotation 2 (soy beans)</li>
+</ul></li>
 </ul>
-<h3 id="measuring-soil-moisture">Measuring soil % moisture</h3>
+<blockquote>
+<p>Used combined 20 yr organic rotations for microcosms</p>
+</blockquote>
+<h3 id="soil-sieving">Soil sieving:</h3>
+<ul>
+<li>Sieved soil back in the lab.</li>
+<li>15 g of soil dry weight added to each microcosm.</li>
+</ul>
+<h3 id="measuring-soil-percent-moisture-and-carrying-capacity">Measuring soil percent moisture and carrying capacity</h3>
 <ul>
 <li>See <code>'Determine soil dry weight'</code> of <code>'soil_sampling_protcol'</code></li>
 </ul>
-<h3 id="preincubation">Preincubation</h3>
+<h3 id="preincubation">Preincubation:</h3>
 <ul>
 <li>~2-week incubation in microcosms.
 <ul>
@@ -75,7 +93,10 @@
 <li>12C-control : 12C-con</li>
 <li>H20 : H2O</li>
 </ul>
-<p><strong>MicrocosmID = [treatment]_[rep#]</strong></p>
+<p><strong>MicrocosmID = [treatment]_R[rep#]</strong></p>
+<ul>
+<li>Example: '13C-pal_R1' or '12C-con_R3'</li>
+</ul>
 <h2 id="carbon-treatment-additions">Carbon treatment additions</h2>
 <h3 id="materials">Materials:</h3>
 <ol style="list-style-type: decimal">
@@ -87,10 +108,11 @@
 <h3 id="methods">Methods:</h3>
 <ul>
 <li>Additions (including water) should bring soil to 50% water holding capacity.</li>
+<li>50% water holding capacity for Penn Yan soils: 0.3 g (H2O)/ g (soil)</li>
 <li>Cellulose added by spinkling onto each microcosm.</li>
 <li>The other substrates weighed by mg needed per microcosm * number_replicates
 <ul>
-<li>Added to 1.5? ml Eppendorf tube</li>
+<li>Added to 2? ml Eppendorf tube</li>
 <li>Glycerol added first (semi-solid)
 <ul>
 <li>Tare eppendorf, then add required amount</li>
@@ -115,13 +137,12 @@
 <li>48 of the 2 mL gas vials (pre-crimped with grey butyl stoppers)</li>
 <li>7 of the 10 mL gas vials (pre-crimped with blue butyl rubber stoppers)</li>
 <li>Tank of He gas and gassing station</li>
-<li>44 2/3% gauge needles (you'll inevitably bend lots of them during the gassing process)</li>
 <li>0.5 mL and 10 mL gas tight syringes (with the green-red stop cock)</li>
 <li>Tank of the gas standard (attached to ring stand at gassing station)</li>
 <li>Microcosms</li>
 </ol>
 <h3 id="gas-vial-labeling">Gas vial labeling:</h3>
-<p><strong>2ml-vial-ID = [sample#]_[microcosmID]_[day]_[time]</strong></p>
+<p><strong>2ml-vial-ID = [microcosmID]_[day]_[time]</strong></p>
 <ul>
 <li>day = yymmdd</li>
 <li>time = military</li>
@@ -141,27 +162,38 @@
 </ul></li>
 </ul>
 <h3 id="methods-1">Methods:</h3>
-<h4 id="flushing-vials">Flushing vials</h4>
+<h4 id="flushing-vials">Flushing vials:</h4>
 <ol style="list-style-type: decimal">
-<li>Turn on He tank while you prep things. This allows time to clear the tubing of ambient air.</li>
-<li>Stick a needle into the edge of the stopper of a 2 mL vial.
+<li>All valves at the gassing station should initially be closed.</li>
+<li>Turn on He tank (tank valve).
 <ul>
-<li>Repeat until you have 6 vials with needles sticking out of them.</li>
-<li><strong>NOTE:</strong> Goal for puncturing the septa is to keep it minimumal. More punctures = more chances for gas to escape.</li>
+<li>The psi should be low in order to not overpressurize the vials.</li>
 </ul></li>
-<li>Put vial on a needle on the gassing manifold, set timer for 5 min.</li>
-<li>When removing vial after flushing, make sure both needles are pulled out at the exact same time.</li>
-<li>Repeat until all vials are flushed (Can only flush 6 at a time on the manifold)
+<li>Stick a needle into each leur lock in the gassing manifold.
 <ul>
-<li>Remaining vials will be: 2 vials of He blank, 2 of air, and 7 for the std curve</li>
+<li>Plug up any leur locks that will not be used.</li>
+<li>Each manifold can be shut off using the valve just upstream.</li>
 </ul></li>
+<li>Place a vial on each needle.</li>
+<li>Place safey shield beteen you and vials.</li>
+<li>Turn on venturi vacuum (sink).</li>
+<li>For a cycle of vacuuming and gassing:
+<ul>
+<li><strong>NOTE:</strong> Make sure the vacuum and gas valves are not open simultaneously. The He gas will just be vacuumed out.</li>
+<li>Open the valve for the vacuum.</li>
+<li>Vacuum for &gt;10 sec.</li>
+<li>Close vacuum valve.</li>
+<li>Open gas valve.</li>
+<li>Gas for &gt;10 sec.</li>
+<li>Repeat vacuum-gas cycle for &gt;=5 times.</li>
+<li>Remove the vials while the He gas is still flowing.</li>
+</ul></li>
+<li>Repeat the entire process until all vials are flushed</li>
 <li>Pull tabs off of 10 mL vials and label (gas std vials).</li>
-<li>Flush these vials the same way the 2 mL vials are flushed (except flush them for 20 min instead of 5 min)
-<ul>
-<li><strong>NOTE:</strong> I usually let these flush while I'm sampling gases from the microcosm flasks. Then they're finished and rippin', roarin', ready to go when you're done sampling!</li>
-</ul></li>
+<li>Flush these vials the same way the 2 mL vials are flushed (except &gt;=20 sec for vacuum or gas)</li>
+<li>Turn of He tank, purge the lines, and turn of the venturi vacuum.</li>
 </ol>
-<h4 id="making-standards">Making standards</h4>
+<h4 id="making-standards">Making standards:</h4>
 <ol style="list-style-type: decimal">
 <li>Using gas standard tank (to left in gassing station, on a ring stand), turn it counterclock wise to open it.</li>
 <li>Use 10 mL stopcock gastight syringe to make most of the stds.</li>
@@ -172,14 +204,14 @@
 <li>Insert syringe into regulator through sampling port, fill beyond your desired volume, press in red button and pull out.</li>
 <li><strong>VERY FAST:</strong> open stop cock and push the syringe plunger to your desired volume.
 <ul>
-<li>This allows the gas to come to 1atm which is very important for knowing exactly how much gas is in each std.</li>
+<li>This allows the gas to come to 1 atm which is very important for knowing exactly how much gas is in each std.</li>
 </ul></li>
 <li>Add gas volume to pre-evacuated 10 ml vial.</li>
 <li>Inject 250 uL of each of the stds (from the 10 mL vials) into the 2 mL vials.</li>
 </ol>
-<h4 id="sampling-microcosms">Sampling microcosms</h4>
+<h4 id="sampling-microcosms">Sampling microcosms:</h4>
 <ol style="list-style-type: decimal">
-<li>Use 0.5 mL gas tight syringe (with green/red stop cock)</li>
+<li>Use 0.5 mL gas tight syringe (with stopcock).</li>
 <li>Push needle through 18 gauge sampling port and visually check to make sure the needle is all the way in.</li>
 <li>Pump the plunger 5 times to mix the gas.</li>
 <li>Then pull plunger up to <strong>0.25 mL</strong> and push the red side of the stop cock.</li>
@@ -194,19 +226,18 @@
 <li>At around 2 min until the end of the airing, flush each flask with house air for ~5 sec.</li>
 <li><strong>IMPORTANT:</strong> Make sure the air has a very slow flow, we wouldn't want to blow the soil out of the flasks!</li>
 </ul></li>
-<li>Restopper all the flasks after 10 min. Make sure they're pushed in air tight.</li>
+<li>Restopper all the flasks after 10 min. <strong>IMPORTANT:</strong> Make sure they're pushed in air tight.</li>
 <li>Take a sample of air with the syringe (250 uL) and inject it into the &quot;air&quot; 2 mL vial.</li>
 <li>Note the time you ended flushing the flasks because this will serve as the starting time for the next gas sampling.</li>
 </ol>
-<h4 id="finishing-up">Finishing up</h4>
-<ul>
-<li>Make sure you turn off all the gas tanks and you're done!</li>
-</ul>
 <h2 id="clean-up-checklist">Clean up checklist:</h2>
 <ol style="list-style-type: decimal">
 <li>Did you note the time you sampled the gas?</li>
 <li>Did you note when you finished additions?</li>
-<li>Did you turn off the gases?</li>
-<li>Did you turn of all of the gases (except the GCMS)?</li>
+<li>Did you turn off the gases (and vacuum)?
+<ul>
+<li>Purge lines as necessary.</li>
+</ul></li>
+<li>Did you turn of all of the gases (except for the GCMS)?</li>
 <li>Are you sure the stoppers of the flask are tight?</li>
 </ol>
