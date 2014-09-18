@@ -207,7 +207,104 @@ __2ml-vial-ID = [microcosmID]\_[day]\_[time]__
 1. Take a sample of air with the syringe (250 uL) and inject it into the "air" 2 mL vial.
 1. Note the time you ended flushing the flasks because this will serve as the starting time for the next gas sampling.
 
+
+# Substrate additions
+
+## Preparation
+
+This can be done days in advance.
+
+### Soluble substrates
+
+#### Materials
+
+* MilliQ H2O 
+* Murashige and Skoog base salts mixture (Sigma M5524)
+* 12C substrates
+* 13C substrates
+* 15 ml conicals
+* 10 ml syringes
+* 0.2 um syringe filters (23 mm)
 	
+#### Method
+
+1. Label a conical for each treatment.
+1. Add H2O to each
+1. Add base salts to each
+1. Add 12C substrate to each
+	* Leave out if 13C substrate for treatment
+	* Vortex and head to ~50oC to solubalize if needed
+		* Heat needed for vanillin
+1. Add 13C substrate to each
+	* Make sure substrates are solubalized
+1. Syringe filter each treatment solution into a new 15 ml conical
+1. Store in fridge until use
+	* The vanillin should not recrystalize in the fridge.
+
+### Insoluble substrates
+
+#### Materials
+
+* 12C substrates
+* 13C substrates
+* aluminum foil
+* weigh paper
+
+#### Method
+
+1. Weigh out 12C and 13C substrates in amounts for individual microcosm additions.
+	* Pre-fold the weigh paper to make a wrapper.
+1. Fold up weigh paper with substrate and fold that in aluminum foil
+	* Label
+	
+## Application
+
+### Materials
+
+* Mucosal Atomization Device (MAD)
+* Insoluble Substrate Addition Device (ISAD) 
+	* 50 ml pipette cut to 6 in
+	* 250 um mesh
+	* rubber band
+	* parafilm
+* Soluble substrate solutions
+* Foil packets of insoluble substrate
+* Sterile reagent troughs
+* Sterile MilliQ water
+* Metal stand with quick release tube clamp
+* Long metal spatual
+
+### Method
+
+#### Soluble substrate
+
+1. Flush MAD with 5 ml H2O 3 times
+	* Do this between each soluble substrate treatment
+1. Pipette the amount of soluble substrate solution needed for 1 microcosm into trough
+1. Suck up solution with 10 ml syringe (MAD not attached).
+	* Suck in ~2 ml atmosphere (used for flushing all liquid out of MAD)
+1. Attach MAD.
+1. Apply substrate treatment to soil.
+	* MAD tip should be ~1/2 to 3/4 inch from soil.
+	* Move quickly around soil and soak it all.
+1. Repeat for other microcosms.
+	* Be sure to flush MAD in between substrate treatments.
+
+#### Insoluble substrate
+
+1. Clamp ISAD to metal stand
+1. Place unstoppered microcosm under ISAD 
+	* This catches any substrate that falls through ISAD during loading.
+1. Unwrap foil packet(s) of substrate needed for microcosm and dump onto weigh paper
+1. Dump substrate into ISAD.
+1. Move microcosm off stand.
+1. Carefully release ISAD.
+	* Vibrations will cause loss of substate!
+1. Place ISAD into microcosm (~1/2 - 1 inch from soil)
+1. Repeatedly tap on ISAD to dispense substrate.
+	* The metal spatual may need to be inserted into the ISAD to help with dispensing.
+	* Make sure all of the substrate has been dispensed.
+
 
 ## Clean up checklist:
 
