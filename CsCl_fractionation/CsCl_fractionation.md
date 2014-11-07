@@ -1,8 +1,7 @@
 # Setting up a CsCl gradient for Stable Isotope Probing
 
 
-
-## Gradient Media
+## Making gradient media
 
 Gradients are run in CsCl (DNA) or CsTFA (RNA) dissolved in gradient buffer.
 
@@ -14,15 +13,16 @@ Gradients are run in CsCl (DNA) or CsTFA (RNA) dissolved in gradient buffer.
 
 
 2. Decide on the average density you desire for your gradient.
-
-	* Typical DNA run: 1.69 g/ml gradient; 55,000 rpm; 66+ hrs; 20 deg. C
+	* Typical DNA run: 1.69 g/ml gradient; 55,000 rpm; 66+ hrs; 20<sup>o</sup>C
 
 
 3. Prepare Gradient Media solution (ie: gradient buffer + CsCL)
-
-	* When you add your nucleic acid it will dilute your gradient media solution, thus your gradient media solution should be dense enough to hit your target density after adding your nucleic acid sample.
-
-	* The tubes we use are 4.7 to 4.75 ml volume. Let's say we wanted to leave room for 0.4 – 0.45 ml of nucleic acids in TE while achieving a final gradient density of 1.69 g/ml. We would figure the density of our gradient media solution as follows:
+	* When you add your nucleic acid it will dilute your gradient media solution,
+	thus your gradient media solution should be dense enough to hit your target density
+	after adding your nucleic acid sample.
+	* The tubes we use are 4.7 to 4.75 ml volume. Let's say we wanted to leave room
+	for 0.4 – 0.45 ml of nucleic acids in TE while achieving a final gradient density
+	of 1.69 g/ml. We would figure the density of our gradient media solution as follows:
 
 
 >__Total mass of gradient (without tube):__ $1.69 (g/ml) * 4.75 (ml) = 8.0266 (g)$
@@ -32,100 +32,152 @@ Gradients are run in CsCl (DNA) or CsTFA (RNA) dissolved in gradient buffer.
 >__The desired density for solution:__ $7.5766 (g) / 4.3 (ml) = 1.762 (g/ml)$
 
 
->Thus, dissolve 7.5766 g CsCl in a Total Volume of 4.3 ml gradient buffer. 
-	Note, if you add 7.5766 g of CsCL to 4.3 ml buffer you will end up with a total volume of more than 4.3 ml. 
-	It is helpful to use a graduated tube or cylinder, start with less volume of gradient buffer than you need, add and dissolve the desired amount of CsCl, and then bring it up to your final volume.
+Thus, dissolve 7.5766 g CsCl in a total volume of 4.3 ml gradient buffer. 
+
+__Note:__ if you add 7.5766 g of CsCL to 4.3 ml buffer, you will end up with a 
+total volume of more than 4.3 ml. It is helpful to use a graduated tube or
+cylinder, start with less volume of gradient buffer than you need,
+add and dissolve the desired amount of CsCl, and then bring it up to your
+final volume.
 
 
+4. Fine tune the density of your gradient media solution:
 
-4. Fine tune the density of your gradient media solution
-
-	* Use the digital refractometer to achieve the **EXACT** gradient media density that you desire. To use: add 5 ul solution to sample well, making sure it covers completely the prism surface (it usually does). Press "read," and it will give you the R<sub>I</sub> and temperature. The R<sub>I</sub> of water should be 1.3333. **Wipe well** with kimwipe after each sample. At the end of use add some water and then wipe clean. We have modified the surface of the prism with a piece of black electrical tape cut into the shape of a doughnut (cut with 2 cork borers of different radius). 
+	* Use the digital refractometer to achieve the **EXACT** gradient media density
+	that you desire.
+	* To use: add 5 ul solution to sample well, making sure it covers
+	completely the prism surface (it usually does).
+	* Press "read," and it will give you the R<sub>I</sub> and temperature.
+	The R<sub>I</sub> of water should be 1.3333.
+	* **Wipe well** with kimwipe after each sample.
+	* At the end of use add some water and then wipe clean.
+	* We have modified the surface of the prism with a piece of black electrical
+	tape cut into the shape of a doughnut (cut with 2 cork borers of different radius). 
 
 	1. __First correct for the refractive index of your gradient buffer:__
-	All salts will cause refraction, in measuring the CsCl density of our gradient media we need to first account for the refraction due to the gradient buffer (ie: the Tris, EDTA, and KCl). We do this by measuring the refractive index of the gradient buffer and then using the following equation:
-		* $R_{I corrected} = R_{I observed} - (R_{I buffer} - 1.3333)$
+		* All salts will cause refraction, in measuring the CsCl density of our gradient
+	media we need to first account for the refraction due to the gradient buffer
+	(ie: the Tris, EDTA, and KCl). 
+		* We do this by measuring the refractive index of the gradient buffer and
+		then using the following equation:
+			* $R_{I corrected} = R_{I observed} - (R_{I buffer} - 1.3333)$
 
 	2. __Then to convert refractive index:__
 		* $Density (g/ml) = a * R_{I corrected} - b$
 
-		1. For CsCl of $1.22 - 1.90 g/ml$ at 20<sup>o</sup>C: a = 10.9276 and b = 13.593
-		2. Note: CsCl gets cold when it goes into solution. The equation above is only valid at 20<sup>o</sup>C. Hence, you need to wait until the solution is near room temperature before measuring R	  
+		1. For CsCl of 1.22 - 1.90 g/ml at 20<sup>o</sup>C: 
+			* a = 10.9276, b = 13.593
+		2. __Note:__ CsCl gets cold when it goes into solution. The equation above is only
+		valid at 20<sup>o</sup>C. Hence, you need to wait until the solution is near
+		room temperature before measuring R.
 		3. The $R_{I corrected}$ of a 1.762 CsCl solution is **1.4052**
 
 
 ## Setting up the gradients
 
-1. Dissolve CsCl in gradient buffer to make CsCl solution of density 1.762g/ml, which has a $R_{I corrected}$ of 1.4052
-	1. The solution gets cold, so you need to wait until it is near room temperature before measuring RI. 
-	2. Filter sterilize if needed
-	3. Add buffer or CsCl in small increments until RI = 1.4052 +/- 0.0001
+1. Dissolve CsCl in gradient buffer to make CsCl solution of density 1.762 g/ml,
+which has a $R_{I corrected}$ of 1.4052
+	* The solution gets cold, so you need to wait until it is near room temperature
+	before measuring R<sub>I</sub>. 
+	* Filter sterilize if needed
+	* Add buffer or CsCl in small increments until R<sub>I</sub> = 1.4052 +/- 0.0001
 
 1. Add 4.3 ml exactly of the CsCl solution to the tubes.
-	1. The meniscus should be around the "Beckman" label
+	* The meniscus should be around the "Beckman" label
 
 1. Weigh and balance tubes with the CsCl solution
-	1. Note, 10 ul CsCl solution = 0.02 g
-	2. All tubes should be within 0.01 g
+	* Note, 10 ul CsCl solution = 0.02 g
+	* All tubes should be within 0.01 g
 
 1. Add DNA and TE
-	1. Total volume of DNA and TE together should be 400 ul
-	2. If adding bisbenzamide, add 8 ul here. (If one has <8ug DNA)
+	* Total volume of DNA and TE together should be 400 ul
+	* If adding bisbenzamide, add 8 ul here. (If one has <8ug DNA)
 
 1. Add gradient buffer to fill the tubes to their necks
-	1. Err on having a bit less volume so you have room to balance
+	* Err on having a bit less volume so you have room to balance
 
 1. Weigh and balance tubes by adding gradient buffer
-	1. Add the black caps, and repeat weighing and balancing. When balanced, push the black caps down to seal.
+	* Add the black caps, and repeat weighing and balancing.
+	* When balanced, push the black caps down to seal.
 
 1. Mix all tubes by inverting several times until no refraction waves can be seen
 
-1. Run in ultracentrifuge 55,000 rpm, 20C, 66+ hours.
-	1. Put stem adapter (brown caps that look like hats) on tubes to keep stem from collapsing.
-	2. Put tubes in rotor. Rotor should always be set on cloth/paper to prevent damage to the magnets underneath. 
-	3. Turn on ultracentrifuge.
-	4. Press door button and keep pulling on the handle until the vacuum is off.
-	5. Put rotor on the spindle and depress the button in the center of the rotor. Make sure it stays depressed.
-	6. Close door. Set speed, temperature and time. Press start. It will start running when the vacuum is fully established.
+1. Run in ultracentrifuge: 55,000 rpm, 20<sup>o</sup>C, 66+ hours.
+	* Put stem adapter (brown caps that look like hats) on tubes to keep stem
+	from collapsing.
+	* Put tubes in rotor. __Note:__ 
+		* The rotor should always be set on cloth/paper to prevent damage to the
+		magnets underneath. 
+	* Turn on ultracentrifuge.
+	* Press door button and keep pulling on the handle until the vacuum is off.
+	* Put rotor on the spindle and depress the button in the center of the rotor.
+		* Make sure it stays depressed.
+	* Close door. Set speed, temperature and time. Press start. It will start running
+	when the vacuum is fully established.
 
 
 ## CsCl gradient fractioning
 
 ### Setting up the fraction recovery system
 
-* Spacer pins in "B" holes. Put in empty tube.
-* Screw in needle through bottom, until the hole on the needle is visible inside the tube.
-* Take up mineral oil in 20 ml (or more) syringe. 
-* Connect tubing to rubber cap unit on one side and push the needle of a yellow syringe needle (20 G) in the other side. 
-* Attach syringe needle to the 20ml syringe.
+* Take up mineral oil in 20 ml syringe.
+* Remove as much air from the syringe as possible.
+* Connect the HPLC tubing to the 20 ml syringe.
 * Put syringe on the pump and secure. Turn on the pump.
-* Press "run" to move the oil by 100ul, or "run" + "-->" to fast forward the oil. Fill the tubing with oil until the oil reaches the opening of the rubber cap.
-* With the recovery needle pushed up, adjust the system (if needed) so that you can put the tubes/place underneath the needle to recover the fraction.
+* Attach a 21 G needle to the other end of the HPLC tubing.
+	* Place a rubber spacer on the needle (needed for stabing tube later).
+	* Suspend the needle upwards.
+* Press "run" on the syringe pump to move the oil by 100ul,
+or "run" + "-->" to fast forward the oil.
+	* Fill the tubing with oil until the oil is dripping out of the 
+* Make sure to prepare the following (timing is important during the fractionation):
+	* 96 well fraction recovery plates
+		* Label the recovery plates
+	* A stand to suspend the plates
+	* The refractometer
+	* A pipette and enough tips
+	* Enough cut 21 G needles (just needle shaft: __~0.75???__ inch long)
 
-### Fractionation
+### Fractionation (NEEDS REVISION)
 
-* Remove two tubes from the ultracentrifuge at a time using the forceps in the box. Keep the other tubes spinning. 
-* With the needle down, slide the tube into place in the fraction recovery system.
-* Remove cap/plug with forceps; avoid shaking the tube as much as possible.
-* Add mineral oil to the tube until the tube is completely filled.
-* Put the white cap (with the hole in the middle) on the tube.
-* Turn rubber cap upside down, so that the opening is facing downwards. Fasten it into the ring above the tube.
-* Lower the rubber cap down on the tube, depress the spring and tighten. The opening of the rubber cap should be over the hole in the white cap, so that the oil will flow through the white cap into the tube.
-* Puncture the bottom of the tube with the needle by raising the needle. (If there is an air leak somewhere, then the contents of the tube will start to drip out.)
-* Press "run"; the first fraction will be less than 100 ul. (The presence of an air leak may also not be evident until the first fraction, so be careful).
+* Remove two tubes from the ultracentrifuge at a time using the forceps in the box.
+	* If more tubes are still in the ultracentrifuge: keep the other tubes spinning. 
+	* __Note: Avoid shaking/disturbing any of the tubes!!! This will disrupt the
+	established gradient!__
+* Slide one tube into place in the fraction recovery system.
+	* Store the other tube on a rack until this fractionation is complete.
+* Secure the tube in the fraction recovery system (tighten all clamps).
+* With the 21 G needle attached to the syringe pump, stab the tube at the lower end
+of the neck. This should be the only part of the top of the tube that is visible.
+The rubber tube holders are marked for where to stab the tube.
+* Place a cut 21 G needle in the Tube Penetration Device (TPD)
+	* The TPD is the repurposed dissecting microscope.
+* Puncture the bottom of the tube with the needle by raising the needle slowly
+with the Tube Penetration Device (TPD).
+	* __Note:__If there is an air leak somewhere, then the contents of the tube
+	will start to drip out.
+* Lower the TPD, and the cut 21 G needle should remain in the tube.
+* Set the TPD aside and replace it with a stand holding a 96 well plate.
+	* The plate should be very close to the cut 21 G needle.
+* Press "run" on the syringe pump.
+	* __Note:__ The first fraction will be less than 100 ul.
+	* __Note:__ The presence of an air leak may also not be evident until the
+	first fraction, so be careful.
 * Measure density with the refractometer for each fraction.
-* Stop collecting fractions before the oil reaches the needle. (40, 50 fractions)
+* Stop collecting fractions before the oil reaches the needle. (~40-50 fractions)
 
 
-### Clean-up (between tubes)
+### Clean-up (between tubes) (NEEDS REVISION)
 
-* Remove the rubber caps off the tubing and place finger over the tube opening to keep liquids from leaking from the bottom. You want to avoid having mineral oil in the needle.
+* Remove the rubber caps off the tube and place finger over the tube opening to
+keep liquids from leaking from the bottom. You want to avoid having mineral oil in
+the needle.
 * Lift the tube off the system and discard rest of liquid.
 * Put a dry empty tube on the needle and add water to go through and clean the needle.
 * Remove needle and blow air through it to dry it off.
 
 
-### Clean-up
+### Clean-up (NEEDS REVISION)
 
 * Do the "between tubes" clean up
 * Let the needle soak in a beaker of water, then dry it off
@@ -136,7 +188,11 @@ Gradients are run in CsCl (DNA) or CsTFA (RNA) dissolved in gradient buffer.
 
 ## Removing CsCl from DNA samples
 
-### Option 1: isopropanol ppt
+### Using the robot:
+
+???
+
+### Manual option 1: isopropanol ppt
 
 1. Add 3 volumes of DNA free water to the CsCl solution and mix
 2. Add 0.6 volumes (calculated from new volume) of isopropanol 
@@ -150,7 +206,7 @@ Gradients are run in CsCl (DNA) or CsTFA (RNA) dissolved in gradient buffer.
 	3. Centrifuge at 14,000 g for 15min 
 6. Resuspend in 50 uL TE
 
-### Option 2: filtration
+### Manual option 2: filtration
 
 1. Use Pall 96 well filter plates
 2. Add 100ul CsCl fraction + 200 ul 50 mM Tris pH 8 (or TE if desired) to wells
@@ -162,7 +218,9 @@ Gradients are run in CsCl (DNA) or CsTFA (RNA) dissolved in gradient buffer.
 8. Add 25ul - 50ul to the center of each membrane
 9. Allow 5 minutes to dissolve DNA
 10. Pipette up and down to remove from membrane
-11. Measure volume removed if the volume exceeds the amount added in step 8 (that is if the wells were not dry)
+11. Measure volume removed if the volume exceeds the amount added in step 8
+and if the wells were not dry.
+
 
 #### Notes:
 

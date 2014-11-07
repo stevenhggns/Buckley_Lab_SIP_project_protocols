@@ -20,17 +20,20 @@
 * __If DNA:__ CsCl fractionation
 	* [CsCl_fractionation](../CsCl_fractionation/CsCl_fractionation.html) 
 
-* __Else if RNA:__ TFA fractionation
+* __Else if RNA:__ CsTFA fractionation
 	* [RNA_SIP](../RNA_SIP/RNA_SIP.html)
+
+* Pippin Prep
+	* ???
 
 * Fraction nucleotide quantification:
 	* With Picogreen: 
 		* ???
 	* With qPCR: 
-		* 
+		* ??? 
 
 * MiSeq library prep:
-	* ???
+	* [Illumina_barcoding_protocol](../library_prep/Illumina_barcoding_protocol.html)
 
 
 ## Others
