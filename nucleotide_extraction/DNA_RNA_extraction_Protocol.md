@@ -18,10 +18,17 @@
 	* ice-cold
 * 2 ml microcentrifuge tubes containing 0.5 g heat treated zirconia beads 
 	* 1 needed for each extraction
-* 1.5 ml microcentrifuge tubes
+* 2 ml microcentrifuge tubes
 	* 2 needed for each extraction
 * Bucket of ice
 
+
+## Pre-extraction checklist
+
+* Check the PEG solution to see if it precipitated. The PEG should go back into
+solution once it has warmed up. This also help with pipetting it.
+* Check to make sure the 70% ethanol is in a freezer, so that it is ice-cold when
+needed.
 
 ## Method
 
@@ -31,9 +38,15 @@
 	which should be sufficient to destroy RNAses and DNA.
 	* Alternatively, lysing matrix E tubes (MP Biomedicals Cat # 16) can also be used.
 
-1. Add 0.5 ml **Extraction buffer**, 0.25 ml equilibrated **phenol (pH 8)**,
-and 0.25 ml **chloroform:isoamyl alcohol (24:1)** to each 2 ml tube.
-	* __Note:__ work in the chemcial hood when handling phenol:chloroform:isoamyl alcohol
+1. Add the following to each 2 ml tube:
+	* 0.5 ml **Extraction buffer**
+	* 0.25 ml equilibrated **phenol (pH 8)**
+	* 0.25 ml **chloroform:isoamyl alcohol (24:1)** 
+	* __WARNING:__ work in the chemcial hood when handling
+	phenol and chloroform. Also, wear adequate protective equipment (eg., a lab coat).
+		* Phenol is corrisive and toxic. It can cause burns that 
+		are not immediately painful or visible.
+		* Chloroform is an anesthetic and likely a carcinogen.
 
 1. Place tubes in Fast-prep machine to lyse cells for 1 min at 5.5 m s<sup>-1</sup>.
 
@@ -79,11 +92,15 @@ alcohol (24:1)**.
 
 1. Centrifuge for 5 min at 16 000 x _g_ at 4<sup>o</sup>C.
 
-1. Transfer the aqueous layer to a new 1.5 ml microcentrifuge tube.
+1. Transfer the aqueous layer to a new 2 ml microcentrifuge tube.
+	* Approx. volume transferred: ~0.9 ml
+	* __Note:__ Make sure to not pipette up the organic layer.
+	* __Note:__ This is the final tube that will contain the purified nucleotides,
+	so label it well.
 
 1. Precipitate the nucleic acids with 1.5-2 volumes of **Polyethylene glycol
 solution**. 
-	* Approx. volumne of PEG: 1 ml
+	* Approx. volume of PEG: 1 ml
 
 1. Mix well through inversion by hand.
 
