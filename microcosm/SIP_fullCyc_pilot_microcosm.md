@@ -56,7 +56,7 @@
 
 ### Preincubation:
 
-* ~2-week incubation in microcosms.
+* ~2-3 week incubation in microcosms.
 	* Microcosms stoppered.
 	* Waiting for CO2 respiration (measured by GCMS) to level off.
 	* Measuring CO2 respiration:
@@ -82,37 +82,8 @@
 
 __MicrocosmID = [treatment]\_R[rep#]__
 
-* Example: '13C-pal\_R1' or '12C-con\_R3'
+* Example: 'C13-pal\_R1' or 'C12-con\_R3'
 
-
-## Carbon treatment additions
-
-### Materials:
-
-1. 12C and 13C substrates
-1. Base salts mixture (thawed and filter-sterilized)
-1. Sterile water
-1. Microcosms!
-
-### Methods:
-
-* Additions (including water) should bring soil to 50% water holding capacity.
-  * 50% water holding capacity for Penn Yan soils: 0.3 g (H2O)/ g (soil)
-* Cellulose added by spinkling onto each microcosm.
-* The other substrates weighed by mg needed per microcosm * number_replicates
-	* Added to 2? ml Eppendorf tube
-	* Glycerol added first (semi-solid)
-		* Tare eppendorf, then add required amount
-* Base salt mixture added to each eppendorf
-* Water (to get to 50% holding capacity) added to each eppendorf.
-* Vortex eppendorf to disolve substrates.
-* Flush each microcosm prior to adding substrates.
-* From eppendorf:
-	* Pipette evenly onto soil of each microcosm
-	* Ashley's method: `I usually start dripping the addition around the wall of the flask and move into a circle/spiral formation towards the middle of the soil.`
-* Stopper flasks
-* Seal with parafilm
-* Note time (time point 0)
 
 
 ## Gas Sampling
@@ -120,11 +91,13 @@ __MicrocosmID = [treatment]\_R[rep#]__
 ### Materials:
 
 1. 48 of the 2 mL gas vials (pre-crimped with grey butyl stoppers) 
-1. 7 of the 10 mL gas vials (pre-crimped with blue butyl rubber stoppers)
+1. 6 of the 10 mL gas vials (pre-crimped with blue butyl rubber stoppers)
 1. Tank of He gas and gassing station
 1. 0.5 mL and 10 mL gas tight syringes (with the green-red stop cock)
 1. Tank of the gas standard (attached to ring stand at gassing station)
 1. Microcosms
+* __Note:__ ~10 ml vials actually have an interval volume of ~11.5 ml (crimped with
+shallow septa).
 
 ### Gas vial labeling:
 
@@ -138,48 +111,51 @@ __2ml-vial-ID = [microcosmID]\_[day]\_[time]__
 * Using 10 ml vials to make CO2 mixtures
 * ml CO2 gas standard in each vial:
 	* 0
-	* 0.25
 	* 0.5
 	* 1
 	* 2
-	* 5
-	* 7.5
+	* 4
+	* 8
 
 ### Methods:
 
 #### Flushing vials:
 
+1. Label, seal, and crimp all needed 2 ml and ~10 ml vials.
 1. All valves at the gassing station should initially be closed.
 1. Turn on He tank (tank valve).
-	* The psi should be low in order to not overpressurize the vials.
-1. Stick a needle into each leur lock in the gassing manifold.
+	* The PSI should be low (<10 PSI) in order to not overpressurize the vials.
+1. Stick a needle into each leur lock in the gassing manifolds.
 	* Plug up any leur locks that will not be used.
 	* Each manifold can be shut off using the valve just upstream.
-1. Place a vial on each needle.
+1. Check to make sure gas is flowing out of each needle and each needle is tightened
+fully.
 1. Place safey shield beteen you and vials.
 1. Turn on venturi vacuum (sink).
 1. For a cycle of vacuuming and gassing:
 	* __NOTE:__ Make sure the vacuum and gas valves are not open simultaneously.
 	  The He gas will just be vacuumed out.
 	* Open the valve for the vacuum.
-	* Vacuum for >10 sec.
+	* Vacuum for >=10 sec.
 	* Close vacuum valve.
 	* Open gas valve.
-	* Gas for >10 sec.
+	* Gas for >=10 sec.
 	* Repeat vacuum-gas cycle for >=5 times.
     * Remove the vials while the He gas is still flowing.
 1. Repeat the entire process until all vials are flushed 
-1. Pull tabs off of 10 mL vials and label (gas std vials).
-1. Flush these vials the same way the 2 mL vials are flushed (except >=20 sec for vacuum or gas) 
+1. Flush the ~10 ml vials the same way the 2 ml vials are flushed
+(except >=15 sec for vacuum or gas) 
 1. Turn of He tank, purge the lines, and turn of the venturi vacuum.
 
 #### Making standards:
 
-1. Using gas standard tank (to left in gassing station, on a ring stand), turn it counterclock wise to open it. 
+1. Using gas standard tank (to left in gassing station, on a ring stand),
+turn it counterclock wise to open it. 
 1. Use 10 mL stopcock gastight syringe to make most of the stds. 
 1. Pre-evacuate std vials to volume that you plan on filling 
 	* eg., remove 0.5 ml from vial if adding 0.5 ml CO2 gas mixture
-1. Insert syringe into regulator through sampling port, fill beyond your desired volume, press in red button and pull out.
+1. Insert syringe into regulator through sampling port, fill beyond your
+desired volume, press in red button and pull out.
 1. __VERY FAST:__ open stop cock and push the syringe plunger to your desired volume. 
 	* This allows the gas to come to 1 atm which is very important for
 	  knowing exactly how much gas is in each std.
@@ -194,21 +170,27 @@ __2ml-vial-ID = [microcosmID]\_[day]\_[time]__
 1. Pump the plunger 5 times to mix the gas.
 1. Then pull plunger up to __0.25 mL__ and push the red side of the stop cock.
 1. Pull syringe out of sampling port and puncture into respective 2 mL vial.
-	* __IMPORTANT:__ CHECK TO MAKE SURE THE VIAL YOU'RE SAMPLING INTO MATCHES THE FLASK YOU SAMPLED FROM!
+	* __IMPORTANT:__ CHECK TO MAKE SURE THE VIAL YOU'RE SAMPLING INTO MATCHES THE
+	FLASK YOU SAMPLED FROM!
 1. Repeat for all flasks.
 1. Note what time you finished sampling. 
     This is very important because data is based on hourly rates. 
 	The sampling is for nothing if we don't know how much time has passed.
 1. Next step is to air out flasks. Take stoppers out of all flasks
    (don't forget the ones that don't have gas sampling ports) and set a timer for 10 min.
-	* At around 2 min until the end of the airing, flush each flask with house air for ~5 sec. 
-	* __IMPORTANT:__ Make sure the air has a very slow flow, we wouldn't want to blow the soil out of the flasks!
-1. Restopper all the flasks after 10 min. __IMPORTANT:__ Make sure they're pushed in air tight.
+	* At around 2 min until the end of the airing, flush each flask with house air
+	for ~5 sec. 
+	* __IMPORTANT:__ Make sure the air has a very slow flow, we wouldn't want to blow
+	the soil out of the flasks!
+1. Restopper all the flasks after 10 min. __IMPORTANT:__ Make sure they're pushed in
+air tight.
 1. Take a sample of air with the syringe (250 uL) and inject it into the "air" 2 mL vial.
-1. Note the time you ended flushing the flasks because this will serve as the starting time for the next gas sampling.
+1. Note the time you ended flushing the flasks because this will serve as the starting
+time for the next gas sampling.
 
 
 # Substrate additions
+
 
 ## Preparation
 
@@ -229,17 +211,22 @@ This can be done days in advance.
 #### Method
 
 1. Label a conical for each treatment.
-1. Add H2O to each
-1. Add base salts to each
+1. Add sterile H2O to each.
+	* The volume of liquid added to each microcosm should bring the soil
+	to 50% water holding capacity.
+	* 50% water holding capacity for Penn Yan soils: 0.3 g (H2O)/ g (soil)
+1. Add base salt mixture to each
+	* Volume determined by C:N ratio (10:1)
 1. Add 12C substrate to each
 	* Leave out if 13C substrate for treatment
-	* Vortex and head to ~50oC to solubalize if needed
-		* Heat needed for vanillin
-1. Add 13C substrate to each
+	* Vortex and heat to ~50oC to solubalize if needed
+		* Heat needed to full solubilize vanillin
+1. Add 13C substrate to each corresponding treatment
 	* Make sure substrates are solubalized
 1. Syringe filter each treatment solution into a new 15 ml conical
 1. Store in fridge until use
 	* The vanillin should not recrystalize in the fridge.
+
 
 ### Insoluble substrates
 
@@ -278,7 +265,7 @@ This can be done days in advance.
 
 #### Soluble substrate
 
-1. Flush MAD with 5 ml H2O 3 times
+1. Flush MAD with 5 ml sterile purified water 3 times
 	* Do this between each soluble substrate treatment
 1. Pipette the amount of soluble substrate solution needed for 1 microcosm into trough
 1. Suck up solution with 10 ml syringe (MAD not attached).
@@ -298,7 +285,6 @@ This can be done days in advance.
 1. Unwrap foil packet(s) of substrate needed for microcosm and dump onto weigh paper
 1. Dump substrate into ISAD.
 1. Move microcosm off stand.
-1. Carefully release ISAD.
 	* Vibrations will cause loss of substate!
 1. Place ISAD into microcosm (~1/2 - 1 inch from soil)
 1. Repeatedly tap on ISAD to dispense substrate.
