@@ -1,0 +1,126 @@
+<h1 id="picogreen-protocol">Picogreen Protocol</h1>
+<p>The protocol assumes one 96-well plate.</p>
+<h2 id="make-1x-te-buffer">Make 1x TE buffer</h2>
+<p><strong>NOTE:</strong> Depending on the amount of samples being analyzed, more TE buffer may need to be made. Carrying out calculations before beginning the Picogreen is highly recommended.</p>
+<p>To make 40 mL of 1x TE buffer from 20x TE buffer supplied in kit:</p>
+<ul>
+<li><p>20x * y = 1x * 40 (ml)</p>
+<ul>
+<li>y = 2 mL of 20x TE added to 38 mL of nuclease-free water</li>
+</ul></li>
+<li><p>use a 50 mL falcon tube for making the solution</p></li>
+<li><p>Total TE needed = TE for standards + TE for sample dilutions + TE for picogreen reagent dilution + 10% buffer</p></li>
+<li><p>Additionally, sketching out a plate layout for samples and standards is highly encouraged before beginning analysis.</p></li>
+</ul>
+<h2 id="make-standards">Make standards</h2>
+<ul>
+<li><p>Prepare 500 uL of 2 ug/mL stock standard from the 100 ug/mL stock supplied in kit:</p>
+<ul>
+<li><p>100 (ug/mL) * x = 500 (uL) * 2 (ug/mL)</p>
+<ul>
+<li>x = 10 uL of 100 ug/mL added to 490 uL of 1 x TE</li>
+</ul></li>
+</ul></li>
+<li><p>Make up standards, as specified in table below, in 1.5 mL Eppendorf tubes</p></li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th align="left"><strong>Final Concentration (ng/uL)</strong></th>
+<th align="left"><strong>TE to add (uL)</strong></th>
+<th align="left"><strong>2ug/mL stock to add (uL)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">750</td>
+<td align="left">62.5</td>
+<td align="left">187.5</td>
+</tr>
+<tr class="even">
+<td align="left">500</td>
+<td align="left">125</td>
+<td align="left">125</td>
+</tr>
+<tr class="odd">
+<td align="left">250</td>
+<td align="left">187.5</td>
+<td align="left">62.5</td>
+</tr>
+<tr class="even">
+<td align="left">100</td>
+<td align="left">225</td>
+<td align="left">25</td>
+</tr>
+<tr class="odd">
+<td align="left">50</td>
+<td align="left">237.5</td>
+<td align="left">12.5</td>
+</tr>
+<tr class="even">
+<td align="left">20</td>
+<td align="left">245</td>
+<td align="left">5</td>
+</tr>
+<tr class="odd">
+<td align="left">0</td>
+<td align="left">250</td>
+<td align="left">0</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Add 100 uL of each standard to unique wells of a Costar black 96-well plate. The standard curve should be duplicated.</li>
+</ul>
+<h2 id="adding-samples">Adding samples</h2>
+<ul>
+<li><p>99 uL of TE should be placed in wells of the Costar plate that are to house samples. Samples should be run in duplicate. Multichannel pipettors and reagent resevoirs can be used for this step if many samples are run.</p></li>
+<li><p>To the 99 uL in each well, 1uL of template should be added.</p></li>
+<li><p>Additionally, at least two blanks should be run, using at least one DNA sample. Set up as above, with 99uL TE and 1uL sample. This blank will not have Picogreen reagent added to it, and thus will give a measure of fluorescence that is present naturally in the sample.</p></li>
+</ul>
+<h2 id="making-and-adding-picogreen-reagent">Making and adding Picogreen Reagent</h2>
+<ul>
+<li>Based on the number of samples to be run, calculate the amount of 1x Picogreen reagent that should be made:</li>
+</ul>
+<blockquote>
+<p>raw_amount = 100 (uL of 1x Picogreen reagent) * Number_of_samples</p>
+</blockquote>
+<blockquote>
+<p>extra_amount = raw_amount * 10%</p>
+</blockquote>
+<blockquote>
+<p>total_amount = raw_amount + extra_amount</p>
+</blockquote>
+<ul>
+<li><p>Once that the total amount is determined, calculate dilution of the 200x Picogreen reagent:</p>
+<ul>
+<li><p>200x * y = 1x * 1x (Picogreen reagent amount needed)</p></li>
+<li><p>Dilute y in (Picogreen total) - y amount of 1x TE.</p></li>
+<li><p>For example:</p>
+<ul>
+<li>If running 10 samples, 1100 uL of 1x Picogreen should be made, using 5.5 uL of 200x Picogreen reagent diluted into 1094.5 uL of 1x TE.</li>
+</ul></li>
+</ul></li>
+<li><p>Make up Picogreen reagent in a falcon tube (15 mL or 50 mL, depending on the amount needed) that is wrapped in aluminum foil (to prevent degradation of reagent).</p></li>
+<li><p>Once reagent is made up, transfer 100 uL of reagent to each well of the Costar plate to be analyzed, EXCEPT the wells to be used as blanks.</p>
+<ul>
+<li><p>Again, the multichannel pipettor and reagent resevoirs can be useful in this step.</p></li>
+<li><p>Make sure to pipet up and down to mix reagent with well contents.</p></li>
+</ul></li>
+<li><p>After reagent addition, incubate plate for 5 minutes in a dark space</p>
+<ul>
+<li>ex. a closed drawer</li>
+</ul></li>
+</ul>
+<h2 id="running-samples-on-plate-reader">Running samples on plate reader</h2>
+<ul>
+<li>While samples are incubating, set up analysis program on plate reader software:</li>
+</ul>
+<ol style="list-style-type: decimal">
+<li><p>Open Softmax Pro 6.3 software.</p></li>
+<li><p>To make sure the plate reader is set-up to run a fluorescence assay, click on the 'Settings Icon', choose the 'FL' option, and make sure that excitement is set to 485nm and emission is set to 535 nm.</p></li>
+<li><p>Then, click on the 'Protocols' tab Protocol library Nucleic Acids Picogreen assay. This will open up an already created Pico protocol.</p></li>
+<li><p>Modify plate set-up by scrolling to the page with the plate layout, and clicking on the small plate icon ('Template editor'). This will open up a screen that will allow you to add standards, samples, and blanks to the plate to be read.</p></li>
+<li><p>Once the plate is modified, you can save as a protocol file. You can also save the file as a datafile once the analysis is done.</p></li>
+<li><p>To read plate, open the plate reader using the open/close button and place the plate into the reader. Note the orientation of the plate! Then press the read button.</p></li>
+</ol>
