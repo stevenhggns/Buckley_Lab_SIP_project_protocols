@@ -1,32 +1,57 @@
 <h1 id="picogreen-protocol">Picogreen Protocol</h1>
 <p>The protocol assumes one 96-well plate.</p>
 <h2 id="make-1x-te-buffer">Make 1x TE buffer</h2>
-<p><strong>NOTE:</strong> Depending on the amount of samples being analyzed, more TE buffer may need to be made. Carrying out calculations before beginning the Picogreen is highly recommended.</p>
-<p>To make 40 mL of 1x TE buffer from 20x TE buffer supplied in kit:</p>
 <ul>
-<li><p>20x * y = 1x * 40 (ml)</p>
+<li><p><strong>NOTE:</strong> Depending on the amount of samples being analyzed, more TE buffer may need to be made. Carrying out calculations before beginning the Picogreen is highly recommended.</p></li>
+<li><p><strong>NOTE:</strong> Additionally, sketching out a plate layout for samples and standards is highly encouraged before beginning analysis.</p></li>
+<li>To make 1x TE buffer from the 20x stock supplied in the kit:
 <ul>
-<li>y = 2 mL of 20x TE added to 38 mL of nuclease-free water</li>
+<li>1:20 dilution
+<ul>
+<li>e.g., 2 ml of 20x TE in 38 ml of nuclease-free water</li>
 </ul></li>
-<li><p>use a 50 mL falcon tube for making the solution</p></li>
-<li><p>Total TE needed = TE for standards + TE for sample dilutions + TE for picogreen reagent dilution + 10% buffer</p></li>
-<li><p>Additionally, sketching out a plate layout for samples and standards is highly encouraged before beginning analysis.</p></li>
+</ul></li>
+<li><p>Total TE needed:</p>
+<ul>
+<li>raw_total_volume = TE for standards + TE for sample dilutions + TE for picogreen reagent dilution
+<ul>
+<li>volume for each standard:
+<ul>
+<li>see 'TE to add (uL)' in table below</li>
+</ul></li>
+<li>volume for each sample dilution
+<ul>
+<li>99 ul</li>
+</ul></li>
+<li>volume for each picogreen regent dilution
+<ul>
+<li>see 'Making the picogreen reagent' below</li>
+</ul></li>
+</ul></li>
+<li><p>extra_volume = raw_total_volume * 0.1</p></li>
+<li><p>final_total_volume = raw_total_volume + extra_volume</p></li>
+</ul></li>
+<li><p>use a 50 mL falcon tube for making the 1x TE buffer</p></li>
 </ul>
 <h2 id="make-standards">Make standards</h2>
 <ul>
-<li><p>Prepare 500 uL of 2 ug/mL stock standard from the 100 ug/mL stock supplied in kit:</p>
+<li>Stock standard: 100 ug/mL</li>
+<li>Final standard conc. needed: 2 ug/mL
 <ul>
-<li><p>100 (ug/mL) * x = 500 (uL) * 2 (ug/mL)</p>
+<li>1:50 dilution in TE buffer</li>
+</ul></li>
+<li>Total volume needed: 500 uL</li>
+<li>Volume stock standard needed (ul): 500 * 1/50 = 10</li>
+<li><p>Volume TE buffer needed (ul): 500 - 10 = 490</p></li>
+<li>Make up standards, as specified in table below, in 1.5 mL Eppendorf tubes
 <ul>
-<li>x = 10 uL of 100 ug/mL added to 490 uL of 1 x TE</li>
+<li><strong>Note:</strong> This will make 2 replicates of each standard (enough for 1 plate).</li>
 </ul></li>
-</ul></li>
-<li><p>Make up standards, as specified in table below, in 1.5 mL Eppendorf tubes</p></li>
 </ul>
 <table>
 <thead>
 <tr class="header">
-<th align="left"><strong>Final Concentration (ng/uL)</strong></th>
+<th align="left"><strong>Final Conc. post-pico (ng/uL)</strong></th>
 <th align="left"><strong>TE to add (uL)</strong></th>
 <th align="left"><strong>2ug/mL stock to add (uL)</strong></th>
 </tr>
@@ -69,45 +94,55 @@
 </tr>
 </tbody>
 </table>
+<pre><code>* &#39;post-pico&#39; means the final conc. after adding the Picogreen reagent.</code></pre>
 <ul>
 <li>Add 100 uL of each standard to unique wells of a Costar black 96-well plate. The standard curve should be duplicated.</li>
 </ul>
-<h2 id="adding-samples">Adding samples</h2>
+<h2 id="adding-samples-a.k.a.-template">Adding samples (a.k.a. template)</h2>
 <ul>
-<li><p>99 uL of TE should be placed in wells of the Costar plate that are to house samples. Samples should be run in duplicate. Multichannel pipettors and reagent resevoirs can be used for this step if many samples are run.</p></li>
-<li><p>To the 99 uL in each well, 1uL of template should be added.</p></li>
-<li><p>Additionally, at least two blanks should be run, using at least one DNA sample. Set up as above, with 99uL TE and 1uL sample. This blank will not have Picogreen reagent added to it, and thus will give a measure of fluorescence that is present naturally in the sample.</p></li>
+<li>99 uL of TE should be placed in wells of the Costar plate that are to house samples. Samples should be run in duplicate.
+<ul>
+<li>Multichannel pipettors and reagent resevoirs can be used for this step if many samples are run.</li>
+</ul></li>
+<li><p>To the 99 uL in each well, add 1uL of template (sample).</p></li>
+<li>Additionally, at least one nucleotide sample should be used as a blank (2 replicates).
+<ul>
+<li>Set up as above, with 99uL TE buffer and 1 uL sample.</li>
+<li>This blank will not have Picogreen reagent added to it, and thus will give a measure of fluorescence that is present naturally in the sample.</li>
+</ul></li>
 </ul>
 <h2 id="making-and-adding-picogreen-reagent">Making and adding Picogreen Reagent</h2>
 <ul>
-<li>Based on the number of samples to be run, calculate the amount of 1x Picogreen reagent that should be made:</li>
-</ul>
-<blockquote>
-<p>raw_amount = 100 (uL of 1x Picogreen reagent) * Number_of_samples</p>
-</blockquote>
-<blockquote>
-<p>extra_amount = raw_amount * 10%</p>
-</blockquote>
-<blockquote>
-<p>total_amount = raw_amount + extra_amount</p>
-</blockquote>
+<li><p>Based on the number of samples to be run, calculate the volume of 1x Picogreen reagent that should be made:</p>
 <ul>
-<li><p>Once that the total amount is determined, calculate dilution of the 200x Picogreen reagent:</p>
+<li>raw_total_volume = 100 (uL of 1x Picogreen reagent) * Number_of_samples</li>
+<li>extra_volume = raw_total_volume * 0.1</li>
+<li>final_total_volume = raw_total_volume + extra_volume</li>
+</ul></li>
+<li><p>Once that the total volume is determined, calculate dilution of the 200x Picogreen reagent:</p>
 <ul>
-<li><p>200x * y = 1x * 1x (Picogreen reagent amount needed)</p></li>
-<li><p>Dilute y in (Picogreen total) - y amount of 1x TE.</p></li>
-<li><p>For example:</p>
+<li>Final x Picogreen needed: 1x
 <ul>
-<li>If running 10 samples, 1100 uL of 1x Picogreen should be made, using 5.5 uL of 200x Picogreen reagent diluted into 1094.5 uL of 1x TE.</li>
+<li>1:200 dilution in TE buffer</li>
+</ul></li>
+<li>Total volume needed: 110 * number_of_samples
+<ul>
+<li>'110' provides extra volume (10%)</li>
+</ul></li>
+<li>Volume of 200x Picogreen needed: total_volume * 1/200</li>
+<li>Volume of TE buffer needed: total_volume - picogreen_volume</li>
+<li>For example:
+<ul>
+<li>If running 10 samples, 1100 uL of 1x Picogreen should be made, using 5.5 uL of 200x Picogreen reagent diluted with 1094.5 uL of 1x TE buffer.</li>
 </ul></li>
 </ul></li>
 <li><p>Make up Picogreen reagent in a falcon tube (15 mL or 50 mL, depending on the amount needed) that is wrapped in aluminum foil (to prevent degradation of reagent).</p></li>
-<li><p>Once reagent is made up, transfer 100 uL of reagent to each well of the Costar plate to be analyzed, EXCEPT the wells to be used as blanks.</p>
+<li>Once reagent is made up, transfer 100 uL of reagent to each well of the Costar plate to be analyzed, EXCEPT the wells to be used as blanks.
 <ul>
-<li><p>Again, the multichannel pipettor and reagent resevoirs can be useful in this step.</p></li>
-<li><p>Make sure to pipet up and down to mix reagent with well contents.</p></li>
+<li>Again, the multichannel pipettor and reagent resevoirs can be useful in this step.<br /></li>
+<li>Make sure to pipet up and down to mix reagent with well contents.</li>
 </ul></li>
-<li><p>After reagent addition, incubate plate for 5 minutes in a dark space</p>
+<li>After reagent addition, incubate plate for 5 minutes in a dark space
 <ul>
 <li>ex. a closed drawer</li>
 </ul></li>

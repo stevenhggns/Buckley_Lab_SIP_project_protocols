@@ -7,38 +7,51 @@ The protocol assumes one 96-well plate.
 
 ## Make 1x TE buffer
 
-__NOTE:__ Depending on the amount of samples being analyzed, 
+* __NOTE:__ Depending on the amount of samples being analyzed, 
 more TE buffer may need to be made. Carrying out calculations before beginning
 the Picogreen is highly recommended.
 
-To make 40 mL of 1x TE buffer from 20x TE buffer supplied in kit:
+* __NOTE:__ Additionally, sketching out a plate layout for samples and standards is
+highly encouraged before beginning analysis. 
 
-* 20x * y = 1x * 40 (ml)
+* To make 1x TE buffer from the 20x stock supplied in the kit:
+	* 1:20 dilution
+		* e.g., 2 ml of 20x TE in 38 ml of nuclease-free water
 
-	* y = 2 mL of 20x TE added to 38 mL of nuclease-free water
+* Total TE needed:
 
-* use a 50 mL falcon tube for making the solution
+	* raw_total_volume = TE for standards + TE for sample dilutions + TE for picogreen
+reagent dilution
+		* volume for each standard:
+			* see 'TE to add (uL)' in table below
+		* volume for each sample dilution
+			* 99 ul
+		* volume for each picogreen regent dilution
+			* see 'Making the picogreen reagent' below
 
-* Total TE needed = TE for standards + TE for sample dilutions + TE for
-picogreen reagent dilution + 10% buffer
+	* extra_volume = raw_total_volume * 0.1
 
-* Additionally, sketching out a plate layout for samples and standards is highly
-encouraged before beginning analysis. 
+	* final_total_volume = raw_total_volume + extra_volume
+
+
+* use a 50 mL falcon tube for making the 1x TE buffer
 
 
 ## Make standards 
 
-* Prepare 500 uL of 2 ug/mL stock standard from the 100 ug/mL stock
-    supplied in kit:
+* Stock standard: 100 ug/mL
+* Final standard conc. needed: 2 ug/mL
+	* 1:50 dilution in TE buffer
+* Total volume needed: 500 uL
+* Volume stock standard needed (ul): 500 * 1/50 = 10
+* Volume TE buffer needed (ul): 500 - 10 = 490
 
-	* 100 (ug/mL) * x = 500 (uL) * 2 (ug/mL)
-		
-		* x = 10 uL of 100 ug/mL added to 490 uL of 1 x TE
 
 * Make up standards, as specified in table below, in 1.5 mL Eppendorf
     tubes
+    * __Note:__ This will make 2 replicates of each standard (enough for 1 plate).
 
-  **Final Concentration (ng/uL)**   **TE to add (uL)**   **2ug/mL stock to add (uL)**
+  **Final Conc. post-pico (ng/uL)** **TE to add (uL)**   **2ug/mL stock to add (uL)**
   --------------------------------- -------------------- ------------------------------
   750                               62.5                 187.5
   500                               125                  125
@@ -48,47 +61,49 @@ encouraged before beginning analysis.
   20                                245                  5
   0                                 250                  0
 
+	* 'post-pico' means the final conc. after adding the Picogreen reagent.
+
 * Add 100 uL of each standard to unique wells of a Costar black 96-well
-    plate. The standard curve should be duplicated.
+plate. The standard curve should be duplicated.
 
 
-## Adding samples
+## Adding samples (a.k.a. template)
 
 *   99 uL of TE should be placed in wells of the Costar plate that are to
-    house samples. Samples should be run in duplicate. Multichannel
-    pipettors and reagent resevoirs can be used for this step if many
+    house samples. Samples should be run in duplicate.
+	* Multichannel pipettors and reagent resevoirs can be used for this step if many
     samples are run.
 
-*   To the 99 uL in each well, 1uL of template should be added.
+*   To the 99 uL in each well, add 1uL of template (sample). 
 
-*   Additionally, at least two blanks should be run, using at least one
-    DNA sample. Set up as above, with 99uL TE and 1uL sample. This blank
-    will not have Picogreen reagent added to it, and thus will give a
+*   Additionally, at least one nucleotide sample should be used as a blank (2 replicates).
+	* Set up as above, with 99uL TE buffer and 1 uL sample.
+    * This blank will not have Picogreen reagent added to it, and thus will give a
     measure of fluorescence that is present naturally in the sample.
 
 
 ## Making and adding Picogreen Reagent
 
-* Based on the number of samples to be run, calculate the amount of 1x
+* Based on the number of samples to be run, calculate the volume of 1x
 Picogreen reagent that should be made:
 
-> raw_amount = 100 (uL of 1x Picogreen reagent) \* Number_of_samples 
-
-> extra_amount = raw_amount * 10%
-
-> total_amount = raw_amount + extra_amount
+	* raw_total_volume = 100 (uL of 1x Picogreen reagent) \* Number_of_samples 
+	* extra_volume = raw_total_volume * 0.1
+	* final_total_volume = raw_total_volume + extra_volume
 
 
-* Once that the total amount is determined, calculate dilution of the 200x Picogreen reagent:
+* Once that the total volume is determined, calculate dilution of the 200x
+Picogreen reagent:
 
-	* 200x * y = 1x * 1x (Picogreen reagent amount needed)
-
-	* Dilute y in (Picogreen total) - y amount of 1x TE.
-
+	* Final x Picogreen needed: 1x
+		* 1:200 dilution in TE buffer
+	* Total volume needed: 110 * number_of_samples
+		* '110' provides extra volume (10%)
+	* Volume of 200x Picogreen needed: total_volume * 1/200
+	* Volume of TE buffer needed: total_volume - picogreen_volume
 	* For example:
-
 		* If running 10 samples, 1100 uL of 1x Picogreen should be made, using
-		5.5 uL of 200x Picogreen reagent diluted into 1094.5 uL of 1x TE.
+		5.5 uL of 200x Picogreen reagent diluted with 1094.5 uL of 1x TE buffer.
 
 *   Make up Picogreen reagent in a falcon tube (15 mL or 50 mL, depending
     on the amount needed) that is wrapped in aluminum foil (to prevent
@@ -97,14 +112,11 @@ Picogreen reagent that should be made:
 *   Once reagent is made up, transfer 100 uL of reagent to each well of
     the Costar plate to be analyzed, EXCEPT the wells to be used as
     blanks. 
-
 	* Again, the multichannel pipettor and reagent resevoirs can
-    be useful in this step.
-    
+    be useful in this step.    
     * Make sure to pipet up and down to mix reagent with well contents.
 
-*   After reagent addition, incubate plate for 5 minutes in a dark space
-    
+*   After reagent addition, incubate plate for 5 minutes in a dark space    
     * ex. a closed drawer
 
 
