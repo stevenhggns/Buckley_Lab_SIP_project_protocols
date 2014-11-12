@@ -77,7 +77,7 @@ plate. The standard curve should be duplicated.
 *   To the 99 uL in each well, add 1uL of template (sample). 
 
 *   Additionally, at least one nucleotide sample should be used as a blank (2 replicates).
-	* Set up as above, with 99uL TE buffer and 1 uL sample.
+	* Set up as above, with 99 uL TE buffer and 1 uL sample.
     * This blank will not have Picogreen reagent added to it, and thus will give a
     measure of fluorescence that is present naturally in the sample.
 
@@ -85,25 +85,19 @@ plate. The standard curve should be duplicated.
 ## Making and adding Picogreen Reagent
 
 * Based on the number of samples to be run, calculate the volume of 1x
-Picogreen reagent that should be made:
+Picogreen reagent that should be made (volume in ul):
 
-	* raw_total_volume = 100 (uL of 1x Picogreen reagent) \* Number_of_samples 
-	* extra_volume = raw_total_volume * 0.1
-	* final_total_volume = raw_total_volume + extra_volume
-
+	* total\_volume: 110 * (number\_of\_samples + number\_of\_standards)
 
 * Once that the total volume is determined, calculate dilution of the 200x
 Picogreen reagent:
 
-	* Final x Picogreen needed: 1x
-		* 1:200 dilution in TE buffer
-	* Total volume needed: 110 * number_of_samples
-		* '110' provides extra volume (10%)
-	* Volume of 200x Picogreen needed: total_volume * 1/200
-	* Volume of TE buffer needed: total_volume - picogreen_volume
-	* For example:
-		* If running 10 samples, 1100 uL of 1x Picogreen should be made, using
-		5.5 uL of 200x Picogreen reagent diluted with 1094.5 uL of 1x TE buffer.
+	* Volume of 200x Picogreen needed: total\_volume * 1/200
+	* Volume of TE buffer needed: total\_volume * 199/200
+
+* For example:
+	* If running 10 samples, 1100 uL of 1x Picogreen should be made, using
+	5.5 uL of 200x Picogreen reagent diluted with 1094.5 uL of 1x TE buffer.
 
 *   Make up Picogreen reagent in a falcon tube (15 mL or 50 mL, depending
     on the amount needed) that is wrapped in aluminum foil (to prevent
@@ -115,6 +109,8 @@ Picogreen reagent:
 	* Again, the multichannel pipettor and reagent resevoirs can
     be useful in this step.    
     * Make sure to pipet up and down to mix reagent with well contents.
+
+*   Add 100 uL of TE buffer to the blank wells
 
 *   After reagent addition, incubate plate for 5 minutes in a dark space    
     * ex. a closed drawer

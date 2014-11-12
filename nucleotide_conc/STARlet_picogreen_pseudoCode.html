@@ -1,0 +1,136 @@
+<h1 id="user-designating-layout-of-plates">User designating layout of plates:</h1>
+<ul>
+<li><p>Reagents will be added to &gt;=1 Costar black 96-well plate(s).</p></li>
+<li>In a 96-well plate format, wells need to be set as either:
+<ul>
+<li>standards (dilution series of 7 concentrations)</li>
+<li>unknowns</li>
+<li>blanks</li>
+</ul></li>
+<li><p>All standards, unknowns, and blanks are performed in duplicate on the same plate</p></li>
+<li>[not critical] Based on the number for standards, unknowns, and blanks, the software would calculate the volumes of the necessary reagents:
+<ul>
+<li>TE buffer</li>
+<li>standard DNA</li>
+<li><p>picogreen reagent</p></li>
+<li>Total TE needed:
+<ul>
+<li>raw_total_volume = TE for standards + TE for sample dilutions + TE for picogreen reagent dilution</li>
+<li>volume for ALL standards:
+<ul>
+<li>1332.5 ul</li>
+</ul></li>
+<li>volume for EACH sample:
+<ul>
+<li>99 ul</li>
+</ul></li>
+<li>volume for EACH picogreen reagent dilution:
+<ul>
+<li>110 ul</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>The user would also need to designate where each unknown (nucleotide sample) is located on another 96-well plate that holds all of the unknowns.</p></li>
+</ul>
+<h1 id="user-provided-materials">User-provided materials:</h1>
+<ul>
+<li>reagent trough of 1x TE buffer</li>
+<li>empty reagent trough for preparing picogreen working stock</li>
+<li>micro-cfg tube with picogreen reagent</li>
+<li>micro-cfg tube with standard template</li>
+<li>7 micro-cfg tubes for preparing the standards (per 1 plate)</li>
+<li>96-well plate(s) containing unknowns (samples)</li>
+<li>Costar black 96-well plate(s) (will contain the final reagent mixtures)</li>
+</ul>
+<h1 id="making-standards-per-plate">Making standards (per plate):</h1>
+<ul>
+<li>The stock standard is diluted with TE buffer to make the dilution series of standards as specified in the table below:</li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th align="left"><strong>TE to add (uL)</strong></th>
+<th align="left"><strong>2ug/mL stock to add (uL)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">62.5</td>
+<td align="left">187.5</td>
+</tr>
+<tr class="even">
+<td align="left">125</td>
+<td align="left">125</td>
+</tr>
+<tr class="odd">
+<td align="left">187.5</td>
+<td align="left">62.5</td>
+</tr>
+<tr class="even">
+<td align="left">225</td>
+<td align="left">25</td>
+</tr>
+<tr class="odd">
+<td align="left">237.5</td>
+<td align="left">12.5</td>
+</tr>
+<tr class="even">
+<td align="left">245</td>
+<td align="left">5</td>
+</tr>
+<tr class="odd">
+<td align="left">250</td>
+<td align="left">0</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>100 uL of each of the prepared standards is added the the Costar black 96-well plate
+<ul>
+<li>The plate/well IDs are determined from the user designation of the final plate layout</li>
+</ul></li>
+</ul>
+<h1 id="add-unknowns">Add unknowns:</h1>
+<ul>
+<li>For all unknown wells:
+<ul>
+<li>add 99 uL of TE Buffer</li>
+</ul></li>
+<li>For each unknown well:
+<ul>
+<li>add 1 uL of the corresponding unknown (user-defined correspondence)</li>
+</ul></li>
+</ul>
+<h1 id="add-blanks">Add blanks:</h1>
+<ul>
+<li>For all blank wells:
+<ul>
+<li>add 199 uL of TE Buffer</li>
+</ul></li>
+<li>For each unknown well:
+<ul>
+<li>add 1 uL of the corresponding unknown (user-defined correspondence)</li>
+</ul></li>
+</ul>
+<h1 id="making-working-stock-of-picogreen-reagent-1x-concentration">Making working stock of picogreen reagent (1x concentration):</h1>
+<ul>
+<li><p>Calculate volume (ul) of TE buffer and 200x picogreen needed:</p>
+<ul>
+<li>number_unk_std = number_unknowns + number_standards</li>
+<li>total_volume_working_stock = 110 * number_unk_std</li>
+<li>total_volume_200x_picogreen = total_volume_working_stock * 1/200</li>
+<li>total_volume_TE_buffer = total_volume_working_stock * 199/200</li>
+</ul></li>
+<li>Transfer the necessary volume of TE buffer to the empty reagent trough
+<ul>
+<li>total_volume_200x_picogreen</li>
+<li>total_volume_TE_buffer</li>
+</ul></li>
+<li><p>Transfer the necessary volume of 200x picogreen to the empty reagent trough</p></li>
+<li><p>Mix reagents in trough by pipetting up and down 5x</p></li>
+<li><p>Transfer 100 ul of 1x picogreen reagent into each unknown and standard well</p></li>
+<li><p>Mix reagents in trough by pipetting up and down 5x</p></li>
+<li><p>Alert the user that the method is nearly complete (5 min remaining)</p></li>
+<li><p>Allow plate(s) to incubate for 5 min</p></li>
+<li><p>Alert the user that the method is complete!</p></li>
+</ul>
