@@ -23,14 +23,17 @@
 * __Else if RNA:__ CsTFA fractionation
 	* [RNA_SIP](../RNA_SIP/RNA_SIP.html)
 
+* Nucleotide quantification:
+	* [Picogreen](../nucleotide_conc/picogreen.html)
+
+* Nucleotide sample concentration
+	* [speed-vac](../speed-vac/speed-vac.html)
+
 * Pippin Prep
-	* ???
+	* [Pippen_prep](../Pippen_prep/Pippen_prep.html)
 
 * Fraction nucleotide quantification:
-	* With Picogreen: 
-		* ???
-	* With qPCR: 
-		* ??? 
+	* [picogreen](../nucleotide_conc/picogreen.html)
 
 * MiSeq library prep:
 	* [Illumina_barcoding_protocol](../library_prep/Illumina_barcoding_protocol.html)
