@@ -1,4 +1,4 @@
-# Operation of the Buckley lab speed-vac
+## Operation of the Buckley lab speed-vac
 
 1. Turn on the main power.
 1. If heat is desired, set the proper temperature.
@@ -11,6 +11,20 @@ keys simulantaneously.
 	* __Function 2:__ for high vapor pressure solvents
 	* __Function 3:__ for aqueous solutions
 	* __Note:__ On start-up, the device defaults to Function 1.
+		
+**Indicators of which function is selected:**
+
+|                | ------ | Ventilation control lamp   | ------ | Vacuum control lamp  |
+|----------------|--------|----------------------------|--------|----------------------|
+| **Function 1** |        |                            |        |                      |
+| during run     |        | flashes                    |        | lights up constantly |
+| in standstill  |        | flashes                    |        | off                  |
+| **Function 2** |        |                            |        |                      |
+| during run     |        | off                        |        | lights up constantly |
+| in standstill  |        | lights up constantly       |        | off                  |
+| **Function 3** |        |                            |        |                      |
+| during run     |        | off                        |        | flashes              |
+| in standstill  |        | lights up constantly       |        | flashes              |
 
 1. Hit __Start__ to begin the run.
 	* Check samples every ~10-15 min to make sure they are concentrating properly
@@ -25,13 +39,8 @@ the vacuum pump.
 __WARNING: Since this device does not currently contain a cooling trap, this unit
 should not be used with the following materials:__
 
-* Poisonous liquids
+* Poisonous, corrosive, caustic, or hazardous liquids
 * Pathogenic bacteria
-* Corrosive liquids
-* Caustic liquids
-* Hazardous liquids
-* Phenol
-* Chloroform
-* Formamide
+* Phenol, Chloroform, or Formamide
 
 __Note:__ This unit spins at 1,200 rpm. 
