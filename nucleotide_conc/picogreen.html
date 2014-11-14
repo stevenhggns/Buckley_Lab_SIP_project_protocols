@@ -1,48 +1,83 @@
 <h1 id="picogreen-protocol">Picogreen Protocol</h1>
-<p>The protocol assumes one 96-well plate.</p>
+<ul>
+<li>The protocol assumes one 96-well plate.</li>
+</ul>
+<h2 id="materials">Materials</h2>
+<ul>
+<li>(1) Costar black 96-well plate</li>
+<li>(8) 1.5ml micro-cfg tubes</li>
+<li>(2) 15 or 50 ml falcon tubes (depends on volume 1x TE buffer neded)</li>
+<li>(1) Picogreen kit
+<ul>
+<li>Warm up the picogreen reagent before use</li>
+</ul></li>
+</ul>
 <h2 id="make-1x-te-buffer">Make 1x TE buffer</h2>
 <ul>
-<li><p><strong>NOTE:</strong> Depending on the amount of samples being analyzed, more TE buffer may need to be made. Carrying out calculations before beginning the Picogreen is highly recommended.</p></li>
-<li><p><strong>NOTE:</strong> Additionally, sketching out a plate layout for samples and standards is highly encouraged before beginning analysis.</p></li>
+<li><strong>NOTE:</strong> Sketching out a plate layout is highly encouraged before beginning analysis.
+<ul>
+<li>The plate will contain:
+<ul>
+<li>Standards
+<ul>
+<li>Dilution series of DNA standard</li>
+</ul></li>
+<li>Unknowns
+<ul>
+<li>Provided nucleotide samples with unknown concentrations</li>
+</ul></li>
+<li>Blanks
+<ul>
+<li>Accounts for background noise in unknowns (from humics and other contaminants)</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p><strong>NOTE:</strong> This protocol assumes all standards, unknowns, and blanks are run in duplicate.</p></li>
 <li>To make 1x TE buffer from the 20x stock supplied in the kit:
 <ul>
 <li>1:20 dilution
 <ul>
-<li>e.g., 2 ml of 20x TE in 38 ml of nuclease-free water</li>
+<li>e.g., 2 ml of 20x TE buffer in 38 ml of nuclease-free water</li>
 </ul></li>
 </ul></li>
-<li><p>Total TE needed:</p>
+<li><p>Calculate the total volume of TE buffer needed:</p>
 <ul>
 <li>raw_total_volume = TE for standards + TE for sample dilutions + TE for picogreen reagent dilution
 <ul>
-<li>volume for each standard:
+<li>volume for all standards (ul):
 <ul>
-<li>see 'TE to add (uL)' in table below</li>
+<li>Number 99 + 1832.5</li>
 </ul></li>
-<li>volume for each sample dilution
+<li>volume for all blanks (ul):
 <ul>
-<li>99 ul</li>
+<li>Number_of_blanks * 199</li>
 </ul></li>
-<li>volume for each picogreen regent dilution
+<li>volume for all unknowns (ul):
 <ul>
-<li>see 'Making the picogreen reagent' below</li>
+<li>Number_of_unknowns * 198</li>
 </ul></li>
 </ul></li>
-<li><p>extra_volume = raw_total_volume * 0.1</p></li>
-<li><p>final_total_volume = raw_total_volume + extra_volume</p></li>
+<li>final_total_volume = raw_total_volume * 1.1
+<ul>
+<li><strong>Note:</strong> Produces 10% extra 1x TE buffer</li>
+</ul></li>
+<li>For example:
+<ul>
+<li>10 unknowns in duplicate + 1 blank in duplicate + 14 total standards would need 5.59 mL of raw_total_volume and 6.15 mL final_total_volume (with extra TE buffer).</li>
+</ul></li>
 </ul></li>
 <li><p>use a 50 mL falcon tube for making the 1x TE buffer</p></li>
 </ul>
 <h2 id="make-standards">Make standards</h2>
 <ul>
-<li>Stock standard: 100 ug/mL</li>
-<li>Final standard conc. needed: 2 ug/mL
+<li>Stock standard conc.: 100 ug/mL</li>
+<li>Working standard conc. needed: 2 ug/mL
 <ul>
 <li>1:50 dilution in TE buffer</li>
 </ul></li>
-<li>Total volume needed: 500 uL</li>
-<li>Volume stock standard needed (ul): 500 * 1/50 = 10</li>
-<li><p>Volume TE buffer needed (ul): 500 - 10 = 490</p></li>
+<li>Volume working standard needed (ul): 500</li>
+<li>Volume TE buffer needed (ul): 500 * 49/50 = <strong>490</strong></li>
+<li><p>Volume stock standard needed (ul): 500 * 1/50 = <strong>10</strong></p></li>
 <li>Make up standards, as specified in table below, in 1.5 mL Eppendorf tubes
 <ul>
 <li><strong>Note:</strong> This will make 2 replicates of each standard (enough for 1 plate).</li>
@@ -51,45 +86,61 @@
 <table>
 <thead>
 <tr class="header">
-<th align="left"><strong>Final Conc. post-pico (ng/uL)</strong></th>
+<th align="left"><strong>Final Conc. post-pico (ng/mL)</strong></th>
+<th align="left">___</th>
 <th align="left"><strong>TE to add (uL)</strong></th>
-<th align="left"><strong>2ug/mL stock to add (uL)</strong></th>
+<th align="left">___</th>
+<th align="left"><strong>2ug/mL working std to add (uL)</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td align="left">750</td>
+<td align="left"></td>
 <td align="left">62.5</td>
+<td align="left"></td>
 <td align="left">187.5</td>
 </tr>
 <tr class="even">
 <td align="left">500</td>
+<td align="left"></td>
 <td align="left">125</td>
+<td align="left"></td>
 <td align="left">125</td>
 </tr>
 <tr class="odd">
 <td align="left">250</td>
+<td align="left"></td>
 <td align="left">187.5</td>
+<td align="left"></td>
 <td align="left">62.5</td>
 </tr>
 <tr class="even">
 <td align="left">100</td>
+<td align="left"></td>
 <td align="left">225</td>
+<td align="left"></td>
 <td align="left">25</td>
 </tr>
 <tr class="odd">
 <td align="left">50</td>
+<td align="left"></td>
 <td align="left">237.5</td>
+<td align="left"></td>
 <td align="left">12.5</td>
 </tr>
 <tr class="even">
 <td align="left">20</td>
+<td align="left"></td>
 <td align="left">245</td>
+<td align="left"></td>
 <td align="left">5</td>
 </tr>
 <tr class="odd">
 <td align="left">0</td>
+<td align="left"></td>
 <td align="left">250</td>
+<td align="left"></td>
 <td align="left">0</td>
 </tr>
 </tbody>
@@ -98,33 +149,35 @@
 <ul>
 <li>Add 100 uL of each standard to unique wells of a Costar black 96-well plate. The standard curve should be duplicated.</li>
 </ul>
-<h2 id="adding-samples-a.k.a.-template">Adding samples (a.k.a. template)</h2>
+<h2 id="unknown-blank-well-reagent-additions">Unknown &amp; blank well reagent additions</h2>
 <ul>
-<li>99 uL of TE should be placed in wells of the Costar plate that are to house samples. Samples should be run in duplicate.
+<li>Add 99 uL of TE buffer to all wells on the Costar plate assigned as unknowns or blanks.
 <ul>
-<li>Multichannel pipettors and reagent resevoirs can be used for this step if many samples are run.</li>
+<li>Multichannel pipettors and reagent resevoirs can be used for this step if many unknowns/blanks are in the layout.</li>
 </ul></li>
-<li><p>To the 99 uL in each well, add 1uL of template (sample).</p></li>
-<li>Additionally, at least one nucleotide sample should be used as a blank (2 replicates).
+<li>Add 100 uL of TE buffer to all blank wells.
 <ul>
-<li>Set up as above, with 99 uL TE buffer and 1 uL sample.</li>
-<li>This blank will not have Picogreen reagent added to it, and thus will give a measure of fluorescence that is present naturally in the sample.</li>
+<li>The blanks will not have Picogreen reagent added.</li>
 </ul></li>
+<li>Add 1uL of the corresponding unknown to the assigned unknown well.</li>
 </ul>
 <h2 id="making-and-adding-picogreen-reagent">Making and adding Picogreen Reagent</h2>
 <ul>
-<li><p>Based on the number of samples to be run, calculate the volume of 1x Picogreen reagent that should be made (volume in ul):</p>
+<li><p>Based on the number of unknowns to be run, calculate the volume of 1x Picogreen reagent that should be made (volume in ul):</p>
 <ul>
-<li>total_volume: 110 * (number_of_samples + number_of_standards)</li>
+<li>total_volume (uL): 110 * (number_of_unknowns + number_of_standards)
+<ul>
+<li><strong>NOTE:</strong> Remember the duplicates!</li>
+</ul></li>
 </ul></li>
 <li><p>Once that the total volume is determined, calculate dilution of the 200x Picogreen reagent:</p>
 <ul>
-<li>Volume of 200x Picogreen needed: total_volume * 1/200</li>
-<li>Volume of TE buffer needed: total_volume * 199/200</li>
+<li>Volume of 200x Picogreen needed (uL): total_volume * 1/200</li>
+<li>Volume of TE buffer needed (uL): total_volume * 199/200</li>
 </ul></li>
 <li>For example:
 <ul>
-<li>If running 10 samples, 1100 uL of 1x Picogreen should be made, using 5.5 uL of 200x Picogreen reagent diluted with 1094.5 uL of 1x TE buffer.</li>
+<li>If running 10 unknowns in duplicate (&amp; 14 total standards), 2640 uL of 1x Picogreen should be made, using 13.2 uL of 200x Picogreen reagent diluted with 2626.8 uL of 1x TE buffer.</li>
 </ul></li>
 <li><p>Make up Picogreen reagent in a falcon tube (15 mL or 50 mL, depending on the amount needed) that is wrapped in aluminum foil (to prevent degradation of reagent).</p></li>
 <li>Once reagent is made up, transfer 100 uL of reagent to each well of the Costar plate to be analyzed, EXCEPT the wells to be used as blanks.
@@ -132,21 +185,20 @@
 <li>Again, the multichannel pipettor and reagent resevoirs can be useful in this step.<br /></li>
 <li>Make sure to pipet up and down to mix reagent with well contents.</li>
 </ul></li>
-<li><p>Add 100 uL of TE buffer to the blank wells</p></li>
-<li>After reagent addition, incubate plate for 5 minutes in a dark space
+<li>Place the Costar plate in the plate reader and incubate for 5 minutes
 <ul>
-<li>ex. a closed drawer</li>
+<li>Alternatively, just stick the plate in a drawer.</li>
 </ul></li>
 </ul>
-<h2 id="running-samples-on-plate-reader">Running samples on plate reader</h2>
+<h2 id="running-unknowns-on-plate-reader">Running unknowns on plate reader</h2>
 <ul>
-<li>While samples are incubating, set up analysis program on plate reader software:</li>
+<li>While unknowns are incubating, set up analysis program on plate reader software:</li>
 </ul>
 <ol style="list-style-type: decimal">
 <li><p>Open Softmax Pro 6.3 software.</p></li>
+<li><p>Then, click on: 'Protocols' tab =&gt; 'Protocol Manager' =&gt; 'Protocol library' =&gt; 'Nucleic Acids' =&gt; 'Picogreen assay'. This will open up an already created Pico protocol.</p></li>
 <li><p>To make sure the plate reader is set-up to run a fluorescence assay, click on the 'Settings Icon', choose the 'FL' option, and make sure that excitement is set to 485nm and emission is set to 535 nm.</p></li>
-<li><p>Then, click on the 'Protocols' tab Protocol library Nucleic Acids Picogreen assay. This will open up an already created Pico protocol.</p></li>
-<li><p>Modify plate set-up by scrolling to the page with the plate layout, and clicking on the small plate icon ('Template editor'). This will open up a screen that will allow you to add standards, samples, and blanks to the plate to be read.</p></li>
+<li><p>Modify plate set-up by scrolling to the page with the plate layout, and clicking on the small plate icon ('Template editor'). This will open up a screen that will allow you to add standards, unknowns, and blanks to the plate to be read.</p></li>
 <li><p>Once the plate is modified, you can save as a protocol file. You can also save the file as a datafile once the analysis is done.</p></li>
 <li><p>To read plate, open the plate reader using the open/close button and place the plate into the reader. Note the orientation of the plate! Then press the read button.</p></li>
 </ol>
