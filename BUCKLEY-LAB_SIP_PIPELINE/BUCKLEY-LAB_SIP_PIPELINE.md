@@ -62,6 +62,7 @@
 * [Nucleotide quantification via Picogreen](../nucleotide_conc/picogreen.html)
 
 * PCR with barcoded primers targetting a fragment of the 16S rRNA gene
+	* See robot method: qPCR_wWorklist_altdispense.med
 
 * [SequalPrep Normalization](https://www.lifetechnologies.com/order/catalog/product/A1051001)
 
@@ -82,6 +83,7 @@
 * [Nucleotide quantification via Picogreen](../nucleotide_conc/picogreen.html)
 
 * PCR with barcoded primers targetting a fragment of the 16S rRNA gene
+	* See robot method: qPCR_wWorklist_altdispense.med
 
 * [SequalPrep Normalization](https://www.lifetechnologies.com/order/catalog/product/A1051001)
 
