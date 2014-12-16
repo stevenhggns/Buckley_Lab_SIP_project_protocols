@@ -50,3 +50,39 @@
 * Plant stimulant
 	* [Substrate_Additions_MicrobSuccession](../plant_stimulant/Substrate_Additions_MicrobSuccession.htm)
 
+
+## Workflows
+
+### Bulk DNA sequencing of the 16S rRNA gene
+
+* [Nucleotide extraction](../nucleotide_extraction/DNA_RNA_extraction_Protocol.html)
+
+* [Sephadex column clean-up](http://www.gelifesciences.com/webapp/wcs/stores/servlet/productById/en/GELifeSciences/27533001)
+
+* [Nucleotide quantification via Picogreen](../nucleotide_conc/picogreen.html)
+
+* PCR with barcoded primers targetting a fragment of the 16S rRNA gene
+
+* [SequalPrep Normalization](https://www.lifetechnologies.com/order/catalog/product/A1051001)
+
+* Library pooling, then concentrating via [speed-vac](../speed-vac/speed-vac.html)
+
+
+### Microcosm -> gradient fractionation -> 16S rRNA gene sequencing
+
+* [Nucleotide extraction](../nucleotide_extraction/DNA_RNA_extraction_Protocol.html)
+
+* [PippenPrep](../Pippen_prep/Pippen_prep.html)
+
+* [Nucleotide quantification via Picogreen](../nucleotide_conc/picogreen.html)
+
+* [CsCl_fractionation](../CsCl_fractionation/CsCl_fractionation.html) 
+	* Including desalting
+
+* [Nucleotide quantification via Picogreen](../nucleotide_conc/picogreen.html)
+
+* PCR with barcoded primers targetting a fragment of the 16S rRNA gene
+
+* [SequalPrep Normalization](https://www.lifetechnologies.com/order/catalog/product/A1051001)
+
+* Library pooling, then concentrating via [speed-vac](../speed-vac/speed-vac.html)

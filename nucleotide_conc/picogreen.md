@@ -35,7 +35,7 @@ in duplicate.
 	* raw_total_volume = TE for standards + TE for sample dilutions + TE for picogreen
 reagent dilution
 		* volume for all standards (ul):
-			* Number\of\standards * 99 + 1832.5 
+			* 14 * 99 + 1832.5 = 3218.5 ul
 		* volume for all blanks (ul):
 			* Number\_of\_blanks * 199
 		* volume for all unknowns (ul):
@@ -148,6 +148,7 @@ Picogreen reagent:
     and clicking on the small plate icon ('Template editor'). This will
     open up a screen that will allow you to add standards, unknowns, and
     blanks to the plate to be read.
+    * __Note:__ The dilution factor for the unknowns should be set to 200.
 
 1.  Once the plate is modified, you can save as a protocol file. You can
     also save the file as a datafile once the analysis is done.
