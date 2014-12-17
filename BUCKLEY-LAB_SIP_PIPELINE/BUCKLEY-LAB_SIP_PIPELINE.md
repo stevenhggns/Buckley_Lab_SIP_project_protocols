@@ -30,7 +30,7 @@
 	* [speed-vac](../speed-vac/speed-vac.html)
 
 * Pippin Prep
-	* [Pippen_prep](../Pippen_prep/Pippen_prep.html)
+	* [Pippin_prep](../Pippin_prep/Pippin_prep.html)
 
 * Fraction nucleotide quantification:
 	* [picogreen](../nucleotide_conc/picogreen.html)
@@ -68,12 +68,18 @@
 
 * Library pooling, then concentrating via [speed-vac](../speed-vac/speed-vac.html)
 
+* [Gel extraction](../gel_extraction/gel_extraction.html)
+
+* [Nucleotide quantification via Picogreen](../nucleotide_conc/picogreen.html)
+
+* __Optional:__ Concentrating via [speed-vac](../speed-vac/speed-vac.html)
+
 
 ### Microcosm -> gradient fractionation -> 16S rRNA gene sequencing
 
 * [Nucleotide extraction](../nucleotide_extraction/DNA_RNA_extraction_Protocol.html)
 
-* [PippenPrep](../Pippen_prep/Pippen_prep.html)
+* [PippinPrep](../Pippin_prep/Pippin_prep.html)
 
 * [Nucleotide quantification via Picogreen](../nucleotide_conc/picogreen.html)
 
@@ -88,3 +94,9 @@
 * [SequalPrep Normalization](https://www.lifetechnologies.com/order/catalog/product/A1051001)
 
 * Library pooling, then concentrating via [speed-vac](../speed-vac/speed-vac.html)
+
+* [Gel extraction](../gel_extraction/gel_extraction.html)
+
+* [Nucleotide quantification via Picogreen](../nucleotide_conc/picogreen.html)
+
+* __Optional:__ Concentrating via [speed-vac](../speed-vac/speed-vac.html)
