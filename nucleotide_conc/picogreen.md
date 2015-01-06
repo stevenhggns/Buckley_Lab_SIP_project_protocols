@@ -111,8 +111,8 @@ Picogreen reagent:
 
 * For example:
 	* If running 10 unknowns in duplicate (& 14 total standards), 
-	2640 uL of 1x Picogreen should be made, using 13.2 uL of 200x Picogreen
-	reagent diluted with 2626.8 uL of 1x TE buffer.
+	3740 uL of 1x Picogreen should be made ((20+14)*110=3740), using 18.7 uL of 200x Picogreen
+	reagent diluted with 3721.3 uL of 1x TE buffer.
 
 *   Make up Picogreen reagent in a falcon tube (15 mL or 50 mL, depending
     on the amount needed) that is wrapped in aluminum foil (to prevent
