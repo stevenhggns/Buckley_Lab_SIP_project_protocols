@@ -1,5 +1,11 @@
 # Modified Griffith et al (2000) nucleic acid extraction method:
 
+>Griffiths RI, Whiteley AS, O'Donnell AG, Bailey MJ. (2000).
+Rapid Method for Coextraction of DNA and RNA from Natural Environments for
+Analysis of Ribosomal DNA- and rRNA-Based Microbial Community Composition.
+Appl Environ Microbiol 66:5488-5491.
+
+
 ## Materials
 
 ### Recipes listed at end of this protocol:
@@ -185,12 +191,17 @@ and cDNA synthesis.
 * Autoclave and store at RT
 
 
-### TE buffer (10 mM Tris, 1 mM EDTA)
+### TE buffer (10 mM Tris, 1 mM EDTA, pH 8)
 * Make stock solutions in molecular grade water:
-	* 1 M Tris
-	* 0.5 M EDTA disodium salt
+	* 1 M Tris (MW = 121.4 g/mol)
+		* pH to 8.0 using HCl
+	* 0.5 M EDTA disodium salt (MW = 372.24 g/mol)
+		* pH to 8.0 using NaOH
+		* __Note:__ EDTA will not be soluble until pH reaches 8
+			* This may take hours.
+			* Use stirring, heat (if desired), & time
 * TE buffer:
-	* 40 ml molecular grade water
+	* 39.5 ml molecular grade water
 	* 400 ul of 1 M Tris
 		* Final conc.: 10 mM Tris
 	* 80 ul of 0.5 M EDTA

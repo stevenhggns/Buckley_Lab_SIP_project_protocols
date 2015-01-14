@@ -28,6 +28,10 @@ Gradients are run in CsCl (DNA) or CsTFA (RNA) dissolved in gradient buffer.
 	Thus, your gradient media solution should be dense enough to hit your target density
 	after adding your nucleic acid sample.
 	
+	* __Note:__ You can make a stock of Gradient Media Solution (e.g., 200 ml).
+	Store it in vials sealed with crimp-capped butyl rubber stoppers to prevent
+	evaporation and salt build-up.
+	
 	* The tubes we use are 4.7 to 4.75 ml volume. Let's say we wanted to leave room
 	for 0.45 ml of nucleic acids in TE while achieving a final gradient density
 	of 1.69 g/ml. We would figure the density of our gradient media solution as follows:
@@ -92,7 +96,7 @@ final volume.
 	* The meniscus should be around the "Beckman" label
 
 1. Weigh and balance tubes with the CsCl solution
-	* Note, 10 ul CsCl solution = 0.02 g
+	* Note: 10 ul CsCl solution = 0.02 g
 	* All tubes should be within +/- 0.01 g
 
 1. Add DNA and TE
@@ -103,10 +107,10 @@ final volume.
 	* Err on having a bit less volume so you have room to balance
 
 1. Weigh and balance tubes by adding gradient buffer
-	* Add the black caps, and repeat weighing and balancing.
-	* When balanced, push the black caps down to seal.
+	* When balanced, push the black caps down to seal
+		* The caps probably will not seal well. This is OK.
 
-1. Mix all tubes by inverting several times until no refraction waves can be seen
+1. Mix all tubes by inverting several times until no refraction waves can be seen.
 
 1. Run in ultracentrifuge: 55,000 rpm, 20<sup>o</sup>C, 66+ hours.
 	* Put stem adapter (brown caps that look like hats) on tubes to keep stem
@@ -126,25 +130,28 @@ final volume.
 
 ### Setting up the fraction recovery system
 
-* Take up mineral oil in 20 ml syringe.
+* Take up MilliQ H<sub>2</sub>O in 20 ml syringe.
 * Remove as much air from the syringe as possible.
 * Connect the HPLC tubing to the 20 ml syringe.
-* Put syringe on the pump and secure. Turn on the pump.
+* Put syringe on the pump and secure. Turn on the syringe pump.
 * Attach a 21 G needle to the other end of the HPLC tubing.
-	* Place a rubber spacer on the needle (needed for stabing tube later).
+	* Place a rubber spacer on the needle (needed for stabing the cfg tube later).
 	* Suspend the needle upwards.
-* Press "run" on the syringe pump to move the oil by 100 ul,
-or "run" + "-->" to fast forward the oil.
-	* Fill the tubing with oil until the oil is dripping out of the 
+* Press "run" on the syringe pump to move the water by 100 ul,
+or "run" + "-->" to fast forward the water.
+	* Fill the tubing with water until the water is dripping out of the needle.
+	* Pump speed: __12 ml / hour__
+		* ~115 seconds needed per fraction when using a 21 G needle
 * Make sure to prepare the following (timing is important during the fractionation):
 	* 96 well fraction recovery plates
 		* Label the recovery plates
 	* A stand to suspend the plates
 	* The refractometer
-	* A pipette and enough tips
-	* Enough cut 21 G needles (just needle shaft: __~0.75???__ inch long)
+	* A P10-pipette and enough tips
+	* Enough cut 21 G needles (just needle shaft: __~7/8__ inch long)
+	* A lab notebook for recording measurements
 
-### Fractionation (NEEDS REVISION)
+### Fractionation 
 
 * Remove two tubes from the ultracentrifuge at a time using the forceps in the box.
 	* If more tubes are still in the ultracentrifuge: keep the other tubes spinning. 
@@ -153,9 +160,6 @@ or "run" + "-->" to fast forward the oil.
 * Slide one tube into place in the fraction recovery system.
 	* Store the other tube on a rack until this fractionation is complete.
 * Secure the tube in the fraction recovery system (tighten all clamps).
-* With the 21 G needle attached to the syringe pump, stab the tube at the lower end
-of the neck. This should be the only part of the top of the tube that is visible.
-The rubber tube holders are marked for where to stab the tube.
 * Place a cut 21 G needle in the Tube Penetration Device (TPD)
 	* The TPD is the repurposed dissecting microscope.
 * Puncture the bottom of the tube with the needle by raising the needle slowly
@@ -165,38 +169,39 @@ with the Tube Penetration Device (TPD).
 * Lower the TPD, and the cut 21 G needle should remain in the tube.
 * Set the TPD aside and replace it with a stand holding a 96 well plate.
 	* The plate should be very close to the cut 21 G needle.
+* With the 21 G needle attached to HPLC tubing that is attached to the syringe, 
+stab the tube at the lower end of the neck.
+	* __Note:__ Make sure that the needle and tubing does not contain any air!
+	* This should be the only part of the top of the tube that is visible.
+	* The rubber tube holders are marked for where to stab the tube.
 * Press "run" on the syringe pump.
-	* __Note:__ The first fraction will be less than 100 ul.
+	* __Note:__ The first fraction will be likely less than 100 ul.
 	* __Note:__ The presence of an air leak may also not be evident until the
-	first fraction, so be careful.
-* Measure density with the refractometer for each fraction.
-* Stop collecting fractions before the oil reaches the needle. (~40-50 fractions)
+	first fraction, so be careful; check for drips.
+* Measure density with the refractometer for each fraction by pipetting 5 ul from the
+  well and onto the refectometer.
+	* Record the RI in your lab notebook
+* Collect a total of 36 fractions.
 
 
-### Cleaning up between tubes (NEEDS REVISION)
+### Cleaning up between tubes
 
-* Remove the rubber caps off the tube and place finger over the tube opening to
-keep liquids from leaking from the bottom. You want to avoid having mineral oil in
-the needle.
-* Lift the tube off the system and discard rest of liquid.
-* Put a dry empty tube on the needle and add water to go through and clean the needle.
-* Remove needle and blow air through it to dry it off.
+* Remove the cfg tube and discard the rest of the liquid.
+* Remove and replace the needles.
 
+### Final Clean-up 
 
-### Final Clean-up (NEEDS REVISION)
-
-* Do the "between tubes" clean up
-* Let the needle soak in a beaker of water, then dry it off
-* Remove mineral oil from the rubber cap and tubing (by pushing air through it)
 * Disassemble tubing
 * Soak the platform in a beaker of water if needed (if CsCl has crystallized on it).
 
 
-## Removing CsCl from DNA samples
+## Removing CsCl from DNA samples (de-salting)
+
+Magnetic bead-based clean-up is used.
 
 ### Using the robot:
 
-???
+* Robot protocol: MagBead_Extraction.med
 
 ### Manual option 1: isopropanol ppt
 
@@ -234,5 +239,6 @@ and if the wells were not dry.
 * Max g force for plate is ~3500g
 * Hold up volme of plates is 0-30ul
 * Large amounts of DNA will slow filtration and may require longer spin times
-* expect <1.5 mM CsCl remaining after 4th spin, for higher purity increase number of washes or use isopropanol ppt.
+* expect <1.5 mM CsCl remaining after 4th spin,
+  for higher purity increase number of washes or use isopropanol ppt.
 
