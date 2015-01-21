@@ -61,23 +61,15 @@
 
 * [Nucleotide quantification via Picogreen](../nucleotide_conc/picogreen.html)
 
-* PCR with barcoded primers targetting a fragment of the 16S rRNA gene
-	* See robot method: qPCR_wWorklist_altdispense.med
+* [16S rRNA amplicon library prep](../library_prep/Illumina_barcoding_protocol.html)
 
-* [SequalPrep Normalization](https://www.lifetechnologies.com/order/catalog/product/A1051001)
-
-* Library pooling, then concentrating via [speed-vac](../speed-vac/speed-vac.html)
-
-* [Gel extraction](../gel_extraction/gel_extraction.html)
-
-* [Nucleotide quantification via Picogreen](../nucleotide_conc/picogreen.html)
-
-* __Optional:__ Concentrating via [speed-vac](../speed-vac/speed-vac.html)
 
 
 ### Microcosm -> gradient fractionation -> 16S rRNA gene sequencing
 
 * [Nucleotide extraction](../nucleotide_extraction/DNA_RNA_extraction_Protocol.html)
+
+* __Optional:__ Concentrating via [speed-vac](../speed-vac/speed-vac.html)
 
 * [PippinPrep](../Pippin_prep/Pippin_prep.html)
 
@@ -86,17 +78,6 @@
 * [CsCl_fractionation](../CsCl_fractionation/CsCl_fractionation.html) 
 	* Including desalting
 
-* [Nucleotide quantification via Picogreen](../nucleotide_conc/picogreen.html)
+* [Nucleotide quantification of fractions via Picogreen](../nucleotide_conc/picogreen.html)
 
-* PCR with barcoded primers targetting a fragment of the 16S rRNA gene
-	* See robot method: qPCR_wWorklist_altdispense.med
-
-* [SequalPrep Normalization](https://www.lifetechnologies.com/order/catalog/product/A1051001)
-
-* Library pooling, then concentrating via [speed-vac](../speed-vac/speed-vac.html)
-
-* [Gel extraction](../gel_extraction/gel_extraction.html)
-
-* [Nucleotide quantification via Picogreen](../nucleotide_conc/picogreen.html)
-
-* __Optional:__ Concentrating via [speed-vac](../speed-vac/speed-vac.html)
+* [16S rRNA amplicon library prep](../library_prep/Illumina_barcoding_protocol.html)

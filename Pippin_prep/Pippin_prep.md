@@ -20,12 +20,13 @@ For selecting genomic DNA >4kb for SIP gradients
 
 ## Method
 
-1. Pippin should be calibrated to the specific cassette you're using (and should be calibrated daily _or_ if you change the cassette to a diff type)
+### Pippen calibration
 
+  1. Pippin should be calibrated to the specific cassette you're using (and should be calibrated daily _or_ if you change the cassette to a diff type)
   1. Follow instruction in manual on pg 9-1
   2. QUICK REF: LED calibration setting should be '0.60' for dye-free cassettes (what we use)
 
-1. Prep cassette for run
+### Prep cassette for run
 
   1. Check for air bubbles
   2. Check buffer levels (no well should be lass than 50% full, add running buffer if any are too low)
@@ -39,7 +40,8 @@ For selecting genomic DNA >4kb for SIP gradients
     2. If all good, move on
     3. If not, check for bubbles, they're the most likely culprit.
 
-1. Running Protocol
+### Running Protocol
+
   1. Select "DNASIPgradiet\_size selection" protocol from the drop down list.
   2. Identify which sample are in which lane
   3. Loading Samples
@@ -48,16 +50,18 @@ For selecting genomic DNA >4kb for SIP gradients
     2. Check to make sure all sample wells are full with electrophoresis buffer
     3. For the well that you want to add your sample to, remove 40uL of the buffer
     4. Add the 40uL sample to the well you just removed buffer from
-    5. For the Standard, no need to mix with loading solution – just add 40uL std (we use Marker S1 as our standard).
+    5. For the Standard, no need to mix with loading solution; just add 40uL std (we use Marker S1 as our standard).
   1. Click "start"
   2. Make sure things are going ok by checking the status bar for each lane in the upper right
   3. Run should take 4-4.5 hours (you make check on it occasionally to make sure things are running ok)
 
-1. Elution
+### Elution
   1. Pipette 65uL of sample out of the elution well
   2. Add 40uL 0.1\% Tween (comes with kit) into same well
   3. Incubate for 1min
   4. Pipette the 40uL tween back out of elution well and add to first elution of that sample (105uL total)
   5. Repeat for each sample
 
-2. Freeze samples at -20C
+### Storage
+
+   1. Freeze samples at -20<sup>o</sup>C

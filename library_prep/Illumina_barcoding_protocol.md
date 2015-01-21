@@ -38,22 +38,25 @@ and are hand-pipetted in after the robotic protocol is completed.
 
 1. Perform Sequal PCR purification and normalization
 	* SequalPrep Normalization Plates, Life Technologies, A10510-01
-	* Follow the manufacturer's instructions, using 25 uL of PCR product for each sample
+	* Follow the [manufacturer's instructions](https://www.lifetechnologies.com/order/catalog/product/A1051001),
+	using 25 uL of PCR product for each sample
 
 1. Combine all Sequal'd samples (20 ul/sample) into one tube
 (or two, if the volume too large). 
 
 1. Vacuum evaporate samples to concentrate. 
-	* __EVAPORATE TO WHAT CONCENTRATION?__
+	* [speed-vac](../speed-vac/speed-vac.html)
+	* You need >=25 uL with a concentration of 5 ng/uL
 
-1. Quantify concentrated collection of samples. You will want ~20 uL with a
-concentration of 5 ng/uL. 
+1. Quantify concentrated collection of samples. 
+	* Make sure to have >=25 uL with a concentration of 5 ng/uL. 
 
 1. Run concentrated sample on a gel to ensure expected, cleaned product for sequencing. 
-If additional, unexpected bands are seen, consider gel purification of concentrated
-sample. 
+	* If additional, unexpected bands are seen, consider
+	[Gel extraction](../gel_extraction/gel_extraction.html)
+	of the concentrated sample.  
 
-1. For submission to Cornell Sequencing Facility:
+1. Submission to Cornell Sequencing Facility:
 	* Place 20 uL of sample with a concentration of 5 ng/uL into sequencing tube. 
 	* Additionally, submit 10 uL of 100 uM sequencing primers:
 		* forward sequencing primer
