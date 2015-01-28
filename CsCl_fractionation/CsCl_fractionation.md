@@ -1,5 +1,10 @@
 # Setting up a CsCl gradient for Stable Isotope Probing
 
+## FAQs
+
+* How much DNA per gradient?
+	* Ashley used 5-8 ug per gradient
+	* Nick: Full C-Cycle Exp: 6 ug per gradient
 
 ## Making gradient media
 
@@ -31,17 +36,22 @@ Gradients are run in CsCl (DNA) or CsTFA (RNA) dissolved in gradient buffer.
 	* __Note:__ You can make a stock of Gradient Media Solution (e.g., 200 ml).
 	Store it in vials sealed with crimp-capped butyl rubber stoppers to prevent
 	evaporation and salt build-up.
+		* When needed, use a 20-30 mL syringe to pull out enough volume and transfer
+		to reagent well. Also, transfer N_gradients x 100 ul of CsCl solution to a
+		micro-cfg tube for balancing the gradient tubes.
 	
 	* The tubes we use are 4.7 to 4.75 ml volume. Let's say we wanted to leave room
-	for 0.45 ml of nucleic acids in TE while achieving a final gradient density
-	of 1.69 g/ml. We would figure the density of our gradient media solution as follows:
+	for 0.45 ml of nucleic acids in TE buffer
+	(TE can be used as filler if lesser volumes used)
+	while achieving a final gradient density of 1.69 g/ml.
+	We would figure the density of our gradient media solution as follows:
 
 
->__Total mass of gradient (without tube):__ $1.69 (g/ml) * 4.75 (ml) = 8.0266 (g)$
+>__Total mass of gradient (without tube):__ $1.69 (g/ml) * 4.75 (ml) = 8.0275 (g)$
 
->__Subtract the mass of the DNA/RNA solution:__ $8.0266 (g) - 0.45 (g) = 7.5766 (g)$
+>__Subtract the mass of the DNA/RNA solution:__ $8.0275 (g) - 0.45 (g) = 7.5775 (g)$
 
->__The desired density for CsCl solution:__ $7.5766 (g) / 4.3 (ml) = 1.762 (g/ml)$
+>__The desired density for CsCl solution:__ $7.5775 (g) / 4.3 (ml) = 1.762 (g/ml)$
 
 
 Thus, dissolve 7.5766 g CsCl in a total volume of 4.3 ml gradient buffer. 
@@ -96,18 +106,21 @@ final volume.
 	* The meniscus should be around the "Beckman" label
 
 1. Weigh and balance tubes with the CsCl solution
-	* Note: 10 ul CsCl solution = 0.02 g
+	* __Note:__ 10 ul CsCl solution = 0.02 g
 	* All tubes should be within +/- 0.01 g
+	* This is to make sure that the same amount of CsCl solution was added to each tube.
 
-1. Add DNA and TE
-	* TE is used as filler to in in total add 400 ul of volume to each cfg tube.
+1. Add DNA and TE buffer
+	* TE is used as filler to in in total add 450 ul of volume to each cfg tube.
 	* If adding bisbenzamide, add 8 ul here. (If one has <8 ug DNA)
 
-1. Add gradient buffer to fill the tubes to their necks
-	* Err on having a bit less volume so you have room to balance
+1. Add TE buffer to fill the tubes to their necks
+	* Err on having a bit less volume so you have room to balance.
+	* The goal is to have no air bubble when placing lid in the tube
+	and applying pressure (the air should go into solution).
 
-1. Weigh and balance tubes by adding gradient buffer
-	* When balanced, push the black caps down to seal
+1. Weigh and balance tubes by adding TE buffer
+	* When balanced, push the black caps down to seal.
 		* The caps probably will not seal well. This is OK.
 
 1. Mix all tubes by inverting several times until no refraction waves can be seen.
@@ -134,21 +147,22 @@ final volume.
 * Remove as much air from the syringe as possible.
 * Connect the HPLC tubing to the 20 ml syringe.
 * Put syringe on the pump and secure. Turn on the syringe pump.
-* Attach a 21 G needle to the other end of the HPLC tubing.
-	* Place a rubber spacer on the needle (needed for stabing the cfg tube later).
+* Attach an 18 G needle to the other end of the HPLC tubing.
+	* Place a plastic spacer on the needle (needed for stabing the cfg tube later).
 	* Suspend the needle upwards.
 * Press "run" on the syringe pump to move the water by 100 ul,
 or "run" + "-->" to fast forward the water.
 	* Fill the tubing with water until the water is dripping out of the needle.
-	* Pump speed: __12 ml / hour__
-		* ~115 seconds needed per fraction when using a 21 G needle
+	* Pump speed: __15 ml / hour__
+		* ~30 seconds needed per fraction when using a 18 G needle.
 * Make sure to prepare the following (timing is important during the fractionation):
 	* 96 well fraction recovery plates
 		* Label the recovery plates
 	* A stand to suspend the plates
 	* The refractometer
 	* A P10-pipette and enough tips
-	* Enough cut 21 G needles (just needle shaft: __~7/8__ inch long)
+	* One 18 G needle per gradient (stabed into the neck)
+	* Enough cut 18 G needles (just needle shaft: __~7/8__ inch long)
 	* A lab notebook for recording measurements
 
 ### Fractionation 
@@ -160,16 +174,16 @@ or "run" + "-->" to fast forward the water.
 * Slide one tube into place in the fraction recovery system.
 	* Store the other tube on a rack until this fractionation is complete.
 * Secure the tube in the fraction recovery system (tighten all clamps).
-* Place a cut 21 G needle in the Tube Penetration Device (TPD)
+* Place a cut 18 G needle in the Tube Penetration Device (TPD)
 	* The TPD is the repurposed dissecting microscope.
 * Puncture the bottom of the tube with the needle by raising the needle slowly
 with the Tube Penetration Device (TPD).
 	* __Note:__ If there is an air leak somewhere, then the contents of the tube
 	will start to drip out.
-* Lower the TPD, and the cut 21 G needle should remain in the tube.
+* Lower the TPD, and the cut 18 G needle should remain in the tube.
 * Set the TPD aside and replace it with a stand holding a 96 well plate.
-	* The plate should be very close to the cut 21 G needle.
-* With the 21 G needle attached to HPLC tubing that is attached to the syringe, 
+	* The plate should be very close to the cut 18 G needle.
+* With the 18 G needle attached to HPLC tubing that is attached to the syringe, 
 stab the tube at the lower end of the neck.
 	* __Note:__ Make sure that the needle and tubing does not contain any air!
 	* This should be the only part of the top of the tube that is visible.
@@ -181,18 +195,24 @@ stab the tube at the lower end of the neck.
 * Measure density with the refractometer for each fraction by pipetting 5 ul from the
   well and onto the refectometer.
 	* Record the RI in your lab notebook
-* Collect a total of 36 fractions.
+* Collect fractions until you reach the minimum RI<sub>corrected</sub> needed:
+	* min(RI<sub>corrected</sub>) = __1.3967__
+		* This corresponds to a buoyant density that would contain 10% G+C DNA
+		(assuming equilibrium).
+		* This will probably require 25-30 fractions.
 
 
 ### Cleaning up between tubes
 
 * Remove the cfg tube and discard the rest of the liquid.
 * Remove and replace the needles.
+* Seal the 96-well plate until used for downstream applications.
 
 ### Final Clean-up 
 
-* Disassemble tubing
-* Soak the platform in a beaker of water if needed (if CsCl has crystallized on it).
+* Shut off syringe pump.
+* Make sure all used consumables are discarded.
+* Wash CsCl solution off of equipment with water. 
 
 
 ## Removing CsCl from DNA samples (de-salting)
@@ -201,7 +221,7 @@ Magnetic bead-based clean-up is used.
 
 ### Using the robot:
 
-* Robot protocol: MagBead_Extraction.med
+* Robot protocol: __MagBead_Extraction.med__
 
 ### Manual option 1: isopropanol ppt
 
