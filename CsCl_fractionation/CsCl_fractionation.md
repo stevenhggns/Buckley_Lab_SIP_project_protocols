@@ -4,7 +4,7 @@
 
 * How much DNA per gradient?
 	* Ashley used 5-8 ug per gradient
-	* Nick: Full C-Cycle Exp: 6 ug per gradient
+	* Nick: Full C-Cycle Exp: 5 ug per gradient
 
 ## Making gradient media
 
@@ -103,27 +103,31 @@ final volume.
 ## Setting up the gradients
 
 1. Add exactly 4.3 ml of the CsCl solution to the cfg tubes.
-	* The meniscus should be around the "Beckman" label
-
-1. Weigh and balance tubes with the CsCl solution
-	* __Note:__ 10 ul CsCl solution = 0.02 g
-	* All tubes should be within +/- 0.01 g
-	* This is to make sure that the same amount of CsCl solution was added to each tube.
+	* Use weight to measure this volume:
+		* 4.3 ml x [density\_CsCl\_solution] = grams of CsCl solution needed.
+    	* e.g., 4.3 (ml) x 1.762 (g/ml) = 7.5766 (g)
+    * Adding the CsCl solution:
+    	* Zero an empty cfg tube on the milligram scale.
+    	* Add CsCl solution until desired weight is reached.
+	* __Notes:__ The meniscus should be around the "Beckman" label.
 
 1. Add DNA and TE buffer
 	* TE is used as filler to in in total add 450 ul of volume to each cfg tube.
 	* If adding bisbenzamide, add 8 ul here. (If one has <8 ug DNA)
 
-1. Add TE buffer to fill the tubes to their necks
+1. Add TE buffer to fill the tubes to their necks.
+	* ~30 ul of TE buffer is needed __IF__ 450 ul of DNA & TE were added.
 	* Err on having a bit less volume so you have room to balance.
-	* The goal is to have no air bubble when placing lid in the tube
+	* The goal is to have only a very small air bubble when placing lid in the tube
 	and applying pressure (the air should go into solution).
 
-1. Weigh and balance tubes by adding TE buffer
+1. Weigh and balance tubes by adding TE buffer.
 	* When balanced, push the black caps down to seal.
 		* The caps probably will not seal well. This is OK.
+	* __Note:__ all tubes should be within +/- 0.01 g
 
-1. Mix all tubes by inverting several times until no refraction waves can be seen.
+1. Mix all tubes by inverting several times (~8-10) until no refraction 
+waves can be seen.
 
 1. Run in ultracentrifuge: 55,000 rpm, 20<sup>o</sup>C, 66+ hours.
 	* Put stem adapter (brown caps that look like hats) on tubes to keep stem
