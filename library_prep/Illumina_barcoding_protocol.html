@@ -1,7 +1,7 @@
 <h1 id="illumina-miseq-barcoding-protocol">Illumina Miseq Barcoding Protocol</h1>
 <ol style="list-style-type: decimal">
 <li><p>Quantify samples to be sequenced using Picogreen protocol.</p></li>
-<li><p>Calculate sample volume necessary for addition of 5 ng of template DNA to PCR reactions.</p></li>
+<li><p>Calculate sample volume necessary for addition of <strong>5 ng</strong> of template DNA to PCR reactions.</p></li>
 <li><p>PCR reaction composition for 1 rxn:</p>
 <ul>
 <li><p>12.5 uL Mastermix (NEB Q5 High Fidelity, Hot Start PCR Mastermix - M0494)</p></li>
@@ -14,7 +14,7 @@
 <li><p>X uL template (5 ng/reaction)</p></li>
 <li><p>PCR water up to 25 uL</p></li>
 </ul></li>
-<li><p>Use robot protocol (qPCR_wWorklist_altdispense) for setting up PCRs, running triplicate reactions for each sample to be sequenced. Addition of BSA and Picogreen reagent are not as of yet included in the protocol and are hand-pipetted in after the robotic protocol is completed.</p></li>
+<li><p>Use robot method &quot;qPCR_wWorklist_altdispense&quot; for setting up PCRs, running triplicate reactions for each sample to be sequenced.</p></li>
 <li>Run the PCR plate on the qPCR thermocycler, using the following cycle:
 <ul>
 <li>98<sup>o</sup>C for 30 seconds</li>
@@ -26,13 +26,20 @@
 </ul></li>
 <li>Final extension of 72<sup>o</sup>C for 2 minutes</li>
 </ul></li>
-<li><p>Combine triplicate PCRs for each samples, transferring samples to a new 96-well plate.</p></li>
+<li>Combine triplicate PCRs for each samples, transferring samples to a new 96-well plate.
+<ul>
+<li>This can be done with the robot method: &quot;plate_pooling&quot;</li>
+</ul></li>
 <li>Perform Sequal PCR purification and normalization
 <ul>
 <li>SequalPrep Normalization Plates, Life Technologies, A10510-01</li>
 <li>Follow the <a href="https://www.lifetechnologies.com/order/catalog/product/A1051001">manufacturer's instructions</a>, using 25 uL of PCR product for each sample</li>
 </ul></li>
-<li><p>Combine all Sequal'd samples (20 ul/sample) into one tube (or two, if the volume too large).</p></li>
+<li>Combine all Sequal'd samples (20 ul/sample) into one tube (or two, if the volume too large).
+<ul>
+<li>Pre-weigh the tube to help with the next step (speed-vac).</li>
+<li>This can be done with the robot method: &quot;plate_pooling&quot;</li>
+</ul></li>
 <li>Vacuum evaporate samples to concentrate.
 <ul>
 <li><a href="../speed-vac/speed-vac.html">speed-vac</a></li>

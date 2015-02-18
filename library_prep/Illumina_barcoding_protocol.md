@@ -3,7 +3,7 @@ Illumina Miseq Barcoding Protocol
 
 1. Quantify samples to be sequenced using Picogreen protocol.
 
-1. Calculate sample volume necessary for addition of 5 ng of template DNA to PCR
+1. Calculate sample volume necessary for addition of __5 ng__ of template DNA to PCR
 reactions.
 
 1. PCR reaction composition for 1 rxn:
@@ -21,10 +21,8 @@ reactions.
 
 	* PCR water up to 25 uL
 
-1. Use robot protocol (qPCR\_wWorklist\_altdispense) for setting up PCRs, 
+1. Use robot method "qPCR\_wWorklist\_altdispense" for setting up PCRs, 
 running triplicate reactions for each sample to be sequenced. 
-Addition of BSA and Picogreen reagent are not as of yet included in the protocol 
-and are hand-pipetted in after the robotic protocol is completed.
 
 1. Run the PCR plate on the qPCR thermocycler, using the following cycle:
 	* 98<sup>o</sup>C for 30 seconds
@@ -35,6 +33,7 @@ and are hand-pipetted in after the robotic protocol is completed.
 	* Final extension of 72<sup>o</sup>C for 2 minutes
 
 1. Combine triplicate PCRs for each samples, transferring samples to a new 96-well plate. 
+	* This can be done with the robot method: "plate_pooling"
 
 1. Perform Sequal PCR purification and normalization
 	* SequalPrep Normalization Plates, Life Technologies, A10510-01
@@ -42,7 +41,9 @@ and are hand-pipetted in after the robotic protocol is completed.
 	using 25 uL of PCR product for each sample
 
 1. Combine all Sequal'd samples (20 ul/sample) into one tube
-(or two, if the volume too large). 
+(or two, if the volume too large).
+	* Pre-weigh the tube to help with the next step (speed-vac).
+	* This can be done with the robot method: "plate_pooling"
 
 1. Vacuum evaporate samples to concentrate. 
 	* [speed-vac](../speed-vac/speed-vac.html)
