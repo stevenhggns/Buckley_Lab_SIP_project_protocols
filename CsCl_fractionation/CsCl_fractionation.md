@@ -65,6 +65,9 @@ final volume.
 
 4. Fine tune the density of your gradient media solution:
 
+    * __NOTE:__ If the CsCl solution is stored in a sealed vial, shake
+    the vial vigorously prior reading the RI.
+    	* This can help resuspend CsCl that has crystalized in the vial. 
 	* Use the digital refractometer to achieve the **EXACT** gradient media density
 	that you desire.
 	* To use: add 5 ul solution to sample well, making sure it covers

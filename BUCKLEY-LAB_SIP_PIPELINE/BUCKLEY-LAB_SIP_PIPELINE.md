@@ -81,3 +81,5 @@
 * [Nucleotide quantification of fractions via Picogreen](../nucleotide_conc/picogreen.html)
 
 * [16S rRNA amplicon library prep](../library_prep/Illumina_barcoding_protocol.html)
+	* For automated generation of the Excel files needed for the PCR assay, 
+		see the fractionSelectFor16S-PCR.ipynb notebook in the SIPdb repo.
