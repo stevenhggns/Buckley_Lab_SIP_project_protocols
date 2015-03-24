@@ -10,12 +10,13 @@ reactions.
 
 	* 12.5 uL Mastermix (NEB Q5 High Fidelity, Hot Start PCR Mastermix - M0494)
 
-	* 2.5 uL combined forward and reverse barcoded primers
+	* 2.5 uL combined forward and reverse barcoded primers (10 uM)
+		* Primer plates can be created with the robot method: "make\_primer\_plate"
 
 	* 1.25 uL BSA (20 mg/mL, NEB B9000S)
 
 	* 0.625 uL Picogreen reagent
-		* 4x concentration, made from 200x stock that comes in the Picogreen kit
+		* 4x concentration, dilute the 200x stock that comes in the Picogreen kit with 1X TE
 
 	* X uL template (5 ng/reaction)
 
@@ -28,9 +29,10 @@ running triplicate reactions for each sample to be sequenced.
 	* 98<sup>o</sup>C for 30 seconds
 	* 30 cycles of:
 		* 98<sup>o</sup>C for 5 seconds
-		* 50<sup>o</sup>C for 20 seconds
+		* 50<sup>o</sup>C for 30 seconds
 		* 72<sup>o</sup>C for 10 seconds
 	* Final extension of 72<sup>o</sup>C for 2 minutes
+	* Hold at 4<sup>o</sup>C 
 
 1. Combine triplicate PCRs for each samples, transferring samples to a new 96-well plate. 
 	* This can be done with the robot method: "plate_pooling"
@@ -38,7 +40,8 @@ running triplicate reactions for each sample to be sequenced.
 1. Perform Sequal PCR purification and normalization
 	* SequalPrep Normalization Plates, Life Technologies, A10510-01
 	* Follow the [manufacturer's instructions](https://www.lifetechnologies.com/order/catalog/product/A1051001),
-	using 25 uL of PCR product for each sample
+	using 25 uL of PCR product for each sample.
+	* This can be done with the robot method: "SequalPrep_Assay"
 
 1. Combine all Sequal'd samples (20 ul/sample) into one tube
 (or two, if the volume too large).
@@ -49,7 +52,7 @@ running triplicate reactions for each sample to be sequenced.
 	* [speed-vac](../speed-vac/speed-vac.html)
 	* You need >=25 uL with a concentration of 5 ng/uL
 
-1. Quantify concentrated collection of samples. 
+1. Quantify concentrated collection of samples using PicoGreen. 
 	* Make sure to have >=25 uL with a concentration of 5 ng/uL. 
 
 1. Run concentrated sample on a gel to ensure expected, cleaned product for sequencing. 
