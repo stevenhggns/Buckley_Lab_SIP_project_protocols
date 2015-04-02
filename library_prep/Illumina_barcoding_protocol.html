@@ -4,19 +4,38 @@
 <li><p>Calculate sample volume necessary for addition of <strong>5 ng</strong> of template DNA to PCR reactions.</p></li>
 <li><p>PCR reaction composition for 1 rxn:</p>
 <ul>
-<li><p>12.5 uL Mastermix (NEB Q5 High Fidelity, Hot Start PCR Mastermix - M0494)</p></li>
+<li>12.5 uL Mastermix (NEB Q5 High Fidelity, Hot Start PCR Mastermix - M0494)
+<ul>
+<li>50% of total volume</li>
+</ul></li>
 <li>2.5 uL combined forward and reverse barcoded primers (10 uM)
 <ul>
+<li>10% of total volume<br /></li>
 <li>Primer plates can be created with the robot method: &quot;make_primer_plate&quot;</li>
 </ul></li>
-<li><p>1.25 uL BSA (20 mg/mL, NEB B9000S)</p></li>
+<li>1.25 uL BSA (20 mg/mL, NEB B9000S)
+<ul>
+<li>5% of total volume</li>
+</ul></li>
 <li>0.625 uL Picogreen reagent
 <ul>
+<li>2% of total volume</li>
 <li>4x concentration, dilute the 200x stock that comes in the Picogreen kit with 1X TE</li>
 </ul></li>
 <li><p>X uL template (5 ng/reaction)</p></li>
 <li><p>PCR water up to 25 uL</p></li>
 </ul></li>
+</ol>
+<ul>
+<li><strong>If adding pico &amp; BSA to master mix prior to aliquoting master mix:</strong>
+<ul>
+<li>total_volume = master_mix + BSA + pico</li>
+<li>volume_master_mix = total_volume * 0.870</li>
+<li>volume_BSA = total_volume * 0.087</li>
+<li>volume_pico = total_volume * 0.043</li>
+</ul></li>
+</ul>
+<ol style="list-style-type: decimal">
 <li><p>Use robot method &quot;qPCR_wWorklist_altdispense&quot; for setting up PCRs, running triplicate reactions for each sample to be sequenced.</p></li>
 <li>Run the PCR plate on the qPCR thermocycler, using the following cycle:
 <ul>
@@ -56,7 +75,10 @@
 </ul></li>
 <li>Run concentrated sample on a gel to ensure expected, cleaned product for sequencing.
 <ul>
-<li>If additional, unexpected bands are seen, consider <a href="../gel_extraction/gel_extraction.html">Gel extraction</a> of the concentrated sample.</li>
+<li>If additional, unexpected bands are seen, consider <a href="../gel_extraction/gel_extraction.html">Gel extraction</a> of the concentrated sample.
+<ul>
+<li>This may result in higher sequence quality.</li>
+</ul></li>
 </ul></li>
 <li>Submission to Cornell Sequencing Facility:
 <ul>
@@ -69,3 +91,7 @@
 </ul></li>
 </ul></li>
 </ol>
+<h2 id="usuall-comments-provided-with-the-sequencing-order">Usuall comments provided with the sequencing order:</h2>
+<blockquote>
+<p>We would like to run the 2x300 paired end read platform. Our submitted sample is a pooled set of already barcoded samples. We have supplied custom primers (labeled Primer 1, Index Primer 1, and Primer 2) for the sequencing as well, as follows: Primer 1: combined pad, linker, and gene-specific primer sequence at the 5' end of the region (pad+linker+515F primer) that will produce a long sequence read from the 5' end of the sequence. (Read 1) Index Primer 1: reverse complement of the pad, linker, and gene-specific primer from the 3'end (pad+linker+927R) that will provide an index read of the 3' end of the sequence. (Read 2) Primer 2: Combined pad linker, and gene-specific primer sequence at the 3' end of the region (pad+linker+927R primer) that will produce the second sequence read (300 nt) from the 3' end of the sequence (Read 4). The primers are described in more detail in [Kozich JJ, Westcott SL, Baxter NT, Highlander SK, Schloss PD. (2013). Development of a Dual-Index Sequencing Strategy and Curation Pipeline for Analyzing Amplicon Sequence Data on the MiSeq Illumina Sequencing Platform. Appl Environ Microbiol 79:5112-5120]. 10ul of 100uM primer has been supplied. Please let us know if you have any questions about the primers.</p>
+</blockquote>
