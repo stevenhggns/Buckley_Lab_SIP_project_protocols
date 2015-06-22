@@ -78,7 +78,26 @@ running triplicate reactions for each sample to be sequenced.
 		* reverse sequencing primer
 		* reverse index read primer
 
-## Usuall comments provided with the sequencing order:
+## Usual comments provided with the sequencing order:
+
+### Comments for 515f-806r primers
+
+We have generated our dual-indexed custom barcoded library
+as described in Kozich et al., (2013). Along with the submitted library,
+we have provided 10 ul of 100 uM custom sequencing primers: 
+Primer 1, Index Primer, Primer 2.
+We request the following MiSeq run specifications: a cluster density of 700-800k/mm^2
+(under-shooting cluster density is better than over-shooting),
+a PhiX spike-in of 5%. These MiSeq run specifications are described 
+in Kozich et al., (2013); see 'Run Monitoring' in the Supplemental Materials.
+Please let us know if you have any questions about the primers or requested
+run parameters. Thank you!
+[Citation: Kozich JJ, Westcott SL, Baxter NT, Highlander SK, Schloss PD. (2013).
+Development of a Dual-Index Sequencing Strategy and Curation Pipeline
+for Analyzing Amplicon Sequence Data on the MiSeq Illumina Sequencing
+Platform. Appl Environ Microbiol 79:5112-5120.]
+
+### Comments for 515f-927r primers
 
 > We would like to run the 2x300 paired end read platform. 
 Our submitted sample is a pooled set of already barcoded samples. 
