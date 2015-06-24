@@ -1,0 +1,71 @@
+<h1 id="quantifying-isotopic-enrichment">Quantifying isotopic enrichment</h1>
+<h2 id="uc-davis-stable-isotope-facility">UC Davis Stable Isotope Facility</h2>
+<ul>
+<li><p><a href="http://stableisotopefacility.ucdavis.edu/">link</a></p></li>
+<li><p>5 atom-% is the upper limit of isotopic enrichment</p></li>
+<li><p>total carbon in sample must be in range: 200-2000 ug C</p></li>
+<li><p>Analytical accuracy: 0.2 permil for 13C</p></li>
+</ul>
+<h2 id="dna">DNA</h2>
+<h3 id="notes">Notes</h3>
+<ul>
+<li><p>Using glucose for a natural abundance carbon source</p></li>
+<li><p>200-2000 ug C of glucose requires 500-5000 ug total weight</p></li>
+<li><p>MW of dsDNA nucleotides: (# nucleotides x 607.4) + 157.9</p></li>
+<li><p>average % C in dsDNA: ~46% (see DNA carbon % notes)</p></li>
+<li><p>(5 + 224.7) / (95 + 19775)</p></li>
+<li><p>(X / 0.0112372 - 1) * 1000 = 40 permil</p></li>
+<li>1 ug DNA-C in 200 ug total C
+<ul>
+<li>dilution = 1:200</li>
+<li>Accuracy: 0.2 permil * 200 = +/-40 permil</li>
+<li>If using Vienna Pee Dee Belemnite (V-PDB) as standard:
+<ul>
+<li>(Rsample / Rstandard - 1) * 1000</li>
+<li>Rstandard = 0.0112372</li>
+<li>(X / 0.0112372 - 1) * 1000 = 40 permil</li>
+<li>X = (40/1000 + 1) * 0.0112372 = 0.0112372
+<ul>
+<li>Rsample must be &gt; ~0.0112 to exceed noise</li>
+</ul></li>
+</ul></li>
+<li></li>
+</ul></li>
+</ul>
+<h2 id="references">References</h2>
+<blockquote>
+<p>El Zahar Haichar F, Achouak W, Christen R, Heulin T, Marol C, Marais M-F, et al. (2007). Identification of cellulolytic bacteria in soil by stable isotope probing. Environmental Microbiology 9:625–634.</p>
+</blockquote>
+<pre><code>* 2 ug of gradient fraction added to tin capsule and dried for 2 hr at 60&lt;sup&gt;o&lt;/sup&gt;C</code></pre>
+<h2 id="dna-carbon-notes">DNA carbon % notes</h2>
+<p>Adenine: C5H5N5 * 44.4% C</p>
+<p>Guanine: C5H5N5O * 39.7% C</p>
+<p>Cytosine: C4H5N3O * 43.2% C</p>
+<p>Thymine: C5H5N2O2 * 48.0% C</p>
+<p>Phosphate: PO4 * 0% C</p>
+<p>2-deoxyribose: C5H9O4 * 45.1%</p>
+<p>deoxyribose + phosphate + base:</p>
+<pre><code>* C5H9O + PO4 + base
+
+* 180 + base
+    * 60 C
+
+Adenine: 
+    * 135
+    * 60 C
+    * Total: 215, 120 C, 55.8% C
+    
+Guanine:
+    * 151
+    * 60 C
+    * Total: 231, 120 C, 51.9% C
+
+Cytosine:
+    * 111
+    * 48 C
+    * Total: 291, 108, 37.1% C
+
+Thymine: 
+    * 125
+    * 60 C
+    * Total:  305, 120, 39.3% C</code></pre>
