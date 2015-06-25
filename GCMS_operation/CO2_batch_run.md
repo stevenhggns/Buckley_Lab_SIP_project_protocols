@@ -6,10 +6,10 @@ Protocol for quantifying CO2 in headspace samples with the Shimadzu GCMS-QP2010
 # Equipment 
 
 * GCMS 
-  * Shimadzu GCMS-QP2010
+	* Shimadzu GCMS-QP2010
 
 * Autosampler
-  * Shimadzu AOC-5000 Auto Injector
+	* Shimadzu AOC-5000 Auto Injector
 
 ***
 
@@ -21,37 +21,41 @@ Protocol for quantifying CO2 in headspace samples with the Shimadzu GCMS-QP2010
 This can be done using the GCMS software.
 
 * If the GCMS has not been used in a while:
-  * Check the oil level in the rotory vacuum pump (on the floor).
+	* Check the oil level in the rotory vacuum pump (on the floor).
+	* Check the amount of carrier gas still in the tank.
   
 
 ## Procedure:
 
 1. Turn on carrier gas (should be Helium)
-  * psi should be ~100
+	* The PSI should be ~100
 1. Turn on Shimadzu AOC-5000 Auto Injector
-  * Make sure this is done BEFORE turning on the computer!
 1. Turn on computer
-1. Turn on GC and MS
-1. Start the GCMS Real Time Analysis software
+1. Turn on both the GC and the MS
+1. Start the __GCMS Real Time Analysis software__
 
-### Next step done in GCMS Real Time Analysis software
+# The next steps are done in GCMS Real Time Analysis software
 
-1. Vacuum control
-  * Either Auto Startup or manual startup
-    * Manual startup provides more control, option for safety checks, and may produce less wear and tear.
-  * For Auto Startup, just click
-  * Manual startup:
-    1. Close vent valve
-    1. Turn on rotory pump
-       * Let the pressure drop to <3.1 pascals 
-    1. AFTER pressure is <3.1 pascals: turn on high pressure pump
-       * A sound resembling a jet engine is normal, as long as it only lasts < a minute.
-    1. Turn on ion source heater
-       * GC and MS indicators in top right of screen should say 'ready'
-     
+1. Select __Vacuum control__ 
+1. Use the manual startup ('Vacuum control' => 'advanced...')
+	* Manual startup provides more control, 
+	option for safety checks, 
+	and may produce less wear and tear.
+	* Manual startup procedure:
+		1. Start the flow controller and GC system
+    	1. Close vent valve
+	    1. Turn on rotory pump
+			* Let the pressure drop to <3.1 pascals
+			* This takes many minutes 
+	    1. AFTER pressure is <3.1 pascals: turn on high pressure pump 
+	    (ie., the turbo molecular pump)
+			* __Note:__ A sound resembling a jet engine is normal, 
+			as long as it only lasts < a minute.
+	    1. Turn on ion source heater
+			* GC and MS indicators in top right of screen should soon say 'ready'
 1. Load a method or create a new method
-  * Make sure that GC and MS are heating up to the method's specified temps
-  * A batch file can then be created if needed
+	* Make sure that GC and MS are heating up to the method's specified temps
+	* A batch file can then be created if needed
 
 ***
 
@@ -61,7 +65,7 @@ This can be done using the GCMS software.
 
 * If the GCMS has not been used in a long time (e.g., a year),
 wait ~1 day prior to tuning.
-  * This wait provides time for the column to be purged of contaminants.
+	* This wait provides time for the column to be purged of contaminants.
 
 ## Procedure:
 
@@ -85,7 +89,9 @@ off very briefly prior to changing the septum.
 
 # GCMS shut down
 
-* Use auto shutdown or manual shutdown.
+* Use manual shutdown.
+	* Auto shutdown does not give enough time between the turbo molecular pump shutdown
+	and the vacuum pump shutdown. 
 * Wait for the GC to cool before turning off the carrier gas.
 
 ***
@@ -94,5 +100,7 @@ off very briefly prior to changing the septum.
 
 * The blue septa may provide a better seal than the green septa (for higher temps).
 * The rotory vacuum oil should be changed every 6 months.
-
+* Replate the injection port glass liner (contains glass wool) after ~1000 injections.
+	* This helps prevent the liner from fusing to the injection port.
+	
 
