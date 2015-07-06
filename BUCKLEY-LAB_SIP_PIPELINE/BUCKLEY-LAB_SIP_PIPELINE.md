@@ -1,5 +1,9 @@
 # Buckley lab SIP pipeline overview: from soil sampling to MiSeq sequencing
 
+## README 
+
+[README](../README.html)
+
 ## Pipeline steps and references to the specific protocols:
 
 * Soil sampling
