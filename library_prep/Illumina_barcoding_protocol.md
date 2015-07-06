@@ -86,9 +86,9 @@ We have generated our dual-indexed custom barcoded library
 as described in Kozich et al., (2013). Along with the submitted library,
 we have provided 10 ul of 100 uM custom sequencing primers: 
 Primer 1, Index Primer, Primer 2.
-We request the following MiSeq run specifications: a cluster density of 700-800k/mm^2
-(under-shooting cluster density is better than over-shooting),
-a PhiX spike-in of 5%. These MiSeq run specifications are described 
+We request the following MiSeq run specifications: a __cluster density of 650-750k/mm^2__
+(under-shooting the cluster density is better than over-shooting),
+a __PhiX spike-in of 5%__. These MiSeq run specifications are described 
 in Kozich et al., (2013); see 'Run Monitoring' in the Supplemental Materials.
 Please let us know if you have any questions about the primers or requested
 run parameters. Thank you!
