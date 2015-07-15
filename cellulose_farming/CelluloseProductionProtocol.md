@@ -62,7 +62,12 @@ about 3 times, then decant all liquids and put only the cellulose on a pre-weigh
 * See HeoAndSonMinimalMedia.xls
 
 
-## References
+# Notes
+
+* Yield from 13C-cellulose farming in 2014: __~24%__
+
+
+# References
 
 1. Moon-Soo Heo and Hong-Joo Son, Biotechnol Appl Biochem (2002) 36: 41-45
 
