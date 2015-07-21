@@ -104,3 +104,9 @@ off very briefly prior to changing the septum.
 	* This helps prevent the liner from fusing to the injection port.
 	
 
+*** 
+
+# Notes on Carboxen 1010 PLOT column
+
+* Bake at 200<sup>o</sup>C for 1-2 hours if column disconnected for < 1 day.
+* If it is diconnected for >1 day, bake overnight at 200<sup>o</sup>C.
