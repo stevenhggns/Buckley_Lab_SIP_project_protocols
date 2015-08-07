@@ -7,17 +7,23 @@
 	* The rich media is used to get a healthy stock which is needed to grow well on the
   minimal Heo and Son media
 1. Streak *Gluconoacetobacter xylinus* from single colonies grown on the Herstin 
-and Schram media to Heo and Son 0.1% glucose agar plates. 
+and Schram media to Heo and Son 0.5% glucose agar plates. 
 	* Media contains 0.5% v/v 12C-glucose and no inositol (Heo and Son 2002)
 	* Incubation temp: 30<sup>o</sup>C 
-3. Autoclave media and 10 foil covered 1L flasks 
-4. Aliquot 100 mL of media to each 1L flask
-	* Allows for a large liquid surface area for cellulose production
-5. Inoculate each aliquot of media with three isolated colonies of *Gluconoacetobacter
+1. Autoclave media and 10 foil covered 1L flasks 
+    * __Note:__ This recipe is for 1L of media, alter number of 1L flasks according to 
+    the amount of media you need.
+1. Add all of the filter-sterlized components of the media __EXCEPT__ for FeSO<sub>4</sub>
+    * FeSO<sub>4</sub> will produce a precipitant, which is hard to aliquot to all 1L 
+    flasks evenly
+1. Aliquot 100 mL of media to each 1L flask
+	* 1L flasks allows for a large liquid surface area for cellulose production
+1. Add filter-sterlized FeSO<sub>4</sub> to each 1L flask.
+1. Inoculate each aliquot of media with three isolated colonies of *Gluconoacetobacter
 xylinus* from Heo and Son plate. 
-6. Keep flasks static in the dark at 30<sup>o</sup>C for 2-3 weeks until thick cellulose 
+1. Keep flasks static in the dark at 30<sup>o</sup>C for 2-3 weeks until thick cellulose 
 pellicule forms. 
-	* **WARNING:** Any disturbance to the flasks may prevent/stop pellicule production
+	* __WARNING:__ Any disturbance to the flasks may prevent/stop pellicule production
 
 
 # Cellulose Harvest
@@ -60,14 +66,14 @@ about 3 times, then decant all liquids and put only the cellulose on a pre-weigh
 ## Heo and Son
 
 * See HeoAndSonMinimalMedia.xls
-
+* __NOTE:__ A precipitant will form shortly after adding the FeSO<sub>4</sub> 
+    * The precipitant will look 'fluffy'
 
 # Notes
 
 * Yield from 13C-cellulose farming in 2014: __~24%__
 
-
 # References
 
-1. Moon-Soo Heo and Hong-Joo Son, Biotechnol Appl Biochem (2002) 36: 41-45
+1. [Moon-Soo Heo and Hong-Joo Son, Biotechnol Appl Biochem (2002) 36: 41-45](http://onlinelibrary.wiley.com/doi/10.1042/BA20020018/full)
 
