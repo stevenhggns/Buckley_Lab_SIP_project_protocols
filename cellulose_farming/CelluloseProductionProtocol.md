@@ -29,25 +29,30 @@ pellicule forms.
 # Cellulose Harvest
 
 1. Pour off excess culture from cellulose growth flask
-2. Make 1% Alconox solution
-3. Add Alconox 2:1 with cellulose+ residual media 
+1. Make 1% Alconox solution
+1. Add Alconox 2:1 with cellulose+ residual media 
 	* i.e., 200 mL of 1% alconox for every 100mL media culture
-4. Autoclave for 30 minutes
-5. Rinse under high pressure DI water faucet 
+1. Autoclave for 30 minutes
+1. Combine the pullicules into a large bucket/beaker
+1. Rinse under high pressure DI water faucet 
 	* ~10 times, or until no suds being produced
-	* Use screen to hold over beaker to pour out water each time. 
-6. At end of rinsing, fill beaker with DI H<sub>2</sub>O and cover. 
-7. Let sit for 12 hours at room temp, then rinse each beaker 3 times under high pressure DI.
-8. Fill with water and let sit for another 12 hours. Repeat this for 2 days 
+	* Use a screen to hold over beaker to pour out water each time. 
+	* __Note:__ the pellicules should be clear/white in color. 
+	Other coloring is probably due to contamination.
+1. At end of rinsing, fill the bucket/beaker with DI H<sub>2</sub>O and cover. 
+1. Let sit for 12 hours at room temp, then rinse 3 times under high pressure DI.
+	* Use >= 1L water for each rinse.
+1. Fill with water and let sit for another 12 hours. Repeat this for 2 days 
 	* i.e., ~4 rinsings total
-9. On the third day (after the 4<sup>th</sup> 12 hour soak), rinse cellulose 
-about 3 times, then decant all liquids and put only the cellulose on a pre-weighed weighboat. 
-10. Cover weighboat with another weight to prevent contamination 
+1. On the third day (after the 4<sup>th</sup> 12 hour soak):
+	1. Rinse the cellulose another 3 times
+	1. Decant all liquids and put only the cellulose on a pre-weighed weighboats
+		* 1 weighboat per full-sized pellicule (this helps with drying)
+1. Cover the weighboats with another weight to prevent contamination
 (especially of streptomyces spores)
-11. Place in drying oven overnight
-12. Weigh dried pellicules and calculate difference (from weighboat)
-
-
+1. Place the weighboats in a drying oven overnight
+1. Weigh dried pellicules and calculate difference (from weighboat)
+	* Record the pellicule weight
 
 # Media
 
