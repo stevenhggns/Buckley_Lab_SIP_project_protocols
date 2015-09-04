@@ -1,9 +1,15 @@
-# Modified Griffith et al (2000) nucleic acid extraction method:
+Modified Griffith et al (2000) nucleic acid extraction method:
+==============================================================
 
 >Griffiths RI, Whiteley AS, O'Donnell AG, Bailey MJ. (2000).
 Rapid Method for Coextraction of DNA and RNA from Natural Environments for
 Analysis of Ribosomal DNA- and rRNA-Based Microbial Community Composition.
 Appl Environ Microbiol 66:5488-5491.
+
+
+## Authorship
+
+Dan Buckley (2006)
 
 
 ## Materials

@@ -1,6 +1,10 @@
 Protocol for quantifying CO2 in headspace samples with the Shimadzu GCMS-QP2010
 ===============================================================================
 
+## Authorship
+
+Ashley Campbell, Chantal Koechli, and Nick Youngblut (2014)
+
 ***
 
 # Equipment 

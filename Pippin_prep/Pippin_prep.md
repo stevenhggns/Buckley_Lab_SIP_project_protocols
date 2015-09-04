@@ -1,10 +1,17 @@
-# Blue Pippin Protocol
+Blue Pippin Protocol
+====================
 
 For selecting genomic DNA >4kb for SIP gradients
 
 **NOTE: The Pippin manual is very detailed; if you have any questions, refer to the manual.**
 
 **NOTE: USE ONLY GEL LOADING TIPS (extra long tips).**
+
+
+## Authorship
+
+Ashley Campbell, Chantal Koechli, and Nick Youngblut (2011-2014)
+
 
 ## Materials
 

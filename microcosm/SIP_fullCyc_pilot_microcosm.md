@@ -1,5 +1,10 @@
 # Notes on conducting the full cycle pilot microcosm experiment
 
+## Authorship
+
+Nick Youngblut (2014)
+
+
 ## Goals:
 
 1. Determine the time point to which each 13C treatment will be destructively sampled.

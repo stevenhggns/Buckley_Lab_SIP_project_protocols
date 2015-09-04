@@ -1,3 +1,11 @@
+Cellulose farming
+=================
+
+## Authorship
+
+Ashley Campbell, Chris Gaby, and Mallory Choudoir (2011)
+
+
 # Cellulose Production
 
 1. Plate *Gluconoacetobacter xylinus* glycerol stock onto Herstin and Schram agar plates. 

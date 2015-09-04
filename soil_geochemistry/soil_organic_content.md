@@ -1,6 +1,15 @@
 Soil organic content
 ====================
 
+This is basically just a trimmed down version of the method in the
+Kellogg Soil Survey Laboratory Methods Manual, Soil Survey Investigations Report No. 42
+Version 5.0
+
+
+## Authorship
+
+Chantal Koechli, and Nick Youngblut (2015)
+
 ## Application
 
 The mineral content consists of the plant ash and soil particles that remain 

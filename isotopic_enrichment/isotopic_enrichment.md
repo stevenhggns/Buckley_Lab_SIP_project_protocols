@@ -1,4 +1,10 @@
-# Quantifying isotopic enrichment
+Quantifying isotopic enrichment
+===============================
+
+## Authorship
+
+Chantal Koechli, and Nick Youngblut (2014)
+
 
 ## UC Davis Stable Isotope Facility 
 

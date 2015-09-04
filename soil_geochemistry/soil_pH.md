@@ -1,6 +1,14 @@
 Soil pH
 =======
 
+This is basically just a trimmed down version of the method in the
+Kellogg Soil Survey Laboratory Methods Manual, Soil Survey Investigations Report No. 42
+Version 5.0
+
+## Authorship 
+
+Chantal Koechli and Nick Youngblut (2015)
+
 
 # Application and Principle
 

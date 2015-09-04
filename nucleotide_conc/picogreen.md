@@ -1,4 +1,11 @@
-# Picogreen Protocol 
+Picogreen Protocol 
+==================
+
+## Authorship
+
+Chantal Koechli and Nick Youngblut (2011-2014)
+
+## Notes
 
 * The protocol assumes one 96-well plate.
 

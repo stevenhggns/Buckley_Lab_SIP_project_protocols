@@ -1,4 +1,11 @@
-# Gel extraction protocol
+Gel extraction protocol
+=======================
+
+## Authorship
+
+Chantal Koechli, and Nick Youngblut (2011-2014)
+
+## Notes
 
 * The protocol uses the Wizard SV Gel and PCR Clean-Up System (Promega) with
 some modifications

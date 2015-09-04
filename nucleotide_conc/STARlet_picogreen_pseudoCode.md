@@ -1,3 +1,11 @@
+Pseudo-code for STARlet method
+==============================
+
+# Authorship
+
+Nick Youngblut (2014)
+
+
 # User designating layout of plates:
 
 * Reagents will be added to >=1 Costar black 96-well plate(s).

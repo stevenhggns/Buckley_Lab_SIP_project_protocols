@@ -1,6 +1,9 @@
 RNA Stable Isotope Probing Test Protocol
 ========================================
 
+## Authorship
+
+Chantal Koechli (2012)
 
 ## Extract nucleic acids
 

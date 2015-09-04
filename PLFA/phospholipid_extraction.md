@@ -5,6 +5,12 @@ __NOTE: this is a work-in-progress__
 * Based on Buyer and Sasser 2012. Applied Soil Ecology
 	* [link](http://www.midi-inc.com/pdf/Rapid_PLFA_Extraction.pdf)
 
+
+## Authorship
+
+Nick Youngblut (2015)
+
+
 ## Equipment needed
 
 * sonication bath

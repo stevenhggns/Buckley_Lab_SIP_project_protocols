@@ -1,6 +1,10 @@
 Basic soil sampling protocol
 ============================
 
+## Authorship
+
+Dan Buckley, Ashley Campbell, Chris Gaby, Chantal Koechli, and Nick Youngblut (2014)
+
 ## Collecting soil
 
 ### Equipment

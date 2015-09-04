@@ -1,10 +1,15 @@
-# Setting up a CsCl gradient for Stable Isotope Probing
+Setting up a CsCl gradient for Stable Isotope Probing
+=====================================================
+
+## Authorship
+
+Ashley Campbell, Chantal Koechli, and Nick Youngblut (2014)
 
 ## FAQs
 
 * How much DNA per gradient?
 	* Ashley used 5-8 ug per gradient
-	* Nick: Full C-Cycle Exp: 5 ug per gradient
+	* Nick: 5 ug per gradient for the full C-Cycle experiment
 
 ## Making gradient media
 

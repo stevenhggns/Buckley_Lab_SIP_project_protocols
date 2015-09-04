@@ -1,4 +1,11 @@
-## Operation of the Buckley lab speed-vac
+Operation of the Buckley lab speed-vac
+======================================
+
+## Authorship
+
+Ashley Campbell, Chantal Koechli, and Nick Youngblut (2014)
+
+## Method
 
 1. Turn on the main power.
 1. If heat is desired, set the proper temperature.

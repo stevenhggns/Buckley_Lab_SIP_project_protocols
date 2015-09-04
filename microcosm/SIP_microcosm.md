@@ -1,5 +1,10 @@
 # How to care for your beloved microcosms
 
+## Authorship
+
+Ashley Campbell (2014)
+
+
 ## Gas Sampling
 
 ### Materials:

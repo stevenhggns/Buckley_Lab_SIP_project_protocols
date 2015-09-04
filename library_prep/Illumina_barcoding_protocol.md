@@ -1,6 +1,12 @@
 Illumina Miseq Barcoding Protocol
 =================================
 
+## Authorship
+
+Ashley Campbell, Chuck Pepe-Ranney, Chantal Koechli, and Nick Youngblut (2014)
+
+# Method
+
 1. Quantify samples to be sequenced using Picogreen protocol.
 
 1. Calculate sample volume necessary for addition of __5 ng__ of template DNA to PCR

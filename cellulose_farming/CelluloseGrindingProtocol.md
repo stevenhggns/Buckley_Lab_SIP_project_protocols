@@ -1,4 +1,9 @@
-# Cellulose Grinding Protocol
+Cellulose Grinding Protocol
+===========================
+
+## Authorship
+
+Ashley Campbell and Chris Gaby (2011)
 
 ## Materials
 
