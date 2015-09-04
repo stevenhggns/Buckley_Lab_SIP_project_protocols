@@ -2,7 +2,7 @@ Buckley Lab DOE protocols
 =========================
 
 
-[__Buckley lab sip pipeline__](./BUCKLEY-LAB_SIP_PIPELINE/BUCKLEY-LAB_SIP_PIPELINE.html)
+[__Buckley lab sip pipeline__](./BUCKLEY-LAB_SIP_PIPELINE/BUCKLEY-LAB_SIP_PIPELINE.md)
 
 
 ## Updating non-markdown versions of files

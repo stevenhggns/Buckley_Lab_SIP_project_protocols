@@ -15,6 +15,9 @@ do
     # pandoc conversion
     pandoc --webtex -f markdown -t html -o $file.html $file.md;
 
+	# edit links
+	perl -pi -e 's/(href=.+)\.md">/$1.html">/' $file.html
+
     # change permissions
     chmod a-w $file.html
 

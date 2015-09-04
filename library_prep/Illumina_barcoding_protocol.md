@@ -59,7 +59,7 @@ running triplicate reactions for each sample to be sequenced.
 	* This can be done with the robot method: "plate_pooling"
 
 1. Vacuum evaporate samples to concentrate. 
-	* [speed-vac](../speed-vac/speed-vac.html)
+	* [speed-vac](../speed-vac/speed-vac.md)
 	* You need >=25 uL with a concentration of 5 ng/uL
 
 1. Quantify concentrated collection of samples using PicoGreen. 
@@ -67,7 +67,7 @@ running triplicate reactions for each sample to be sequenced.
 
 1. Run concentrated sample on a gel to ensure expected, cleaned product for sequencing. 
 	* If additional, unexpected bands are seen, consider
-	[Gel extraction](../gel_extraction/gel_extraction.html)
+	[Gel extraction](../gel_extraction/gel_extraction.md)
 	of the concentrated sample.  
 		* This may result in higher sequence quality.
 
