@@ -3,14 +3,11 @@ Buckley Lab SIP protocols
 
 ## Updating non-markdown versions of protocol files
 
-* Please don't edit the *.docx or html files directly!
+* Please don't edit the Word or html files directly!
 * The markdown files (*.md) serve as the template files for all of the other formats (eg., html or docx).
 * The bash scripts (eg., md2html.sh) will convert all files ending in '.md' to a specified format.
 	* Example usage: `./md2html.sh` 
-		* This will convert all markdown files to html.
-    * NOTE: use those scripts to update the html, docx, etc. versons of each script.
-        * This insures that only the markdown files have write permissions.
-
+		* This will creat a html file for each corresponding markdown file.
 
 ## Pipeline steps
 

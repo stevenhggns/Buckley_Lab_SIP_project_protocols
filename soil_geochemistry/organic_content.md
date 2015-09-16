@@ -13,11 +13,8 @@ Chantal Koechli, and Nick Youngblut (2015)
 ## Application
 
 The mineral content consists of the plant ash and soil particles that remain 
-after removal of organic matter.  The percentage of organic matter lost on ignition 
-can be used to define organic soils in place of estimates of organic matter by the 
-Walkley-Black organic C method.  The determination of organic matter by loss on ignition
+after removal of organic matter. The determination of organic matter by loss on ignition
 is a taxonomic criterion for organic soil materials (Soil Survey Staff, 2014).
-Organic C data by Walkley-Black are generally considered invalid if organic C >8 %.
 
 
 ## Summary of Method
