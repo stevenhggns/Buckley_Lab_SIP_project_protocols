@@ -4,18 +4,26 @@ ScriptDir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 for file in `find $ScriptDir -name "*.md" | perl -pe 's/\.md$//'`
 do
-    # status
-    echo "$file.md --> $file.docx"; 
-
-    # removing old file version
-    if [ -e $file.docx ]; then 
-	rm -f $file.docx; 
-    fi; 
-
-    # pandoc conversion
-    pandoc -f markdown -t docx -o $file.docx $file.md; 
+    # check if file exists
+    mdFile="$file.md"
+    docxFile="$file.docx"
     
-    # change permissions
-    chmod a-w $file.docx
+    if [ ! -e "$docxFile" ] || [ "$docxFile" -ot "$mdFile" ]; then
+	# status
+	echo "Converted: $mdFile --> $docxFile"; 
+
+	# removing old file version
+	if [ -e $docxFile ]; then 
+	    rm -f $docxFile; 
+	fi; 
+
+	# pandoc conversion
+	pandoc -f markdown -t docx -o $docxFile $mdFile; 
+    
+	# change permissions
+	chmod a-w $docxFile
+    else
+	echo "File up-to-date: $docxFile"
+    fi
 
 done
