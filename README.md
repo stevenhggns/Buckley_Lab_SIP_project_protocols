@@ -9,6 +9,12 @@ Buckley Lab SIP protocols
 	* Example usage: `./md2html.sh` 
 		* This will creat a html file for each corresponding markdown file.
 
+
+## Working in the lab
+
+* [lab_etiquette](./working_in_the_lab/lab_etiquette.md)
+* [undergrad_expectations](./working_in_the_lab/undergrad_expectations.md)
+
 ## Pipeline steps
 
 * Soil sampling

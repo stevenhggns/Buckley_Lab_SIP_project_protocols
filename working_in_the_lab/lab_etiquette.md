@@ -3,7 +3,8 @@ Lab Etiquette
 
 * __Before you leave at the end of the day__, walk around the lab to make sure that
 equipment is shut off and clean, and that shared work spaces that you have used 
-have been cleaned up.
+have been cleaned up. If you are the last to leave, make sure that the lights are off
+and the doors are shut and locked.
 
 * Tip/serological pipet waste goes into tip waste box.
 
