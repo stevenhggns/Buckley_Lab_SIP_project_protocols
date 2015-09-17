@@ -2,7 +2,7 @@ Expectations for undergrads working on the DOE SIP project
 ==========================================================
 
 1. __Be curious__
-	* If you have questions about the project or any else, ask them!
+	* If you have questions about the project or anything else, ask them!
 	* If you have any ideas for experiments to answer a question that you have about the
 	project or anything else, talk to us and we may be able to make it happen.
 	* Don't be afraid to ask questions during lab meetings. We want to help you understand
@@ -27,7 +27,7 @@ Expectations for undergrads working on the DOE SIP project
 		* [Rice University: *Keeping a lab notebook*](http://www.ruf.rice.edu/~bioslabs/tools/notebook/notebook.html)
 		* [Lab notebook guide](http://misterguch.brinkster.net/sept2000.pdf)
 	* When using a protocol, check off each task as you complete them.
-1. __If a protocol exists, use it__
+1. __If a protocol exists, use it (and if it doesn't, ask us what to do)__
 	* All protocols are freely available online at: [github.com/nyoungb2/Buckley_Lab_SIP_project_protocols](https://github.com/nyoungb2/Buckley_Lab_SIP_project_protocols).
 	* Following protocols is needed to make sure that the work is done *consistently*.
 	* Make sure you have the most up-to-date protocol (check the protocols on github for updates).
