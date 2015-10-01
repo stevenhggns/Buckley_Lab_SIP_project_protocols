@@ -66,8 +66,8 @@ Buckley Lab SIP protocols
 	* [Substrate_Additions_MicrobSuccession](./plant_stimulant/Substrate_Additions_MicrobSuccession.md)
 
 * Soil geochemistry
-	* [pH](./soil_geochemistry/soil_pH.md)
-	* [organic_content](./soil_geochemistry/soil_organic_content.md)
+	* [pH](./soil_geochemistry/pH.md)
+	* [organic_content](./soil_geochemistry/organic_content.md)
 	* [water_holding_capacity](./soil_geochemistry/water_holding_capacity.md)
 
 
