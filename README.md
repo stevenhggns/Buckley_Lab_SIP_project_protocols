@@ -1,6 +1,13 @@
 Buckley Lab SIP protocols 
 =========================
 
+## Printing protocols (conversion of protocols to PDF)
+
+View any Markdown file on GitHub, then in your URL bar replace the git__hub__.com part of the URL with git__print__.com
+
+The Markdown file will be rendered as a PDF for easy printing or downloading.
+
+
 ## Updating non-markdown versions of protocol files
 
 * Please don't edit the Word or html files directly!
