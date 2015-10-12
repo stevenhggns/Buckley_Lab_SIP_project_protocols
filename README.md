@@ -3,7 +3,7 @@ Buckley Lab SIP protocols
 
 ## Printing protocols (conversion of protocols to PDF)
 
-View any Markdown file on GitHub, then in your URL bar replace the git__hub__.com part of the URL with git__print__.com
+View any Markdown file on GitHub, then in your URL bar replace the git**hub**.com part of the URL with git**print**.com
 
 The Markdown file will be rendered as a PDF for easy printing or downloading.
 
