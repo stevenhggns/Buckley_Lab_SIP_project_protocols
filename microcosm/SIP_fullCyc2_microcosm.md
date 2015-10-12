@@ -199,6 +199,7 @@ as the starting time for the next gas sampling.
 	
 #### Method
 
+* __MAKE SURE:__ keep 12C and 13C substrates separate!
 1. Label a conical for each treatment.
 1. Add sterile H2O to each.
 	* The volume of liquid added to each microcosm should bring the soil
@@ -230,6 +231,7 @@ as the starting time for the next gas sampling.
 
 1. Weigh out 12C and 13C substrates in amounts for individual microcosm additions.
 	* Pre-fold the weigh paper to make a wrapper.
+	* __MAKE SURE:__ keep 12C and 13C substrates separate!
 1. Fold up weigh paper with substrate and fold that in aluminum foil
 	* Label
 
