@@ -16,9 +16,13 @@ Nick Youngblut (2015)
 1. completely dried soil (25 g per measurement)
 	* Measurements usually done in triplicate.
 	* Soils should be dried over night (or more) in the drying oven.
-1. flasks 
-1. funnels
+1. 125 ml flasks 
+	* 1 for weighing
+	* 1 for each funnel   
 1. filter paper
+	* Whatman 110mm diam; Cat No: 1001 110
+1. funnels 
+	* big enough for the filter paper
 1. DI water
 1. gram scale
 
