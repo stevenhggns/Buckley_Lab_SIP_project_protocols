@@ -80,27 +80,6 @@ Dan Buckley, Ashley Campbell, Chris Gaby, Chantal Koechli, and Nick Youngblut (2
 
 * [Cornell Stable Isotope Laboratory](http://www.cobsil.com/)
 
-### Determine soil dry weight (and water content)
-
-* Place 10-30 g of soil on a weigh boat.
-  * 15 g soil seemed to work fine.
-  * Make sure to recore the weight (don't tare the weigh boat).
-* Dry in drying oven for ~24 hrs.
-* Re-weigh the soil.
-* dry weight = original weight - dried weight
-
-#### Sean Berthrong's method for determining water holding capacity:
-
-> I basically dried out the soil (you can either air dry or oven dry), 
-and then put a filter paper in a funnel.
-I sat the funnel in a beaker or flask and saturated the filter paper with DI.
-I let the water drain and emptied the beaker. Then I got the mass of the wet filter+funnel+beaker. 
-Then I added the dried soil to the filter funnel and saturated the soil with DI.
-Let the soil free drain until it stops dripping—how long depends on your soils,
-but usually not more than a few minutes. Get the mass of the now wet soil plus apparatus,
-the difference is the mass of water held. Hope that all makes sense.
-
-* Sean's determination of 50% holding capacity for Penn Yan soil: 0.3 g (H2O) / g (soil)
 
 ### Microcosm incubations
 

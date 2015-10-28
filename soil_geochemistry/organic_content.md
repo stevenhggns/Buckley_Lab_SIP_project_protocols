@@ -85,3 +85,4 @@ Precision and accuracy data are available from the KSSL upon request.
 # References
 
 Soil Survey Staff. 2014. Keys to soil taxonomy. 12<sup>th</sup> ed. USDA-NRCS
+
