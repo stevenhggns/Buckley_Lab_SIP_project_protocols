@@ -36,8 +36,7 @@ Nick Youngblut (2015)
 	* Make sure that weight is stable.
 * Subtract out the weight of the weigh boat
 	* Resulting value = "soil dry weight"
-* $$ 10 =  5 - \text{test} $$
-* $\text{Water content (g)}  =  \text{soil wet weight (g)} - \text{soil dry weight (g)}$
-* $\text{Water content (%)}  =  \text{water content (g)} / \text{soil wet weight}$
+* Water\_content\_(g)  =  soil\_wet\_weight\_(g) - soil\_dry\_weight\_(g)
+* Water\_content\_(%)  =  water\_content\_(g) / soil\_wet\_weight
 	* % as wet-weight basis; range is 0-100%
 	

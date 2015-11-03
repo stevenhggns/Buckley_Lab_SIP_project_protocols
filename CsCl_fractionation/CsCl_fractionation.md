@@ -52,11 +52,11 @@ Gradients are run in CsCl (DNA) or CsTFA (RNA) dissolved in gradient buffer.
 	We would figure the density of our gradient media solution as follows:
 
 
->__Total mass of gradient (without tube):__ $1.69 (g/ml) * 4.75 (ml) = 8.0275 (g)$
+>__Total mass of gradient (without tube):__ 1.69 (g/ml) * 4.75 (ml) = 8.0275 (g)
 
->__Subtract the mass of the DNA/RNA solution:__ $8.0275 (g) - 0.45 (g) = 7.5775 (g)$
+>__Subtract the mass of the DNA/RNA solution:__ 8.0275 (g) - 0.45 (g) = 7.5775 (g)
 
->__The desired density for CsCl solution:__ $7.5775 (g) / 4.3 (ml) = 1.762 (g/ml)$
+>__The desired density for CsCl solution:__ 7.5775 (g) / 4.3 (ml) = 1.762 (g/ml)
 
 
 Thus, dissolve 7.5766 g CsCl in a total volume of 4.3 ml gradient buffer. 
@@ -90,17 +90,17 @@ final volume.
 	(ie: the Tris, EDTA, and KCl). 
 		* We do this by measuring the refractive index of the gradient buffer and
 		then using the following equation:
-			* $R_{I corrected} = R_{I observed} - (R_{I buffer} - 1.3333)$
+			* R<sub>I corrected</sub> = R<sub>I observed</sub> - (R<sub>I buffer</sub> - 1.3333)
 
 	2. Then to convert refractive index:
-		* $Density (g/ml) = a * R_{I corrected} - b$
+		* Density (g/ml) = a * R<sub>I corrected</sub> - b
 
 		1. For CsCl of 1.22 - 1.90 g/ml at 20<sup>o</sup>C: 
 			* a = 10.9276, b = 13.593
 		2. __Note:__ CsCl gets cold when it goes into solution. The equation above is only
 		valid at 20<sup>o</sup>C. Hence, you need to wait until the solution is near
 		room temperature before measuring R.
-		3. The $R_{I corrected}$ of a 1.762 CsCl solution is **1.4052**
+		3. The R<sub>I corrected</sub> of a 1.762 CsCl solution is **1.4052**
 
 	3. Adjust the gradient media solution density:
 		* add buffer or CsCl in small increments until R<sub>I</sub> = 

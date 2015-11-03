@@ -63,13 +63,14 @@ to 400<sup>o</sup>C.  Heat overnight (16 h).
 
 ## Calculations
 
-* $\text{Mineral Content (%)} = (R_W / OD_W) * 100$
+
+* Mineral\_Content\_(%) = R<sub>W</sub> / OD<sub>W</sub> * 100
 	* Where:
-	* $R_W = \text{Residue weight after ignition}$
-	* $OD_W = \text{Oven dry soil weight}$
+		* R<sub>W</sub> = Residue\_weight\_after\_ignition
+		* OD<sub>W</sub> = Oven\_dry\_soil\_weight
 
 * Organic matter percent can then be calculated as follows:
-	* $\text{Organic Content (%)} = 100 - \text{Mineral Content (%)}$
+	* Organic\_Content\_(%) = 100 - Mineral\_Content\_(%)
 
 
 # Report

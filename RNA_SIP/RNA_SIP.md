@@ -40,11 +40,11 @@ Gradients are run in CsTFA (RNA) dissolved in gradient buffer.
 
 	* The tubes we use are 4.7 to 4.75 ml volume. Let's say we wanted to leave room for 0.4 – 0.45 ml of nucleic acids in TE while achieving a final gradient density of 1.8 g/ml. We would figure the density of our gradient media solution as follows:
 
->__Total mass of gradient (without tube):__ $1.8 (g/ml) * 4.75 (ml) = 8.5500 (g)$
+>__Total mass of gradient (without tube):__ 1.8 (g/ml) * 4.75 (ml) = 8.5500 (g)
 
->__Subtract the mass of the RNA solution:__ $8.5 (g) - 0.45 (g) = 8.1000 (g)$
+>__Subtract the mass of the RNA solution:__ 8.5 (g) - 0.45 (g) = 8.1000 (g)
 
->__The desired density for solution:__ $8.1000 (g) / 4.3 (ml) = 1.8837 (g/ml)$
+>__The desired density for solution:__ 8.1000 (g) / 4.3 (ml) = 1.8837 (g/ml)
 
 >Thus, dissolve 8.1000g CsTFA in a total volume of 4.3 ml gradient buffer. 
 	Note, if you add 8.1000g of CsTFA to 4.3 ml buffer you will end up with a total volume of more than 4.3 ml. 
@@ -65,21 +65,21 @@ All salts will cause refraction, in measuring the CsTFA density of our gradient 
 we need to first account for the refraction due to the gradient buffer (ie: the Tris, EDTA, and KCl). 
 We do this by measuring the refractive index of the gradient buffer and then using the following equation:
 
->$R_{I corrected} = R_{I_observed} - (R_{I_buffer} - 1.3333)$
+>R<sub>I corrected</sub> = R<sub>I observed</sub> - (R<sub>I buffer</sub> - 1.3333)
 
->__Ri observed:__ Either the gradient buffer +CsTFA OR fractions (one correction before running gradient and one after)
+>__R<sub>I observed</sub>:__ Either the gradient buffer +CsTFA OR fractions (one correction before running gradient and one after)
 
->__Ri buffer:__ Gradient buffer with formamide and NOT CsTFA
+>__R<sub>I buffer</sub>:__ Gradient buffer with formamide and NOT CsTFA
 
 
 >Then to convert refractive index (R<sub>I</sub>) to CsTFA density: 
 
->$\rho = 163.559 - 262.271 (R_I) + 105.281 (R_I)^2 [at 25^oC]$
+>rho = 163.559 - 262.271 (R<sub>I</sub>) + 105.281 (R<sub>I</sub>)<sup>2</sup> [at 25<sup>o</sup>C]
 
 
 >Note CsTFA gets cold when it goes into solution. The equation above is only valid at 20C. Hence, you need to wait until the solution is near room temperature before measuring R<sub>I</sub>.
 
->The [R<sub>I</sub> corrected] of a 1.8000 CsTFA solution is 1.3713
+>The [R<sub>I corrected</sub> ] of a 1.8000 CsTFA solution is 1.3713
 
 >The above equation may not be universal for all batches of CsTFA and gradient buffer, due to differences in chemical batches and buffer concentration (correspondence between Chantal Koechli and Tillmann Lueders). Therefore, a single point standardization must also be done when preparing each batch of CsTFA solution This is done by weighing a fixed volume of solution as accurately as possible to determine the density. The best method is to use a small volumetric flask (1-5mL). Weigh a flask, fill, and cover with stopper to prevent evaporation (weigh stopper first). Then weigh the CsTFA as accurately as possible to determine density. Then measure the refractive index and calculate density from the equation. The difference between the two density values can be used as our correction factor (when converting from RI to density). 
 
@@ -91,7 +91,7 @@ We do this by measuring the refractive index of the gradient buffer and then usi
 which has a [RI corrected] of 1.3713 (will need to solve the RI corrected/RI observed equation to know the value of RI observed you will measure with the refractrometer).
 	1. The solution gets cold, so you need to wait until it is near room temperature before measuring RI. 
 	2. Filter sterilize if needed
-	3. Add buffer or CsTFA in small increments until RI = R<sub>I_corrected</sub>
+	3. Add buffer or CsTFA in small increments until RI = R<sub>I corrected</sub>
 
 1. Add 4.3ml exactly of the CsTFA solution to the tubes.
 	1. The meniscus should be around the "Beckman" label
@@ -128,7 +128,7 @@ which has a [RI corrected] of 1.3713 (will need to solve the RI corrected/RI obs
 - Fill 25mL syringe with water, turn tip up and push out as much air as possible
 - Hook syringe up to autopump and press run several times until there are no air bubbles in tubing
 - Set up ring stand with cored stopper in it (this holds the tube for fractionation)
-- Using a 21G $1\frac{1}{2}$ needle, cut off the plastic base of the needle\*
+- Using a 21G 1&1/2 needle, cut off the plastic base of the needle\*
 	- Do not cut into the medal shaft of the needle, cut the plastic as close as you can to the base of the needle. 
 	  This minimizes sample loss from it getting stuck inside the shaft of the plastic part during fractionation
 - With modified needle, puncture modified silicone (clear) stopper through the middle on its longest side. 
@@ -138,7 +138,7 @@ which has a [RI corrected] of 1.3713 (will need to solve the RI corrected/RI obs
 - Remove two tubes from the ultracentrifuge at a time using the forceps in the box. Keep the other tubes spinning. 
 - Remove cap with forceps; avoid shaking the tube as much as possible.
 - Place tube in cored stopper
-- Puncture bottom of tube with needle (21G $1\frac{1}{2}$)that is attached to silicone stopper
+- Puncture bottom of tube with needle (21G 1&1/2)that is attached to silicone stopper
 - Puncture needle into the top in the curvature zone between the neck of the tube and the lip. Careful not to puncture through the back side of the tube after you push it through on the front side
 - Place 96 well plate under bottom syringe. \*Should fractionate in column form for robot
 - Press "run" on autopump and collect fraction in well
