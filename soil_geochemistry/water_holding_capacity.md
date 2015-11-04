@@ -43,18 +43,18 @@ is the soil water holding capacity.
 1. For each funnel: place the funnel in a flask (not the weighing flask), and place a 
 filter in the funnel.
 1. Pre-moisten the filter paper with DI water.
-	1. Water can drip into the flask.
-1. For each funnel + wetted filter paper
-	1. Add 25 g of dried soil to the funnel.
-	1. Place it on the weighing flask (on the tared scale) and record the weight.
-		1. Weight = weight of dry soil + filter paper + funnel
+	1. Allow the water to drip from the funnel into the flask for __5 minutes__.
+	1. While waiting weigh out the soil (see below).
+	1. After 5 minutes, weight the funnel and wet filter:
+		1. Use a paper towel to remove moisture from the end of the funnel.
+		1. Place the funnel (and filter paper) on the scale with the weighing flask.
+		1. Recore the weight.
+1. Weigh out >= 25 grams of each soil.
+	1. Use at least 25 grams, but it can be slightly more than 25 grams.
+1. For each funnel + wetted filter paper:
 	1. Saturate the soil with DI water.
-	1. Let the soil free drain into the flask until it stops dripping.
-		1. The time needed for this depends on the soil, but usually no more than a few minutes.
-		* __MAKE SURE:__ that there is no water remaining in the neck of the funnel 
-		(it should be all drained).
-			* A paper towel can be used to pull out water from the funnel neck.
-	1. Move the funnel with soil to the weighing flask on the scale and record the weight.
+	1. Allow the water to drip from the funnel into the flask for __20 minutes__.
+	1. Move the funnel with wetted soil to the weighing flask on the scale and record the weight.
 	1. Water carrying capacity = 
 		1. Weight = __weight of water held__ + weight of dry soil + filter paper + funnel
 	1. Water holding capacity = (wet soil weight - dry soil weight) / dry soil weight
