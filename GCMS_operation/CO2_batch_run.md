@@ -26,8 +26,7 @@ This can be done using the GCMS software.
 
 * If the GCMS has not been used in a while:
 	* Check the oil level in the rotory vacuum pump (on the floor).
-	* Check the amount of carrier gas still in the tank.
-  
+	* Check the amount of carrier gas still in the tank.  
 
 ## Procedure:
 
@@ -107,8 +106,18 @@ off very briefly prior to changing the septum.
 * Replate the injection port glass liner (contains glass wool) after ~1000 injections.
 	* This helps prevent the liner from fusing to the injection port.
 	
-
 *** 
+
+# Maintenance
+
+## Autosampler
+
+* Service is need every ~2 years.
+* Do not lubricate anything besides the guide rails in the horizontal portion. 
+	* Lubricating other components will likely break them.
+* You can find videos on how to perform maintenance by googling 'leap autosampler'.
+
+***
 
 # Notes on Carboxen 1010 PLOT column
 
