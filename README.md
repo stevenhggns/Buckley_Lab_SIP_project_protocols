@@ -27,11 +27,13 @@ Buckley Lab SIP protocols
 	* [soil_sampling_protocol](./sampling/soil_sampling_protocol.md)
 	
 * Microcosm setup
-	* Ashley's priming experiment setup
+	* Ashley's priming experiment setup (Fall 2013)
 		* [SIP_microcosm](./microcosm/SIP_microcosm.md)
-	* Nick's full cycle pilot exp. setup
+	* Nick's full C-cycle pilot experiment setup (Fall 2014)
 		* [SIP_fullCyc_pilot_microcosm](./microcosm/SIP_fullCyc_pilot_microcosm.md)
-
+	* Nick's 2nd full C-cycle experiment setup (Fall 2015)
+		* [SIP_fullCyc2_microcosm](./microcosm/SIP_fullCyc2_microcosm.md)
+		
 * Microcosm headspace CO<sub>2</sub> measurements (via GC/MS)
 	* [CO2_batch_run](./GCMS_operation/CO2_batch_run.md)
 
