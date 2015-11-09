@@ -6,6 +6,13 @@ Cellulose farming
 Ashley Campbell, Chris Gaby, and Mallory Choudoir (2011)
 
 
+## Printing this protocol
+
+* View this Markdown file on GitHub, then in your URL bar of your browser 
+  replace the git**hub**.com part of the URL with git**print**.com
+* The Markdown file will be rendered as a PDF for easy printing or downloading.
+
+
 # Cellulose Production
 
 1. Plate *Gluconoacetobacter xylinus* glycerol stock onto Herstin and Schram agar plates. 

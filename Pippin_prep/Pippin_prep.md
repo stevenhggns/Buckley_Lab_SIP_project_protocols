@@ -13,6 +13,13 @@ For selecting genomic DNA >4kb for SIP gradients
 Ashley Campbell, Chantal Koechli, and Nick Youngblut (2011-2014)
 
 
+## Printing this protocol
+
+* View this Markdown file on GitHub, then in your URL bar of your browser 
+  replace the git**hub**.com part of the URL with git**print**.com
+* The Markdown file will be rendered as a PDF for easy printing or downloading.
+
+
 ## Materials
 
 * Blue Pippin

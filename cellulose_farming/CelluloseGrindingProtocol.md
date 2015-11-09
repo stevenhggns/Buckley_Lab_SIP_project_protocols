@@ -5,6 +5,12 @@ Cellulose Grinding Protocol
 
 Ashley Campbell, Chris Gaby, and Nick Youngblut (2011)
 
+## Printing this protocol
+
+* View this Markdown file on GitHub, then in your URL bar of your browser 
+  replace the git**hub**.com part of the URL with git**print**.com
+* The Markdown file will be rendered as a PDF for easy printing or downloading.
+
 ## WARNINGS
 
 * Make sure to not cross-contaminate 13C cellulose on equipment used to measure

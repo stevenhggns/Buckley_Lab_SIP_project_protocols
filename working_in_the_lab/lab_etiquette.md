@@ -1,6 +1,14 @@
 Lab Etiquette
 =============
 
+## Printing this document
+
+* View this Markdown file on GitHub, then in your URL bar of your browser 
+  replace the git**hub**.com part of the URL with git**print**.com
+* The Markdown file will be rendered as a PDF for easy printing or downloading.
+
+***
+
 * __Before you leave at the end of the day__, walk around the lab to make sure that
 equipment is shut off and clean, and that shared work spaces that you have used 
 have been cleaned up. If you are the last to leave, make sure that the lights are off
