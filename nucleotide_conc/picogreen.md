@@ -8,10 +8,30 @@ Chantal Koechli and Nick Youngblut (2011-2014)
 
 ## Printing this protocol
 
+See **Printing protocols** in the [README](../README.md)
+
 * View this Markdown file on GitHub, then in your URL bar of your browser 
   replace the git**hub**.com part of the URL with git**print**.com
 * The Markdown file will be rendered as a PDF for easy printing or downloading.
 
+
+# Automated Picogreen protocol (using the Hamilton robot)
+
+## Basic method
+
+* Select the correct robot method
+* The method will prompt you for all of the materials needed
+  (e.g., picogreen & DNA standard)
+* Run the method in simulation mode to get an idea of what to expect.
+
+## Notes on CsCl gradient fractionation quantification
+
+* Using 2 ul of each fraction per Picogreen rxn should be adequate, 
+even at the ends of the gradient.
+* Use 5 ul of each fraction if you want higher precision. 
+
+
+# Manual Picogreen protocol
 
 ## Notes
 
