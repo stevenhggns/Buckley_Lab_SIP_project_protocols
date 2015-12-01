@@ -24,7 +24,7 @@ after removal of organic matter. The determination of organic matter by loss on 
 is a taxonomic criterion for organic soil materials (Soil Survey Staff, 2014).
 
 
-## Method
+## Method overview
 
 ### Preparation
 
@@ -45,9 +45,9 @@ is a taxonomic criterion for organic soil materials (Soil Survey Staff, 2014).
 
 ### Post 
 
-* % organic matter = (pre-ignition\_weight - post-ignition\_weight) / 
+* %\_organic\_matter = (pre-ignition\_weight - post-ignition\_weight) / 
 pre-ignition\_weight * 100
-* mineral content (%) = 100 - % organic matter
+* %\_mineral\_content = 100 - %\_organic\_matter
 
 ## Interferences
 
