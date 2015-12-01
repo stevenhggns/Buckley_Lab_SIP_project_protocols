@@ -1,10 +1,11 @@
-Soil organic content
-====================
+Soil organic matter content
+===========================
 
 This is basically just a trimmed down version of the method in the
 Kellogg Soil Survey Laboratory Methods Manual, Soil Survey Investigations Report No. 42
-Version 5.0
-
+Version 5.0, pages 495-497. Some details from 
+[the SFU Soil Science Lab](https://www.sfu.ca/soils/lab_documents/Estimation_Of_Organic_Matter_By_LOI.pdf)
+are also used.
 
 ## Authorship
 
@@ -23,20 +24,34 @@ after removal of organic matter. The determination of organic matter by loss on 
 is a taxonomic criterion for organic soil materials (Soil Survey Staff, 2014).
 
 
-## Summary of Method
+## Method
+
+### Preparation
 
 * Dry sample overnight at 110<sup>o</sup>C.
-* Cool and weigh. 
-* Place sample in a cold muffle furnace and raise the temperature to 400<sup>o</sup>C.
-* Heat sample overnight (16 h), cool, and weigh.
-* The ratio of the weights (400<sup>o</sup>C/110<sup>o</sup>C) is the mineral
-content percentage.
-* The Organic content % can be derived from the mineral content %.
+* Place samples in clean crucibles.
+  * Record which sample is in which crucible.
+* Weigh the sample + crucible.
+  * This the the **pre-ignition weight (g)**
 
+### Loss on ignition
+
+* Place sample in a cold muffle furnace and raise the temperature to 400<sup>o</sup>C.
+  * Optimum furnace ramp time is 5<sup>o</sup>C/min.
+* Heat sample overnight (16 h)
+* Once cooled, place samples in drying oven for >= 30 min
+* Weigh the sample + crucible.
+  * This the the **post-ignition weight (g)**
+
+### Post 
+
+* % organic matter = (pre-ignition\_weight - post-ignition\_weight) / 
+pre-ignition\_weight * 100
+* mineral content (%) = 100 - % organic matter
 
 ## Interferences
 
-The sample must be placed in a cold muffle furnace to prevent rapid 
+**NOTE:** The sample must be placed in a cold muffle furnace to prevent rapid 
 combustion and sample splattering
 
 
@@ -48,7 +63,7 @@ goggles.  Handle the heated material with tongs.
 
 ## Equipment
 
-* Metal weighing tins
+* Metal weighing tins (or better yet, crucibles)
 * Oven, 110<sup>o</sup>C
 * Muffle furnace, 400<sup>o</sup>C
 * Electronic Balance, 0.01-g sensitivity
@@ -65,18 +80,6 @@ goggles.  Handle the heated material with tongs.
 to 400<sup>o</sup>C.  Heat overnight (16 h).
 1. Remove sample from oven, cap, and cool in a desiccator.
 1. When cool, record sample weight to nearest 0.01 g.
-
-
-## Calculations
-
-
-* Mineral\_Content\_(%) = R<sub>W</sub> / OD<sub>W</sub> * 100
-	* Where:
-		* R<sub>W</sub> = Residue\_weight\_after\_ignition
-		* OD<sub>W</sub> = Oven\_dry\_soil\_weight
-
-* Organic matter percent can then be calculated as follows:
-	* Organic\_Content\_(%) = 100 - Mineral\_Content\_(%)
 
 
 # Report
