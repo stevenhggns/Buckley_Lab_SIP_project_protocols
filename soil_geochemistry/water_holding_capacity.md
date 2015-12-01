@@ -6,12 +6,18 @@ Soil water holding capacity
 Nick Youngblut (2015)
 
 
-# Notes
+## Printing this protocol
+
+See **Printing protocols** in the [README](../README.md#printing-protocols-conversion-of-protocols-to-pdf)
+
+
+
+## Notes
 
 * Measurments are usually done in triplicate.
 
 
-# Equipment and Reagents
+## Equipment and Reagents
 
 1. completely dried soil (25 g per measurement)
 	* Measurements usually done in triplicate.
@@ -27,14 +33,14 @@ Nick Youngblut (2015)
 1. gram scale
 
 
-# Procedure concept
+## Procedure concept
 
 You are measuring soil that's completely dry, then remeasuring it after saturating it
 with DI water. The difference between saturated soil weight and dry soil weight
 is the soil water holding capacity.
 
 
-# Procedure 
+## Procedure 
 
 1. Designate 1 flask (or beaker) as the 'weighing flask'.
 	1. The 'weighing flask' is just used to hold the funnel on the scale.

@@ -10,6 +10,12 @@ Version 5.0
 
 Chantal Koechli, and Nick Youngblut (2015)
 
+
+## Printing this protocol
+
+See **Printing protocols** in the [README](../README.md#printing-protocols-conversion-of-protocols-to-pdf)
+
+
 ## Application
 
 The mineral content consists of the plant ash and soil particles that remain 

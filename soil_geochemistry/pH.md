@@ -10,6 +10,11 @@ Version 5.0
 Chantal Koechli and Nick Youngblut (2015)
 
 
+## Printing this protocol
+
+See **Printing protocols** in the [README](../README.md#printing-protocols-conversion-of-protocols-to-pdf)
+
+
 # Application and Principle
 
 >A common method of measuring soil pH is performed by placing a glass

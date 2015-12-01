@@ -6,6 +6,11 @@ Determine soil dry weight and water content gravimetrically
 Nick Youngblut (2015)
 
 
+## Printing this protocol
+
+See **Printing protocols** in the [README](../README.md#printing-protocols-conversion-of-protocols-to-pdf)
+
+
 ## References
 
 * [cfr.washington.edu protocol](http://www.cfr.washington.edu/classes.esrm.410/moisture.htm)
