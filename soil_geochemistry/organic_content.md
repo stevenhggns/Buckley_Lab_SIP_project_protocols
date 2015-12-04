@@ -29,7 +29,9 @@ is a taxonomic criterion for organic soil materials (Soil Survey Staff, 2014).
 ### Preparation
 
 * Dry sample overnight at 110<sup>o</sup>C.
-* Place samples in clean crucibles.
+* Place samples in clean and dry crucibles.
+  * Weigh empty crucible weight
+   * This is your **crucible weight (g)** 
   * Record which sample is in which crucible.
 * Weigh the sample + crucible.
   * This the the **pre-ignition weight (g)**
@@ -46,7 +48,7 @@ is a taxonomic criterion for organic soil materials (Soil Survey Staff, 2014).
 ### Post 
 
 * %\_organic\_matter = (pre-ignition\_weight - post-ignition\_weight) / 
-pre-ignition\_weight * 100
+(pre-ignition\_weight - crucible\_weight) * 100
 * %\_mineral\_content = 100 - %\_organic\_matter
 
 ## Interferences
@@ -63,8 +65,9 @@ goggles.  Handle the heated material with tongs.
 
 ## Equipment
 
-* Metal weighing tins (or better yet, crucibles)
+* Labled ceramic crucibles (make sure they are clean and dry)
 * Oven, 110<sup>o</sup>C
+* Dessicator (may need more than one)
 * Muffle furnace, 400<sup>o</sup>C
 * Electronic Balance, 0.01-g sensitivity
 * A lab notebook for recording values
@@ -72,14 +75,21 @@ goggles.  Handle the heated material with tongs.
 
 ## Procedure
 
-1. Place a 10 to 15 g sample in a tared weighing tin.
-1. Dry sample at 110<sup>o</sup>C overnight.
-1. Remove sample from oven, cap, and cool in a desiccator.
-1. When cool, record weight to nearest 0.01 g
-1. Place sample and weighing tin in a cold muffle furnace. Raise temperature 
-to 400<sup>o</sup>C.  Heat overnight (16 h).
-1. Remove sample from oven, cap, and cool in a desiccator.
-1. When cool, record sample weight to nearest 0.01 g.
+1. Weigh empty crucible and record crucible weight.
+2. Place a 10 to 15 g sample in a crucible.
+3. Record which crucible contains each sample.
+4. Dry sample at 110<sup>o</sup>C overnight.
+5. Remove sample from oven and cool in a desiccator.
+6. When cool, record pre-ignition weight to nearest 0.01 g.
+7. Place sample in a cold muffle furnace. Turn on furnace and start programmed run.
+8. For muffle furnace in Lehmann Lab:
+   3. Press left most button till it reads "Run".
+   4. Press second button to left untill screen reads "Stat off".
+   5. Press right most button once. Screen should read "Stat on".
+   6. If program needs to be stopped, press second button to right once. Screen should read "Stat off".
+9. Furnace should increase tempereature at a rate of 5<sup>o</sup>C/min. Then hold at 400<sup>o</sup>C for 16 h.
+10. Once fernace cools to 105<sup>o</sup>C, remove samples and place in desiccator to cool.
+11. When cool, record post-ignition weight to nearest 0.01 g.
 
 
 # Report
