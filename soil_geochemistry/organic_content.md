@@ -9,7 +9,7 @@ are also used.
 
 ## Authorship
 
-Chantal Koechli, and Nick Youngblut (2015)
+Chantal Koechli, Sam Barnett and Nick Youngblut (2015)
 
 
 ## Printing this protocol
@@ -76,26 +76,49 @@ goggles.  Handle the heated material with tongs.
 ## Procedure
 
 1. Weigh empty crucible and record crucible weight.
-2. Place a 10 to 15 g sample in a crucible.
-3. Record which crucible contains each sample.
-4. Dry sample at 110<sup>o</sup>C overnight.
-5. Remove sample from oven and cool in a desiccator.
-6. When cool, record pre-ignition weight to nearest 0.01 g.
-7. Place sample in a cold muffle furnace. Turn on furnace and start programmed run.
-8. For muffle furnace in Lehmann Lab:
-   3. Press left most button till it reads "Run".
-   4. Press second button to left untill screen reads "Stat off".
-   5. Press right most button once. Screen should read "Stat on".
-   6. If program needs to be stopped, press second button to right once. Screen should read "Stat off".
-9. Furnace should increase tempereature at a rate of 5<sup>o</sup>C/min. Then hold at 400<sup>o</sup>C for 16 h.
-10. Once fernace cools to 105<sup>o</sup>C, remove samples and place in desiccator to cool.
-11. When cool, record post-ignition weight to nearest 0.01 g.
+1. Place a 10 to 15 g sample in a crucible.
+1. Record which crucible contains each sample.
+1. Dry sample at 110<sup>o</sup>C overnight.
+1. Remove sample from oven and cool in a desiccator.
+1. When cool, record pre-ignition weight to nearest 0.01 g.
+1. Place sample in a cold muffle furnace. Turn on furnace and start programmed run (To set program, see section "Muffle furnace program setting").
+1. For muffle furnace in Lehmann Lab:
+   1. Press left most button till it reads "Run".
+   1. Press second button to left untill screen reads "Stat off".
+   1. Press right most button once. Screen should read "Stat on".
+   1. If program needs to be stopped, press second button to right once. Screen should read "Stat off".
+1. Furnace should increase tempereature at a rate of 5<sup>o</sup>C/min. Then hold at 400<sup>o</sup>C for 16 h.
+1. Once fernace cools to 105<sup>o</sup>C, remove samples and place in desiccator to cool.
+1. When cool, record post-ignition weight to nearest 0.01 g.
 
 
 # Report
 
 Report mineral content to the nearest whole percent.
 
+
+# Muffle furnace program setting
+
+1. Press left most button untill screen reads "Prog List".
+2. Press second button to run through parameters.  Parameters can be changed by pressing up or down arrow buttons (the two right buttons).
+  3. Hb = OFF
+  4. Hb U = 0.0
+  5. rmPU = min
+  6. dwLU = Hour
+  7. CYCn = 1
+  8. SEGn = 1
+  9. type = rmPr
+  10. tGt = 400
+  11. rate = 5.0
+  12. SEGn = 2
+  13. type = dwell
+  14. dur = 16.0
+  15. SEGn = 3
+  16. type = Step
+  17. tGt = 105
+  18. SEGn = 4
+  19. type = End
+  20. Endt = dwell
 
 # Precision and Accuracy
 
