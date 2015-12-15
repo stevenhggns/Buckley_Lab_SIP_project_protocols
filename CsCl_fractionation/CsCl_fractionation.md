@@ -10,11 +10,15 @@ Ashley Campbell, Chantal Koechli, and Nick Youngblut (2014)
 
 See **Printing protocols** in the [README](../README.md#printing-protocols-conversion-of-protocols-to-pdf)
 
+
 ## FAQs
 
 * How much DNA per gradient?
 	* Ashley used 5-8 ug per gradient
 	* Nick: 5 ug per gradient for the full C-Cycle experiment
+* Which ultracentrifuge tubes?
+	* Beckman Coulter: Ref# 361621
+
 
 ## Making gradient media
 
@@ -112,6 +116,7 @@ final volume.
 		target density +/- 0.0001 
 		
 	4. Filter sterilize if needed
+
 
 ## Setting up the gradients
 

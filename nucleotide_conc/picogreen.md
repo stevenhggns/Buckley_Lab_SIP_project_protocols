@@ -35,9 +35,11 @@ even at the ends of the gradient.
 ## Materials
 
 * \(1\) Costar black 96-well plate
+	* VWR: cat# 62402-983
 * \(8\) 1.5ml micro-cfg tubes
 * \(2\) 15 or 50 ml falcon tubes (depends on volume 1x TE buffer neded)
-* \(1\) Picogreen kit
+* \(1\) Quant-iT™ PicoGreen® dsDNA Assay Kit
+	* ThermoFisher: cat# P7589
 	* Warm up the picogreen reagent before use
 
 

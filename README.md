@@ -7,21 +7,14 @@ Buckley Lab SIP protocols
   replace the git**hub**.com part of the URL with git**print**.com
 * The Markdown file will be rendered as a PDF for easy printing or downloading.
 
-## Updating non-markdown versions of protocol files
-
-* Please don't edit the Word or html files directly!
-* The markdown files (*.md) serve as the template files for all of the other formats (eg., html or docx).
-* The bash scripts (eg., md2html.sh) will convert all files ending in '.md' to a specified format.
-	* Example usage: `./md2html.sh` 
-		* This will creat a html file for each corresponding markdown file.
-
 
 ## Working in the lab
 
 * [lab_etiquette](./working_in_the_lab/lab_etiquette.md)
 * [undergrad_expectations](./working_in_the_lab/undergrad_expectations.md)
 
-## Pipeline steps
+
+## HR-SIP pipeline general workflow
 
 * Soil sampling
 	* [soil_sampling_protocol](./sampling/soil_sampling_protocol.md)
@@ -34,11 +27,23 @@ Buckley Lab SIP protocols
 	* Nick's 2nd full C-cycle experiment setup (Fall 2015)
 		* [SIP_fullCyc2_microcosm](./microcosm/SIP_fullCyc2_microcosm.md)
 		
-* Microcosm headspace CO<sub>2</sub> measurements (via GC/MS)
+* Microcosm headspace CO<sub>2</sub> measurements (via GC-MS)
 	* [CO2_batch_run](./GCMS_operation/CO2_batch_run.md)
 
 * Nucleotide extraction
 	* [DNA_RNA_extraction_Protocol](./nucleotide_extraction/DNA_RNA_extraction_Protocol.md) 
+
+* Nucleotide quantification
+	* [Picogreen](./nucleotide_conc/picogreen.md)
+
+* [Optional] Nucleotide concentration
+	* [speed-vac](./speed-vac/speed-vac.md)
+
+* Pippin Prep
+	* [Pippin_prep](./Pippin_prep/Pippin_prep.md)
+
+* Nucleotide quantification
+	* [Picogreen](./nucleotide_conc/picogreen.md)
 
 * __If DNA:__ CsCl fractionation
 	* [CsCl_fractionation](./CsCl_fractionation/CsCl_fractionation.md) 
@@ -46,23 +51,32 @@ Buckley Lab SIP protocols
 * __Else if RNA:__ CsTFA fractionation
 	* [RNA_SIP](./RNA_SIP/RNA_SIP.md)
 
-* Nucleotide quantification:
+* Nucleotide quantification
 	* [Picogreen](./nucleotide_conc/picogreen.md)
 
-* Nucleotide sample concentration
-	* [speed-vac](./speed-vac/speed-vac.md)
+* MiSeq library prep
+	* [Illumina_barcoding_protocol](./library_prep/Illumina_barcoding_protocol.md)
+	* For automated generation of the Excel files needed for the PCR assay, 
+	see the fractionSelectFor16S-PCR.ipynb notebook in the SIPdb repo.
 
-* Pippin Prep
-	* [Pippin_prep](./Pippin_prep/Pippin_prep.md)
 
-* Fraction nucleotide quantification:
-	* [picogreen](./nucleotide_conc/picogreen.md)
+## Unfractionated sample 16S rRNA amplicon sequencing workflow
 
-* MiSeq library prep:
+* Nucleotide extraction
+	* [DNA_RNA_extraction_Protocol](./nucleotide_extraction/DNA_RNA_extraction_Protocol.md) 
+
+* [Optional] Nucleotide clean-up
+	* [Sephadex column clean-up](http://www.gelifesciences.com/webapp/wcs/stores/servlet/productById/en/GELifeSciences/27533001)
+
+* Nucleotide quantification
+	* [Picogreen](./nucleotide_conc/picogreen.md)
+
+* MiSeq library prep
 	* [Illumina_barcoding_protocol](./library_prep/Illumina_barcoding_protocol.md)
 
 
-## Others
+
+## Other protocols
 
 * Cellulose farming
 	* Cellulose production
@@ -78,37 +92,3 @@ Buckley Lab SIP protocols
 	* [organic_content](./soil_geochemistry/organic_content.md)
 	* [water_holding_capacity](./soil_geochemistry/water_holding_capacity.md)
 
-
-
-## Workflows
-
-### Bulk DNA sequencing of the 16S rRNA gene
-
-* [Nucleotide extraction](./nucleotide_extraction/DNA_RNA_extraction_Protocol.md)
-
-* [Sephadex column clean-up](http://www.gelifesciences.com/webapp/wcs/stores/servlet/productById/en/GELifeSciences/27533001)
-
-* [Nucleotide quantification via Picogreen](./nucleotide_conc/picogreen.md)
-
-* [16S rRNA amplicon library prep](./library_prep/Illumina_barcoding_protocol.md)
-
-
-
-### Microcosm -> gradient fractionation -> 16S rRNA gene sequencing
-
-* [Nucleotide extraction](./nucleotide_extraction/DNA_RNA_extraction_Protocol.md)
-
-* __Optional:__ Concentrating via [speed-vac](./speed-vac/speed-vac.md)
-
-* [PippinPrep](./Pippin_prep/Pippin_prep.md)
-
-* [Nucleotide quantification via Picogreen](./nucleotide_conc/picogreen.md)
-
-* [CsCl_fractionation](./CsCl_fractionation/CsCl_fractionation.md) 
-	* Including desalting
-
-* [Nucleotide quantification of fractions via Picogreen](./nucleotide_conc/picogreen.md)
-
-* [16S rRNA amplicon library prep](./library_prep/Illumina_barcoding_protocol.md)
-	* For automated generation of the Excel files needed for the PCR assay, 
-		see the fractionSelectFor16S-PCR.ipynb notebook in the SIPdb repo.
