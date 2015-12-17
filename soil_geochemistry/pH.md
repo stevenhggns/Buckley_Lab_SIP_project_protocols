@@ -44,8 +44,7 @@ __NOTE:__ This protocol uses the 1:1 soil:water method
 	* pH 7	
 	* pH 10
 1. analytical balance 
-1. clean glass beakers for making a soil slurry
-	* __20 mL???__
+1. clean glass 20 mL scintillation vial
 1. clean glass rods for stirring the slurry
 1. dried soil
 1. deionized water
@@ -54,7 +53,7 @@ __NOTE:__ This protocol uses the 1:1 soil:water method
 
 # Procedure
 
-1. Measure out 10 g of dried soil and transfer to a clean glass beaker
+1. Measure out 5.0 g of dried soil into labled vial.
 
 1. Dispense a volume of DI water equal to the soil weight.
 	* 1 mL water = 1 g water 
@@ -62,11 +61,13 @@ __NOTE:__ This protocol uses the 1:1 soil:water method
 1. Stir the soil and solution vigorously to completely homogenize the slurry
 
 1. Allow the slurry to sit for 30 minutes.
+	* Multiple slurrys can be made in this 30 minute period if needed.
 
 1. __While you are waiting:__ Calibrate the pH meter!
 	* Perform at least a 2-point callibration with the pH 4 and 7 buffers.
 	* It wouldn't hurt to do a 3-point callibration with the pH 4, 7, and 10 buffers.
 	* Rinse the electrode thoroughly with DI water.
+	* This can be done before making slurry.
 
 1. Ensure room temperature is between 20 and 25<sup>o</sup>C before proceeding with pH
 measurement.
@@ -80,6 +81,7 @@ measurement.
 1. Record the pH measurement.
 
 1. Rinse the electrode thoroughly with DI water.
+	* Electrode can be stored in beaker of water with stirring in between soil samples. 
 
 
 # Analytical Performance
