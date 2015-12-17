@@ -10,9 +10,14 @@ Buckley Lab SIP protocols
 
 ## Working in the lab
 
-* [lab_etiquette](./working_in_the_lab/lab_etiquette.md)
-* [undergrad_expectations](./working_in_the_lab/undergrad_expectations.md)
-
+* General expectations of lab etiquette
+  * [lab_etiquette](./working_in_the_lab/lab_etiquette.md)
+* General expectations of undergrads working in the lab
+  * [undergrad_expectations](./working_in_the_lab/undergrad_expectations.md)
+* General lab tasks commonly completed by undergrads in the lab
+  * [general_lab_tasks](./working_in_the_lab/general_lab_tasks.md)
+  * Lab inventory checklist
+    * Use the `Inventory.xlsx` file located at `./working_in_the_lab/Inventory.xlsx`
 
 ## HR-SIP pipeline general workflow
 
