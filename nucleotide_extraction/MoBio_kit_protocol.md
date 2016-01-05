@@ -1,3 +1,16 @@
+MoBio DNA Extraction Kit Protocol
+=================================
+
+## Authorship
+
+Spencer Debenport (2016)
+
+
+## Printing this protocol
+
+See **Printing protocols** in the [README](../README.md#printing-protocols-conversion-of-protocols-to-pdf)
+
+
 # Before Starting:
 1.	Add beta-mercaptoethanol (B-ME) to PowerMag Microbiome lysis solution.
   *	25 ul B-ME per 1 ml lysis solution
