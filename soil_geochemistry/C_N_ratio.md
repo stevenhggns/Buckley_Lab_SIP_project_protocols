@@ -1,5 +1,5 @@
 Carbon:Nitrogen ratio
-=======
+=====================
 
 This protocol explains measuring out and loading of soil samples onto LECO machine for measurement of C:N ratio.
 
