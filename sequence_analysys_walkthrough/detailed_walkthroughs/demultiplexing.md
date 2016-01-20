@@ -40,6 +40,24 @@ ir2db = screed.ScreedDB(ir2)
 ### Load Mapping File
 * The mapping file is a critical component for demultiplexing your sequences.
 * This file contains the sample names assigned to each index read, allowing our demultiplexing script to rename sequences according to the sample that they came from.
+* Additional metadata describing each sample should be included in this file, for downstream application in the `phyloseq` R package.
+* The format of this file is critical, with an example shown [here](INSERT_LINK_HERE).
+
+
+  ```python
+df_map = pd.read_csv("data/Mapping_file.txt", delimiter="\t", usecols=[0,1,2], names=["SampleID","i1","i2"])
+df_map
+  ```
+  ![Example Table Output](https://cloud.githubusercontent.com/assets/7449496/12459259/d4d1a1cc-bf7b-11e5-88fa-4730b005a140.png)
+
+  * NOTE: Using this code, the first three columns of your metadata file must be the SampleID, index read 1 sequence, and index read 2 sequence.
+
+
+
+
+
+
+
 
 
 
