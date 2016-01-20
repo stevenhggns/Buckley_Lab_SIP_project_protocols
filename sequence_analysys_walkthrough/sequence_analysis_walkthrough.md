@@ -24,6 +24,12 @@ NOTE: At this point, raw read QC analysis can be performed. Refer to the `raw_re
 
 ## Demultiplex Sequences
 * At this stage, your sequences will be separated by their index reads.
-* A mapping file is needed to assign sample names based on the index sequences. 
+* A metadata file is needed to assign sample names based on the index sequences. 
+* First, screed databases are created for the two index read files.
+* The merged sequence file is cycled through, replacing raw read names with sample IDs based on the metadata file loaded.
+* Basic summary information such as number of sequences per sample can then be plotted.
+
+[Detailed Walkthrough for Demultiplexing](./detailed_walkthroughs/demultiplexing.md)
+
 
 
