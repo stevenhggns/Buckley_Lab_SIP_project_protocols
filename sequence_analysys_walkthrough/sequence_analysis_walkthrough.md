@@ -23,6 +23,7 @@ NOTE: At this point, raw read QC analysis can be performed. Refer to the `raw_re
 [Detailed Walkthrough for `PEAR`](./detailed_walkthroughs/pear.md)
 
 ## Demultiplex Sequences
+
 * At this stage, your sequences will be separated by their index reads.
 * A metadata file is needed to assign sample names based on the index sequences. 
 * First, screed databases are created for the two index read files.
@@ -30,6 +31,16 @@ NOTE: At this point, raw read QC analysis can be performed. Refer to the `raw_re
 * Basic summary information such as number of sequences per sample can then be plotted.
 
 [Detailed Walkthrough for Demultiplexing](./detailed_walkthroughs/demultiplexing.md)
+
+## Quality Control of Sequences
+
+* Now that we have demultiplexed our sequences, we need to run some quality control measures before downstream applications.
+* First, we will remove any sequences that exceed our maximum allowed error thresholds.
+* All sequences with unassigned 'N' bases are also removed.
+* Remove sequences that do not align to the expected region (usually 16S or ITS regions).
+* Summarize the total number of sequences in each sample after these quality control measures.
+
+[Detailed Walkthrough for Quality Control](./detailed_walkthroughs/qc.md)
 
 
 
