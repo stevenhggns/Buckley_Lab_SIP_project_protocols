@@ -99,6 +99,45 @@ head -n 8 $2_maxee1.fasta
 
   ![Example Filter Output](https://cloud.githubusercontent.com/assets/7449496/12463675/046bb3de-bf93-11e5-922f-800e167901df.png)
 
+### Remove Sequences with 'N' Characters
+* After filtering out sequences with high error rates, we want to remove all sequences with ambiguous 'N' characters.
+* A summary of the total number of sequences before and after this quality control step will also be printed.
+
+  ```r
+%%bash -s "$workDir" "$seqFile"
+
+cd $1
+
+bioawk -c fastx '{if ($seq !~ /N/){print ">" $name " " $4 "\n" $seq}}' \
+    $2_maxee1.fasta > $2_maxee1_noN.fasta
+
+printf "Number of sequence pre-filter: "
+grep -c ">" $2_maxee1.fasta
+
+printf "Number of sequences post-filter: "
+grep -c ">" $2_maxee1_noN.fasta
+  ```
+* Example Output:
+  ```
+Number of sequence pre-filter: 1667925
+
+Number of sequences post-filter: 1667925
+  ```
+
+### Alignment-Based Quality Control Using Mothur
+* In this step, we will align our sequences with the SILVA database using Mothur
+* This allows us to be certain that our sequences are indeed from the region we expect, and allows for trimming down to our specified sequence length.
+
+
+Use mothur to find unique seqs
+Download and format SILVA database
+Align seqs to DB
+Filter out seqs with gaps
+Print a summary of that
+Remove homopolymers and trim to size
+  Context dependent on the summary printed above
+Run the filter one last time
+Deunique the sequences
 
 
 
