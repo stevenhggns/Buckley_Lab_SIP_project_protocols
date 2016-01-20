@@ -75,6 +75,30 @@ ls $tmpdir1/Block?? | parallel --gnu -j $3 -k "usearch -fastq_filter {} -fastq_m
 -fastaout $tmpdir2/{#}.fasta >/dev/null 2>&1 && cat $tmpdir2/{#}.fasta" > $1$2_maxee1.fasta
 rm -r $tmpdir2 $tmpdir1
   ```
+* We can then print some summary information, such as the total number of sequences before and after filtering, and the first few filtered sequences.
+
+  ```r
+%%bash -s "$workDir" "$seqFile" "$nprocs" "$maxee"
+​
+cd $1
+​
+printf "Max expected error cutoff: "
+echo $4
+​
+printf "Number of sequence pre-filter: "
+grep -c "orig_name=" $2
+​
+printf "Number of sequences post-filter: "
+grep -c ">" $2_maxee1.fasta
+​
+echo '' 
+head -n 8 $2_maxee1.fasta
+  ```
+
+* This will result in something like the following:
+
+  ![Example Filter Output](https://cloud.githubusercontent.com/assets/7449496/12463675/046bb3de-bf93-11e5-922f-800e167901df.png)
+
 
 
 
