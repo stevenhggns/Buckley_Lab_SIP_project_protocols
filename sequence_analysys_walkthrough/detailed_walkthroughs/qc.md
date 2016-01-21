@@ -2,6 +2,9 @@
 
 In this walkthrough, we will go through the steps necessary to clean up your sequences and discard any that do not meet our quality control standards.
 
+####Authorship
+Spencer Debenport, Nick Youngblut, Chantal Koechli (2016)
+
 ### Seting variables and Initializing Jupyter Notebook
 * Start your notebook by setting your directory and file variables, and the threshold value for maximum expected error.
 
@@ -127,7 +130,105 @@ Number of sequences post-filter: 1667925
 ### Alignment-Based Quality Control Using Mothur
 * In this step, we will align our sequences with the SILVA database using Mothur
 * This allows us to be certain that our sequences are indeed from the region we expect, and allows for trimming down to our specified sequence length.
-* 
+* The end result of this step will be our final quality filtered sequence file.
+
+#####Create Unique Sequence File
+* First, we will create a file of unique sequences from our dataset. This reduces the size of our sequence file for alignment by only including one copy of each unique sequence. 
+
+  ```r
+%%bash -s "$workDir" "$seqFile"
+
+cd $1
+
+mothur "#unique.seqs(fasta=$2_maxee1_noN.fasta)" 
+  ```
+
+* Then we will check the number of unique sequences in our dataset. This should be significantly less than the total number of sequences we checked previously.
+
+  ```r
+%%bash -s "$workDir" "$seqFile"
+
+cd $1
+
+printf "Number of unique sequences: "
+grep -c ">" $2_maxee1_noN.unique.fasta
+  ```
+  * Example Output:
+  
+    ```
+Number of unique sequences: 639570
+    ```
+  
+#####Create Mothur Group File
+* Next, we will create the Mothur Group File. This file is used to assign sequences to a specific group. This file consists of two columns, with the sequence name in the first column and the group name in the second column. In our case, the group file will be in the following format: SAMPLENAME_Seq#  SAMPLENAME
+
+  ```r
+%%bash -s "$workDir" "$seqFile"
+# making mothur group file
+
+cd $1
+
+perl -ne 'if(/^>/){ s/>(.+)(_\d+) .+/$1$2\t$1/; print;}' $2_maxee1_noN.fasta > group_file.txt
+
+head group_file.txt
+  ```
+  * Example Output:
+  
+    ```
+13C-Oxa.D6.R3_F6_0	13C-Oxa.D6.R3_F6
+    ```
+
+#####Download and Format SILVA Database
+* In order to make our sequence alignment, we must first download and format the SILVA sequence database to meet our needs.
+* First, we will download the database.
+
+  ```r
+%%bash -s "$workDir"
+# dowloading mothur silva databases
+
+cd $1
+
+if ! [ -d mothur_silva_db ]; then
+    mkdir mothur_silva_db
+fi
+
+cd mothur_silva_db
+
+if ! [ -e $1silva_ref_aln_mothur.fasta ]; then
+    curl -o silva_Bac.zip http://www.mothur.org/w/images/9/98/Silva.bacteria.zip && unzip silva_Bac.zip
+    curl -o silva_Euk.zip http://www.mothur.org/w/images/1/1a/Silva.eukarya.zip && unzip silva_Euk.zip
+    curl -o silva_Arc.zip http://www.mothur.org/w/images/3/3c/Silva.archaea.zip && unzip silva_Arc.zip
+fi
+  ```
+  ```r
+%%bash -s "$workDir"
+
+cd $1'mothur_silva_db'
+
+cat silva.bacteria/silva.bacteria.fasta \
+    silva.eukarya/silva.eukarya.fasta \
+    Silva.archaea/silva.archaea.fasta \
+    > silva_ref_aln_mothur.fasta
+
+printf "Number of sequences in mothur silva fasta: "
+grep -c ">" silva_ref_aln_mothur.fasta
+  ```
+* Then we will run a filter on this database before we make our alignment.
+
+  ```r
+%%bash -s "$workDir"
+# filtering column positions in silva db
+
+cd $1'mothur_silva_db'
+
+mothur "#filter.seqs(vertical=t, \
+    fasta=silva_ref_aln_mothur.fasta, \
+    processors=24)" > /dev/null
+
+printf "Number of sequences post-filter: "
+grep -c ">" silva_ref_aln_mothur.filter.fasta
+   ```
+
 
 
 Use mothur to find unique seqs
