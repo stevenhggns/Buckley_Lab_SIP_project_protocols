@@ -1,7 +1,7 @@
 # Using `wget` to Download Sequence Files
 
 ####Authorship
-Spencer Debenport (2016)
+Spencer Debenport, Nick Youngblut, Chantal Koechli (2016)
 
 ### Notebook Setup
 
