@@ -2,6 +2,9 @@
 
 In this walkthrough, we will go through the steps necessary to clean up your sequences and discard any that do not meet our quality control standards.
 
+####Authorship
+Spencer Debenport (2016)
+
 ### Seting variables and Initializing Jupyter Notebook
 * Start your notebook by setting your directory and file variables, and the threshold value for maximum expected error.
 
