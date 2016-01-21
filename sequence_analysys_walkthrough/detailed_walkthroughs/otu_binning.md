@@ -52,6 +52,7 @@ fileList = glob.glob(p)
 fileList
   ```
   * Example Output:
+  
     ```
 '/home/nick/notebook/fullCyc/data/MiSeq_16S/515f-806r/150620_V4_Lib1/run1/QC/finalQC.fasta',
 '/home/nick/notebook/fullCyc/data/MiSeq_16S/515f-806r/150811_V4_Lib6/run1/QC/finalQC.fasta',
@@ -61,6 +62,7 @@ fileList
 '/home/nick/notebook/fullCyc/data/MiSeq_16S/515f-806r/150727_V4_Lib5/run1/QC/finalQC.fasta',
 '/home/nick/notebook/fullCyc/data/MiSeq_16S/515f-806r/150721_V4_Lib4/run1/QC/finalQC.fasta'
     ```
+
 * Next we will print the number of sequences in each file.
 
   ```r
