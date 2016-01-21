@@ -42,8 +42,62 @@ if not os.path.isdir(workDir):
   ```
   
 ### Concatenate All Relevant QC Sequence Files
-* If your full data
+* If your full data set contains samples from multiple sequencing runs, you will need to concatenate your post-QC fasta files together before doing any OTU picking. 
+* In the following example, sequence files from multiple runs will be combined together for downstream analysis. The file structure for this dataset contains multiple libraries, some of which have been run multiple times, all of which have passed through quality filtering before this step.
+  * If you do not have a similar file structure to this (in terms of directory and file naming schemes), you can manually concatenate all `finalQC.fasta` files from your individual libraries together.
 
+  ```r
+p = os.path.join(baseDir, '*V4_Lib*', 'run*', 'QC', 'finalQC.fasta')
+fileList = glob.glob(p)
+fileList
+  ```
+  * Example Output:
+    ```
+'/home/nick/notebook/fullCyc/data/MiSeq_16S/515f-806r/150620_V4_Lib1/run1/QC/finalQC.fasta',
+'/home/nick/notebook/fullCyc/data/MiSeq_16S/515f-806r/150811_V4_Lib6/run1/QC/finalQC.fasta',
+'/home/nick/notebook/fullCyc/data/MiSeq_16S/515f-806r/150715_V4_Lib3/run1/QC/finalQC.fasta',
+'/home/nick/notebook/fullCyc/data/MiSeq_16S/515f-806r/150710_V4_Lib2/run1/QC/finalQC.fasta',
+'/home/nick/notebook/fullCyc/data/MiSeq_16S/515f-806r/150710_V4_Lib2/run2/QC/finalQC.fasta',
+'/home/nick/notebook/fullCyc/data/MiSeq_16S/515f-806r/150727_V4_Lib5/run1/QC/finalQC.fasta',
+'/home/nick/notebook/fullCyc/data/MiSeq_16S/515f-806r/150721_V4_Lib4/run1/QC/finalQC.fasta'
+    ```
+* Next we will print the number of sequences in each file.
+
+  ```r
+# number of sequences per file
+for f in fileList:
+    ret = !cd $workDir; grep -c ">" $f
+    print '{} : {}'.format(f, ret[0])
+  ```
+  * Example Output:
+
+    ```
+/home/nick/notebook/fullCyc/data/MiSeq_16S/515f-806r/150620_V4_Lib1/run1/QC/finalQC.fasta : 2660350
+/home/nick/notebook/fullCyc/data/MiSeq_16S/515f-806r/150811_V4_Lib6/run1/QC/finalQC.fasta : 3879125
+/home/nick/notebook/fullCyc/data/MiSeq_16S/515f-806r/150715_V4_Lib3/run1/QC/finalQC.fasta : 6770040
+/home/nick/notebook/fullCyc/data/MiSeq_16S/515f-806r/150710_V4_Lib2/run1/QC/finalQC.fasta : 6463568
+/home/nick/notebook/fullCyc/data/MiSeq_16S/515f-806r/150710_V4_Lib2/run2/QC/finalQC.fasta : 3178580
+/home/nick/notebook/fullCyc/data/MiSeq_16S/515f-806r/150727_V4_Lib5/run1/QC/finalQC.fasta : 2134224
+/home/nick/notebook/fullCyc/data/MiSeq_16S/515f-806r/150721_V4_Lib4/run1/QC/finalQC.fasta : 4237418
+    ```
+
+* These files are then concatenated together into the final QC fasta file that will be used in OTU binning.
+
+  ```r
+files = ' '.join(fileList)
+!cd $workDir; \
+    cat $files > finalQC.fasta
+  ```
+* The total number of sequences can then be printed.
+
+  ```r
+ret = !cd $workDir; grep -c ">" finalQC.fasta
+print 'Number of sequences: {}'.format(ret[0])
+  ```
+  * Example Output:
+    ```
+Number of sequences: 29323305
+    ```
 
 
 
