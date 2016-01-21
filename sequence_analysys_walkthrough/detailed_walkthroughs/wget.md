@@ -1,6 +1,9 @@
 # Using `wget` to Download Sequence Files
 
-#### Notebook Setup
+####Authorship
+Spencer Debenport (2016)
+
+### Notebook Setup
 
 * First, create a directory for your project sequences in the `/var/seq_data/` directory on the server
   * Use the naming scheme `/var/seq_data/PROJECT_NAME/` with any subdirectories for individual sections or runs for your project
@@ -15,7 +18,7 @@ if not os.path.isdir(seqDir):
      os.makedirs(seqDir)
   ```
 
-#### Download Sequence and Index Files
+### Download Sequence and Index Files
 ###### Read1
 ```r
 !cd $seqDir; \
@@ -44,7 +47,7 @@ if not os.path.isdir(seqDir):
     "LINK_TO_INDEX2_FILE_DOWNLOAD"
 ```
 
-####Example Output
+###Example Output
 You should expect to see something similar to the following when you download each file.
 ```
 --2015-07-02 11:21:22--  http://cbsuapps.tc.cornell.edu/Sequencing/showseqfile.aspx?mode=http&cntrl=1544200496&refid=58068
