@@ -127,6 +127,7 @@ Number of sequences post-filter: 1667925
 ### Alignment-Based Quality Control Using Mothur
 * In this step, we will align our sequences with the SILVA database using Mothur
 * This allows us to be certain that our sequences are indeed from the region we expect, and allows for trimming down to our specified sequence length.
+* 
 
 
 Use mothur to find unique seqs
