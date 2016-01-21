@@ -3,7 +3,7 @@
 This walkthrough will lead you through demultiplexing your sequences by index read and the creation of some basic summary information regarding the number of sequences in each sample.
 
 ####Authorship
-Spencer Debenport (2016)
+Spencer Debenport, Nick Youngblut, Chantal Koechli (2016)
 
 ### Initializing Your Jupyter Notebook
 * Start by importing all libraries you will need for all steps involved in demultiplexing.
