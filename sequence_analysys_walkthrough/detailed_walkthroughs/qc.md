@@ -213,6 +213,11 @@ cat silva.bacteria/silva.bacteria.fasta \
 printf "Number of sequences in mothur silva fasta: "
 grep -c ">" silva_ref_aln_mothur.fasta
   ```
+  * Example Output:
+    ```
+Number of sequences in mothur silva fasta: 18491
+    ```
+
 * Then we will run a filter on this database before we make our alignment.
 
   ```r
@@ -228,6 +233,60 @@ mothur "#filter.seqs(vertical=t, \
 printf "Number of sequences post-filter: "
 grep -c ">" silva_ref_aln_mothur.filter.fasta
    ```
+  * Example Output: 
+    ```
+Number of sequences post-filter: 18491
+    ```
+
+#####Align Sequences to the SILVA Database
+* This next step will align our sequences with the representative sequences in the SILVA Database.
+
+  ```r
+%%bash -s "$workDir" "$seqFile"
+# aligning sequences
+
+cd $1
+
+mothur "#align.seqs(candidate=pear_merged\-2015\-09\-21.assembled.dmult.fastq_maxee1_noN.unique.fasta, \
+    template=mothur_silva_db/silva_ref_aln_mothur.filter.fasta, \
+    processors=24, \
+    flip=T)" | head -n 100
+  ```
+
+* Next, we will filter out any gaps in the alignment.
+
+  ```r
+%%bash -s "$workDir" "$seqFile"
+# filtering out gap positions in the alignment
+
+cd $1
+
+mothur "#filter.seqs(vertical=t, \
+    fasta=pear_merged\-2015\-09\-21.assembled.dmult.fastq_maxee1_noN.unique.align, \
+    processors=24)" | head -n 50
+  ```
+  
+* Then we will print a summary of the sequence alignment.
+
+  ```r
+%%bash -s "$workDir" "$seqFile"
+
+cd $1
+
+mothur "#summary.seqs(fasta=pear_merged-2015-09-21.assembled.dmult.fastq_maxee1_noN.unique.filter.fasta, \
+    processors=24, \
+    name=pear_merged-2015-09-21.assembled.dmult.fastq_maxee1_noN.names)" 
+  ```
+  * Example Output (_Note: there is a large amount of header text from Mothur, which I have omitted here_):
+    ![Example Mothur Summary](https://cloud.githubusercontent.com/assets/7449496/12484414/36b5f54e-c028-11e5-91de-956d82221790.png)
+  * The information from this summary is necessary for the sequence trimmed step after this.
+
+#####Trimming Homopolymers and Sequences That Don't Align to our Amplicon Region
+* In this step, we will remove any sequences containing homopolymers with a length greater than 8, and any sequences that do not lie in our amplicon region.
+* In the previous step, the median 'start' and 'end' positions will be used to trim off any sequences that do not lie in our amplicon region. Every time you run this step, you must adjust the values in the following code to match these for your specific dataset.
+
+
+
 
 
 
