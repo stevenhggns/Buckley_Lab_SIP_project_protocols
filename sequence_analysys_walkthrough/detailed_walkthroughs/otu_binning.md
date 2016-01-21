@@ -97,6 +97,7 @@ ret = !cd $workDir; grep -c ">" finalQC.fasta
 print 'Number of sequences: {}'.format(ret[0])
   ```
   * Example Output:
+  
     ```
 Number of sequences: 29323305
     ```
