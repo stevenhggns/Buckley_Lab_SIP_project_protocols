@@ -46,5 +46,19 @@ NOTE: At this point, raw read QC analysis can be performed. Refer to the `raw_re
 
 [Detailed Walkthrough for Quality Control](./detailed_walkthroughs/qc.md)
 
+## OTU Binning
+* In this step, we will bin our quality filtered sequences into operational taxonomic units (OTUs). 
+* It is recommended that all steps prior to OTU binning be performed on a per-run basis. If your full data set contains samples from more than one single run, you can concatenate your quality filtered sequence files here and proceed with OTU picking.
+* First, we will reduce our sequence files to only contain unique sequences. 
+* Then, we will create OTU centroids (>97% similarity) using this unique sequences file. 
+* Singletons (OTUs which only appear once in the full dataset) will be removed here as well.
+* OTUs clustered using `USEARCH`.
+  * `USEARCH` clustering will also perform chimera checking at this stage.
+* Rename sequences with OTU numbers.
+* Assign taxonomy to OTUs using the SILVA database.
+* Remove any non-target sequences (Chloroplast, Eukaryotic, etc.) from the dataset.
+* Map reads back to the full sequence set.
+* Create and OTU table and add taxonomy information to that table.
 
+[Detailed Walthrough for OTU Binning](./detailed_walkthroughs/otu_binning.md)
 
