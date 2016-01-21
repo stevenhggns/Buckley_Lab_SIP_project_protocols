@@ -1,6 +1,8 @@
 #Merging Raw Reads with `PEAR` and Creating Screed Databases
 This walkthrough will lead you through the creation and implementation of a Jupyter notebook to merge raw reads with `PEAR` and create screed database files needed for downstream applications. 
 
+####Authorship
+Spencer Debenport (2016)
 
 ###Set Variables
 First, you must set the file variables for `PEAR`
