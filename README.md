@@ -1,6 +1,10 @@
 Buckley Lab SIP protocols 
 =========================
 
+**NOTE: this is a depreciated fork of the repo. 
+The fork at [buckleylab](https://github.com/buckleylab/Buckley_Lab_SIP_project_protocols.git)
+is currently maintained.**
+
 ## Printing protocols (conversion of protocols to PDF)
 
 * View any Markdown file on GitHub, then in your URL bar of your browser 
