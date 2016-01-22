@@ -46,13 +46,14 @@ reactions.
 1. Use robot method "qPCR\_wWorklist\_altdispense" for setting up PCRs, 
 running triplicate reactions for each sample to be sequenced. 
 
-1. Run the PCR plate on the qPCR thermocycler, using the following cycle:
-	* 98<sup>o</sup>C for 30 seconds
+1. Run the PCR plate on the qPCR thermocycler using method "My Documents\Bio-rad_CFX_protocols\bac_V4_illumina_pcr.prcl". 
+Temperature cycles should be:
+	* 95<sup>o</sup>C for 2 minutes
 	* 30 cycles of:
-		* 98<sup>o</sup>C for 5 seconds
-		* 50<sup>o</sup>C for 30 seconds
+		* 95<sup>o</sup>C for 20 seconds
+		* 55<sup>o</sup>C for 15 seconds
 		* 72<sup>o</sup>C for 10 seconds
-	* Final extension of 72<sup>o</sup>C for 2 minutes
+	* Final extension of 72<sup>o</sup>C for 5 minutes
 	* Hold at 4<sup>o</sup>C 
 
 1. Combine triplicate PCRs for each samples, transferring samples to a new 96-well plate. 
