@@ -1,8 +1,5 @@
 # OTU Binning
 
-#### Authorship
-Spencer Debenport, Nick Youngblut, Chantal Koechli (2016)
-
 ### Initialize your Notebook and Set Variables
 * First we must initialize your notebook, set important variables, and load all necessary libraries.
 
