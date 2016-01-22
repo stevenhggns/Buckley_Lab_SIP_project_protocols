@@ -1,6 +1,5 @@
 #Workflow for Sequencing Pipeline
 
-
 ##Downloading Links to Sequences
 
 * First, you will receive an email from Peter Schweitzer with links to your sequences.
