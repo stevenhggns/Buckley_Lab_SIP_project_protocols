@@ -417,12 +417,25 @@ fi
 biom summarize-table -i otu_table.biom -o otu_table_summary.txt
     ```
 
+
      ```r
 !cd $workDir; cat otu_table_summary.txt
      ```
 
-* You are now ready for all downstream analysis!
+* Finally, we will add taxonomy metadata to our biom table.
 
+  ```r
+!cd $workDir;\
+    biom add-metadata -i otu_table.biom \
+        -o otu_table_wtax.biom \
+        --observation-metadata-fp otusn_tax/otusn_tax_assignments.txt \
+        --sc-separated taxonomy \
+        --float-fields consensus \
+        --int-fields numhits \
+        --observation-header OTUID,taxonomy,consensus,numhits
+  ```
+
+* Now we are ready for all downstream analyses!
 
 
 
