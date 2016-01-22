@@ -421,7 +421,7 @@ biom summarize-table -i otu_table.biom -o otu_table_summary.txt
 !cd $workDir; cat otu_table_summary.txt
      ```
 
-
+* You are now ready for all downstream analysis!
 
 
 
