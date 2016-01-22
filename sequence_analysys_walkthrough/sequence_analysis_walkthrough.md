@@ -1,7 +1,5 @@
 #Workflow for Sequencing Pipeline
 
-####Authorship
-Spencer Debenport, Nick Youngblut, Chantal Koechli (2016)
 
 ##Downloading Links to Sequences
 
