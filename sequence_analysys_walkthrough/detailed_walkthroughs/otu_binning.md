@@ -287,7 +287,141 @@ Pre-filter: number of sequences: 13790
 Post-filter: number of sequences: 12163
     ```
 
+### Mapping Reads
+* Now that we have our OTUs identified, we can determine how many times these OTUs appear in each sample.
+* First, we have to rename our sequences in our total sequence file into `USEARCH` formatting. 
 
+  ```r
+%%bash -s "$workDir"
+cd $1
+
+perl -pe 's/^>(.+)(_[^_]+)\n$/>$1$2\_$.;barcodelabel=$1\n/' finalQC.fasta > finalQC_usearchfmt.fasta
+  ```
+
+* We can check to make sure that these are formatted correctly as well.
+
+  ```r
+!cd $workDir; head -n 6 finalQC_usearchfmt.fasta
+  ```
+
+  * Example Output:
+  
+    ```
+>13C-Pal.D14.R1_F8_0_1;barcodelabel=13C-Pal.D14.R1_F8
+TACGGAGGGTGCAAGCGTTGTCCGGATTTATTGGGTTTACAGGGAGCGTAGGCGGTCTTTTAAGTCAGTGGTGAAATCCTCCAGCTTAACTGGAGAACTGCCATTGATACTGAAAGACTTGAGTACAGACGAGGTAGGCGGAATTGACAGTGTAGCGGTGAAATGCATAGATATTGGCAAGAACACCGATTGCGAAGGCAGCTTACTAGACTGTAACTGACGCTGAGGCTCGAAAGTGCGGGGATCAAACAGG
+>13C-Pal.D14.R1_F7_1_3;barcodelabel=13C-Pal.D14.R1_F7
+TACGGAGGGGGCTAGCGTTGTTCGGAATTACTGGGCGTAAAGCGCACGTAGGCCTTTGTAAGTTAGAGGTGAAAGCCCGGAGCTCAACTCCGGAACTGCCTTTAAGACTGCATCGCTTGAACGTCGGAGAGGTAAGTGGAATTCCGCGTGTAGAGGTGAAATTCGTAGATATTCGGAAGAACACCAGTGGCGAAGGCGACTTACTGGACGACTGTTGACGCTGAGGTGCGAAAGCGTGGGGAGCAAACAGG
+>13C-Pal.D48.R2_F25_2_5;barcodelabel=13C-Pal.D48.R2_F25
+TACCAGCACCCCGAGTGGTCGGGACGGTTATTGGGCCTAAAGCATCCGTAGCCGGTTCTACAAGTCTTCCGTTAAATCCACCTGCTTAACAGATGGGCTGCGGAAGATACTATAGAGCTAGGAGGCGGGAGAGGCAAGCGGGACTCGATGGGTAGGGGTAACATCCGTTGATCCATTGAAGACCGCCAGTGGCGAAGGCGGCTTGCCAGAACGCGCTCGACGGTGAGGGATGAAAGCTGGGGGAGCAAACCGG
+    ```
+
+* Our full sequence file is quite large, and must be split into multiple files in order to run efficiently.
+  * We can check the file size using the following code:
+  
+    ```r
+!cd $workDir; \
+    du -h finalQC_usearchfmt.fasta
+    ```
+    * Example Output:
+    
+      ```
+8.8G	finalQC_usearchfmt.fasta
+      ```
+
+  * Splitting the file for downstream applications.
+  
+    ```r
+#spliting file
+!cd $workDir; \
+    pyfasta split -n 5 finalQC_usearchfmt.fasta
+    ```
+
+* Now we can create a file list of these split files.
+
+  ```r
+g = os.path.join(workDir, 'finalQC_usearchfmt.*.fasta')
+fileList = glob.glob(g)
+fileList  
+  ```
+  
+  * Example Output:
+  
+    ```
+'/home/nick/notebook/fullCyc/data/MiSeq_16S/515f-806r/V4_Lib1-6/OTU_binning/finalQC_usearchfmt.0.fasta',
+'/home/nick/notebook/fullCyc/data/MiSeq_16S/515f-806r/V4_Lib1-6/OTU_binning/finalQC_usearchfmt.4.fasta',
+'/home/nick/notebook/fullCyc/data/MiSeq_16S/515f-806r/V4_Lib1-6/OTU_binning/finalQC_usearchfmt.3.fasta',
+'/home/nick/notebook/fullCyc/data/MiSeq_16S/515f-806r/V4_Lib1-6/OTU_binning/finalQC_usearchfmt.1.fasta',
+'/home/nick/notebook/fullCyc/data/MiSeq_16S/515f-806r/V4_Lib1-6/OTU_binning/finalQC_usearchfmt.2.fasta'
+    ```
+
+* We can now run `USEARCH` on these split files in parallel. This step uses our OTU file generated earlier as a database for clustering.
+
+  ```r
+# running usearch on each split file
+for f in fileList:
+    sys.stderr.write('Processing {}\n'.format(f))
+    
+    ff,_ = os.path.splitext(f)
+    _,i = os.path.splitext(ff)
+    uc = 'readmap{}.uc'.format(i.lstrip('.')) 
+    
+    !cd $workDir; \
+        usearch \
+        -usearch_global $f \
+        -db otusn.pick.fasta \
+        -strand plus -id 0.97 \
+        -uc $uc \
+        -threads $nprocs
+  ```
+
+* After creating these readmap files for each split sequence file, we can concatenate them together.
+
+  ```r
+!cd $workDir; \
+    cat readmap[0-9].uc > readmap_all.uc
+  ```
+
+* At this point, we must convert our readmap file from `USEARCH` format into biom format for downstream application in the phyloseq R package.
+  * Converting from `USEARCH` format to OTU table format:
+  
+    ```r
+!cd $workDir; \
+    python /opt/bioinfo/edgar_python_scripts/uc2otutab.py readmap_all.uc > otu_table.txt
+    ```
+  
+  * Converting from an OTU table into a biom table:
+  
+    ```r
+%%bash -s "$workDir"
+
+cd $1
+
+if [ -f otu_table.biom ]; then
+    rm otu_table.biom
+fi 
+
+biom convert -i otu_table.txt -o otu_table.biom --table-type "otu table"
+    ```
+
+  * Create and print a biom table summary:
+  
+    ```r
+%%bash -s "$workDir"
+
+cd $1
+
+if [ -f otu_table_summary.txt ]; then
+    rm otu_table_summary.txt
+fi 
+
+biom summarize-table -i otu_table.biom -o otu_table_summary.txt
+    ```
+
+     ```r
+!cd $workDir; cat otu_table_summary.txt
+     ```
+
+* You are now ready for all downstream analysis!
 
 
 
