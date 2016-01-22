@@ -1,8 +1,5 @@
 # Using `wget` to Download Sequence Files
 
-####Authorship
-Spencer Debenport, Nick Youngblut, Chantal Koechli (2016)
-
 ### Notebook Setup
 
 * First, create a directory for your project sequences in the `/var/seq_data/` directory on the server
