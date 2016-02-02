@@ -69,11 +69,24 @@ See **Printing protocols** in the [README](../README.md#printing-protocols-conve
 
 ### Elution
   * Make sure to pre-weigh and label a 2 ml tube for each sample.
+  
   1. Pipette 65 uL of sample out of the elution well
   2. Add 40uL 0.1\% Tween (comes with kit) into same well
   3. Incubate for 1 min
   4. Pipette the 40 uL tween back out of elution well and add to first elution of that sample (105 uL total)
   5. Repeat for each sample
+
+### Checking the size-selected DNA
+
+  * The resulting DNA fragment size distribution can be checked with a gel:
+    * 1% agarose in TAE buffer 
+    * gel dye: Sybr Safe
+    * ladder: 2-log
+    * voltage: ~1.5 hours
+    * volume: 3 ul of ladder, 3 ul of each sample + 6x loading dye
+ * The nucleotide concentration is assess with PicoGreen assays:
+   * 1 ul post-Pippin sample per PicoGreen rxn
+   * PicoGreen quantifications done in duplicate for each sample (as always)
 
 ### Storage
 
