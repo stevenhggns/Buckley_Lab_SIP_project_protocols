@@ -15,9 +15,10 @@ See **Printing protocols** in the [README](../README.md#printing-protocols-conve
 1. Quantify samples to be sequenced using Picogreen protocol.
 
 1. Calculate sample volume necessary for addition of __5 ng__ of template DNA to PCR
-reactions.
+reactions. This is just a guideline for how much DNA to use per rxn. You may need to
+use more or less depending on PCR inhibitors and rxn efficiency.
 
-1. PCR reaction composition for 1 rxn:
+1. PCR composition for 1 rxn:
 
 	* 12.5 uL Mastermix (NEB Q5 High Fidelity, Hot Start PCR Mastermix - M0494)
 		* 50% of total volume
@@ -26,18 +27,19 @@ reactions.
 		* 10% of total volume		
 		* Primer plates can be created with the robot method: "make\_primer\_plate"
 
-	* 1.25 uL BSA (20 mg/mL, NEB B9000S)
-		* 5% of total volume	
-
 	* 0.625 uL Picogreen reagent
 		* 2% of total volume
 		* 4x concentration, dilute the 200x stock that comes in the Picogreen kit with 1X TE
+	
+	* [optional] 1.25 uL BSA (20 mg/mL, NEB B9000S)
+		* 5% of total volume
 
-	* X uL template (5 ng/reaction)
+	* X uL template (we usually shoot for 5 ng/reaction)
 
 	* PCR water up to 25 uL
 
 * __If adding pico & BSA to master mix prior to aliquoting master mix:__
+	* Each PCR rxn: **13.1 uL** of Mastermix with 4X PicoGreen already added
 	* total\_volume = master\_mix + BSA + pico
 	* volume\_master\_mix = total\_volume * 0.870
 	* volume\_BSA = total\_volume * 0.087
@@ -64,24 +66,23 @@ Temperature cycles should be:
 	* Follow the [manufacturer's instructions](https://www.lifetechnologies.com/order/catalog/product/A1051001),
 	using 25 uL of PCR product for each sample.
 	* This can be done with the robot method: "SequalPrep_Assay"
+		* NOTE: this assay is usually just done by hand.
 
-1. Combine all Sequal'd samples (20 ul/sample) into one tube
-(or two, if the volume too large).
-	* Pre-weigh the tube to help with the next step (speed-vac).
-	* This can be done with the robot method: "plate_pooling"
+1. Combine all Sequal'd samples (20 ul/sample) into one tube (or two, if the volume too large).
+	* Pre-weigh the tube(s) to help with the next step (speed-vac).
+		* This will help you determine the volume during Vacuum evaporation.
 
-1. Vacuum evaporate samples to concentrate. 
+1. Vacuum evaporate samples to concentrate down to volume needed for a gel excision.
 	* [speed-vac](../speed-vac/speed-vac.md)
-	* You need >=25 uL with a concentration of 5 ng/uL
+	 
+1. [Gel extraction](../gel_extraction/gel_extraction.md) of bands with the expected fragment size 
+	* This is recommended to increase sequence quality.
 
-1. Quantify concentrated collection of samples using PicoGreen. 
-	* Make sure to have >=25 uL with a concentration of 5 ng/uL. 
-
-1. Run concentrated sample on a gel to ensure expected, cleaned product for sequencing. 
-	* If additional, unexpected bands are seen, consider
-	[Gel extraction](../gel_extraction/gel_extraction.md)
-	of the concentrated sample.  
-		* This may result in higher sequence quality.
+1. Quantify the library sample using PicoGreen. 
+	* Sample requirements for a MiSeq run:
+		* >=20 uL with a concentration of 5 ng/uL. 
+	* Vacuum evaporate if needed
+		* [speed-vac](../speed-vac/speed-vac.md)
 
 1. Submission to Cornell Sequencing Facility:
 	* Place 20 uL of sample with a concentration of 5 ng/uL into sequencing tube. 
