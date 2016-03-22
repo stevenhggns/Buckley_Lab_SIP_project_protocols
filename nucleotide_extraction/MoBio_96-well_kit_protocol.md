@@ -110,6 +110,12 @@ to using the robot. Also, some steps are conducted off the robot.
   *	25 ul B-ME per 1 ml lysis solution
   * 64 ml total lysis solution needed per 96 well plate
   * Warm the Lysis Solytion at 60<sup>o</sup>C 
+1. Run the MoBio_Kit.med method in simulation mode to calculate total volumes needed for all solutions.
+2. Set up the robot platform according to directions from MoBio_kit.med method.
+  * Add 300 ul filter tips.
+  * Arrange reagent reservoirs.
+  * Ensure that deep well plate adapters are installed in the rear two positions of the rightmost carrier. 
+1. Make sure the balance plates for the three centrifugation steps are readily available.
 
 ## Robot Method:
 
@@ -117,19 +123,19 @@ to using the robot. Also, some steps are conducted off the robot.
 2.	Secure a Bead Plate Sealing Mat to the Glass Bead Plate. 
 3.	Place Glass Bead Plate in BioSpec BeadBeater. Beat for 1 min at maximum speed.
 4.	Centrifuge Glass Bead Plate for 15 min at 3000 x g.
-   * **NOTE:** Make sure to have a balance plate with adjusted weight to match your bead plate in the centrifuge.
+   * **NOTE:** Make sure to have a balance plate with adjusted weight to match your bead plate in the centrifuge. Weigh your plate and either add or remove water from the balance plate until it matches the weight of your plate. Reseal balance plate.
 5.	Remove and discard Bead Plate Sealing Mat.
 6.	Transfer supernatant to new 2 ml Deep Well Plate (DWP). 
 7.	Add 150 ul PowerMag Inhibitor Removal Solution to each well and apply Sealing Tape to the DWP. 
 8.	Vortex DWP for 5 seconds.
 9.	Incubate DWP at 4<sup>o</sup>C for 5 minutes.
 10.	Centrifuge DWP for 15 min at 3000 x g.
-   * **NOTE:** Make sure to have a balance plate with adjusted weight to match your bead plate in the centrifuge.
+   * **NOTE:** Make sure to have a balance plate with adjusted weight to match your bead plate in the centrifuge. Weigh your plate and either add or remove water from the balance plate until it matches the weight of your plate. Reseal balance plate.
 11.	Remove and discard Sealing Tape.
 12.	Avoiding the pellet, transfer the entire volume of supernatant to new DWP. 
 13.	Apply Sealing Tape to DWP.
 14.	Centrifuge for 15 min at 3000 x g.
-   * **NOTE:** Make sure to have a balance plate with adjusted weight to match your bead plate in the centrifuge.
+   * **NOTE:** Make sure to have a balance plate with adjusted weight to match your bead plate in the centrifuge. Weigh your plate and either add or remove water from the balance plate until it matches the weight of your plate. Reseal balance plate.
 15.	Transfer no more than 850 ul supernatant to a new DWP, avoiding the pellet.
    * **NOTE:** DWP can be stored at 4<sup>o</sup>C for several hours at this stage.
 16.	Add 875 ul of Bead/Bind Solution to DWP.
