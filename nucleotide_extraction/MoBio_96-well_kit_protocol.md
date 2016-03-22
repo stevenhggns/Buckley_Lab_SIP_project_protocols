@@ -131,7 +131,7 @@ to using the robot. Also, some steps are conducted off the robot.
 14.	Centrifuge for 15 min at 3000 x g.
    * **NOTE:** Make sure to have a balance plate with adjusted weight to match your bead plate in the centrifuge.
 15.	Transfer no more than 850 ul supernatant to a new DWP, avoiding the pellet.
-  * **Note:** DWP can be stored at 4<sup>o</sup>C for several hours at this stage.
+   * **NOTE:** DWP can be stored at 4<sup>o</sup>C for several hours at this stage.
 16.	Add 875 ul of Bead/Bind Solution to DWP.
 17.	Shake for 10 min at 500 rpm. 
 18.	Place DWP on Magnet.
