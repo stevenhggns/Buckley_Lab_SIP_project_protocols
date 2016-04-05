@@ -22,10 +22,14 @@ Buckley Lab SIP protocols
 
 ## Using the server
 
-* [server etiquette](./server/etiquette.md)
-* [bash](./server/bash.md)
-* [git](./server/git.md)
-* [jupyter](./server/jupyter.md)
+* General server etiquette (read first!)
+  * [server etiquette](./server/etiquette.md)
+* Useful bash commands 
+  * [bash](./server/bash.md)
+* Working with git for version control of your data & analyses
+  * [git](./server/git.md)
+* Setting up and using Jupyter Notebooks
+  * [jupyter](./server/jupyter.md)
 
 ## HR-SIP pipeline general workflow
 
