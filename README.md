@@ -103,6 +103,6 @@ Buckley Lab SIP protocols
 * Soil geochemistry
   * [pH](./soil_geochemistry/pH.md)
   * [organic content](./soil_geochemistry/organic_content.md)
-  * [C & N](./C_N_ratio.md)
+  * [C & N](./soil_geochemistry/C_N_ratio.md)
   * [water holding capacity](./soil_geochemistry/water_holding_capacity.md)
   * [gravimetric water content](./soil_geochemistry/gravimetric_water_content.md)
