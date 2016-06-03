@@ -2,7 +2,7 @@ General Spore Counts from Soil
 ==============================
 
 Anay Hindupur
-
+ 
 ## Soil
 * Remove all debris (sticks, rocks, etc.) from soil sample
 * Per 10mL of medium, add 0.25g of soil
