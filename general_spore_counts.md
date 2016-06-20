@@ -5,7 +5,7 @@ Anay Hindupur
  
 ## Soil
 * Remove all debris (sticks, rocks, etc.) from soil sample
-* Per 10mL of medium, add 0.25g of soil
+* Per 10mL of medium, add 0.25g of soil/ 0.025g per 1mL
   * Store in 2mL microfuge tubes
   * Reduce mass if soil is not completely soluble
 
@@ -22,14 +22,14 @@ Anay Hindupur
         *Add agar as necessary (15g per liter)
 
 ## Spore Selection/Heating
-* Heat at 65-70 degrees C for 45 to 30 minutes in water bath
+* Heat at 80 degrees C for 10 minutes in water bath
     * Use fungicides at lower temperatures
     * Test for Streptomyces
     
 ## Plating and Dilutions
-* Three serial dilutions of 1/100
-  * (10^-2, 10^-4, 10^-6)
-  * Add 100 microliters to each plate (total dilution on plates: 10^-3, 10^-5, 10^-7)
+* Three serial dilutions- adding 100 microliters to each plate for a total dilution of:
+  * (10^-3, 10^-4, 10^-5) for aerobic
+  * (10^-4, 10^-5, 10^-6) for anaerobic
     * Reduce dilution factor if low colony counts
 * Create 2 spread plates of each dilution on sporulation medium plates 
 
