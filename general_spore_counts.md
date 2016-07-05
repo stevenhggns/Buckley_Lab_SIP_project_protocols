@@ -28,7 +28,7 @@ Anay Hindupur
     
 ## Plating and Dilutions
 * Three serial dilutions- adding 100 microliters to each plate for a total dilution of:
-  * (10^-3, 10^-4, 10^-5) for aerobic
+  * (10^-4, 10^-5, 10^-6) for aerobic
   * (10^-4, 10^-5, 10^-6) for anaerobic
     * Reduce dilution factor if low colony counts
 * Create 2 spread plates of each dilution on sporulation medium plates 
