@@ -3,7 +3,7 @@ Protocol for quantifying CO2 in headspace samples with the Shimadzu GCMS-QP2010
 
 ## Authorship
 
-Ashley Campbell, Chantal Koechli, and Nick Youngblut (2014)
+Ashley Campbell, Chantal Koechli, Nick Youngblut and Sam Barnett (2016)
 
 
 ## Printing this protocol
@@ -37,30 +37,34 @@ This can be done using the GCMS software.
 
 1. Turn on carrier gas (should be Helium)
 	* The PSI should be ~100
-1. Turn on Shimadzu AOC-5000 Auto Injector
+1. Turn on Shimadzu AOC-5000 Auto Injector (switch on power unit in back)
 1. Turn on computer
-1. Turn on both the GC and the MS
+1. Turn on both the GC and the MS (switch in front and back respectively)
 1. Start the __GCMS Real Time Analysis software__
 
 # The next steps are done in GCMS Real Time Analysis software
 
-1. Select __Vacuum control__ 
-1. Use the manual startup ('Vacuum control' => 'advanced...')
+1. From top screen, select __Vacuum control__ 
+1. Use the manual startup ("Advanced" on Vacuum control window)
 	* Manual startup provides more control, 
 	option for safety checks, 
 	and may produce less wear and tear.
 	* Manual startup procedure:
-		1. Start the flow controller and GC system
-    	1. Close vent valve
+		1. Turn on flow controller
+		1. Turn on GC system
+    	1. Close vent valve (may already be closed)
 	    1. Turn on rotory pump
-			* Let the pressure drop to <3.1 pascals
-			* This takes many minutes 
-	    1. AFTER pressure is <3.1 pascals: turn on high pressure pump 
-	    (ie., the turbo molecular pump)
+			* Let the pressure drop to <3.1 pascals (in reality it only reaches about 5.8 pascals)
+			* This takes over 30 minutes 
+	    1. AFTER pressure is <3.1 pascals (or <5.8) and stabilizes: turn on the turbo molecular pump
 			* __Note:__ A sound resembling a jet engine is normal, 
-			as long as it only lasts < a minute.
+			as long as it only lasts < a minute
+			* Wait for vacuum to return and stabilize before moving on
 	    1. Turn on ion source heater
 			* GC and MS indicators in top right of screen should soon say 'ready'
+	    1. Wait at least 24 hours before running samples on GCMS.
+			* This allows for any contaminating air in system to be purged
+1. Run GCMS tuning proceedure
 1. Load a method or create a new method
 	* Make sure that GC and MS are heating up to the method's specified temps
 	* A batch file can then be created if needed
@@ -100,7 +104,15 @@ off very briefly prior to changing the septum.
 * Use manual shutdown.
 	* Auto shutdown does not give enough time between the turbo molecular pump shutdown
 	and the vacuum pump shutdown. 
-* Wait for the GC to cool before turning off the carrier gas.
+	* Manual shutdown procedure:
+		1. Turn off ion source heater
+			* wait till heater is <80˚C before moving on
+		1. Turn off turbo molecular pump
+			* wait at least 10 minutes
+    	1. Turn off rotary pump
+    	2. Turn off GC system
+    	3. Wait for the GC to cool to close to room temperature <35˚C before turning off flow controller.
+    	4. Close carrier gas tank
 
 ***
 
