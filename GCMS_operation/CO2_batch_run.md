@@ -39,10 +39,11 @@ This can be done using the GCMS software.
 	* The PSI should be ~100
 1. Turn on Shimadzu AOC-5000 Auto Injector (switch on power unit in back)
 1. Turn on computer
-1. Turn on both the GC and the MS (switch in front and back respectively)
+1. Turn on  the GC (switch in front)
+1. Turn on the MS (switch in back)
 1. Start the __GCMS Real Time Analysis software__
 
-# The next steps are done in GCMS Real Time Analysis software
+### The next steps are done in GCMS Real Time Analysis software
 
 1. From top screen, select __Vacuum control__ 
 1. Use the manual startup ("Advanced" on Vacuum control window)
@@ -83,6 +84,19 @@ wait ~1 day prior to tuning.
 
 * Follow procedure starting on Page 21 of the GCMS-QP2010 Operation Guide.
 
+1. Open GCMS Real Time Analysis software 
+1. On left hand side bar, click Tuning icon
+1. Click Auto Tuning Condition icon
+1. Under Target Conditions tab, select:
+	* Adjust Resolution 
+	* Adjust Sensitivity
+	* Calibrate Mass Number
+1. Click Start Auto Tuning
+1. Once auto tuning is complete select File > Save Tuning File As
+	* Save tuning file in GCMSsoltuons/system/Tune1
+	* Save tuning file as yymmdd_UID (ex: 160920_seb369)
+1. Compare tuning results to expected
+ 
 ### Leak check:
 
 * Follow procedure outlined on Page 19 of the GCMS-QP2010 Operation Guide.
@@ -101,6 +115,11 @@ off very briefly prior to changing the septum.
 
 # GCMS shut down
 
+* GCMS shut down is almost the reverse of the startup.
+
+## Procedure:
+
+### The first steps are done in GCMS Real Time Analysis software
 * Use manual shutdown.
 	* Auto shutdown does not give enough time between the turbo molecular pump shutdown
 	and the vacuum pump shutdown. 
@@ -111,8 +130,15 @@ off very briefly prior to changing the septum.
 			* wait at least 10 minutes
     	1. Turn off rotary pump
     	2. Turn off GC system
-    	3. Wait for the GC to cool to close to room temperature <35˚C before turning off flow controller.
-    	4. Close carrier gas tank
+    	3. Wait for the GC to cool to close to room temperature <35˚C then turn off flow controller.
+
+### Once GC system is cool you proceed with manual shutdown of equipment
+1. Turn off the MS (switch in back)
+1. Turn off the GC (switch in front)
+1. Turn off Shimadzu AOC-5000 Auto Injector (switch on power unit in back)
+1. Shut down computer
+1. Close main valve on carrier gas (helium)
+	* No need to close the other valves
 
 ***
 
