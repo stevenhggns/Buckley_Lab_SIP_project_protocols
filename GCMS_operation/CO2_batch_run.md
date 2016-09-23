@@ -111,6 +111,39 @@ wait ~1 day prior to tuning.
 The carrier gas flow will just need to be turned
 off very briefly prior to changing the septum.
 
+## Procedure:
+
+* Follow procedure for Continuous Analysis outlined on on pages 169-187 of GCMS-QP2010 System User's Guide
+
+1. Create batch file
+	* Reuse/alter a previous batch file especially if standards will be the same or use Batch Table Wizard to create new file
+	* Make sure to use methods file specific for your test
+	* Make sure to use the most recent tuning file (see GCMS Tuning above)
+1. Save batch file to new folder specific for this run
+	* Must have a new file for each subsequent runs, even if you are running a time series
+1. Copy and paste methods file specified in you batch file into your new run folder
+	* If methods file is not in the same folder as the batch file, your samples will not be run
+1. For each run replace septa on injection port
+	* This must be done quickly as carrier gas flow must be stopped
+	* It may be easier to remove grill from top of GCMS in case you drop one of the small parts
+	* Use work gloves while replacing septa as the injection port is VERY HOT!!!
+	* Septa replacement
+		1. Open vacuum control and click "advanced"
+		1. Turn off flow controller to stop flow of carrier gas
+		1. With work gloves unscrew red sealing cover
+		1. Remove T-shaped adapter
+		1. With tweezers remove old septa and place in "Used Septa" jar
+		1. With tweezers place new septa in hole being careful not to deform or puncture septa
+		1. Place T-shaped adaptor on top of septa
+		1. Screw red sealing cover back on
+			* Be sure not to tighten too hard as this may deform septa and result in leaks or easy coring
+		1. Restart flow controller
+1. Reset septa consumables by double clicking septa icon on right hand toolbar, clicking "Reset Consumables" and clearing value for septa
+1. Once you double check your batch file click start to start the run
+1. If you need to stop the run for any reason, click pause or stop
+1. During run, check carrier gas levels (on He tank) to make sure it does not run out due to any leaks
+1. Once run is complete, save data to your run folder
+
 ***
 
 # GCMS shut down
