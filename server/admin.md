@@ -3,6 +3,8 @@
     * `uname [-m]`
     * `uname -a`
       * give OS info
+  * Hardware info
+    * `sudo dmidecode -q`
   * CPU info
     * `less /proc/cpuinfo`
   * memory usage
