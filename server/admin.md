@@ -37,10 +37,6 @@
     * `useradd -G {group-name} username`
   * add **EXISTING** user to secondary group
     * `usermod -a -G GROUPNAME USERNAME`
-  * adding a new user
-    * `useradd my_user`
-      * on doe, use: `adduser my_user`
-    * `passwd my_user`
   * file with open permissions
     * `chmod 777 <filename>`
   * open permissions on all files in a directory
@@ -82,13 +78,30 @@
     * `sudo apt-get update`
     * `sudo apt-get upgrade`
 
+* **Add new user**
+  * **Add user to server**
+    * Add user under "username"
+      * `sudo useradd <username>`
+      * on doe, use: `sudo adduser <username>`
+    * Set user password
+      * `sudo passwd <username>`
+  * **Add user to samba (for server mount with smb)**
+    * `sudo smbpasswd -a <username>`
+    
 * **Installations**
   * **R**
-    * `R`
-    * `>install.packages('MY_PACKAGE)`
+    * For global use on Rstudio server
+      * `sudo /opt/R/3.3.2/lib/R/bin/R`
+      * `>install.packages('MY_PACKAGE', lib='/opt/R/3.3.2/lib/R/library')`
+    * For personal repo either install using command line R without sudo or in Rstudio. In this case, do not specify lib in install.packages command
+    * For global use in conda's version of R
+      * if package can be found on anaconda cloud `sudo /opt/anaconda2/bin/conda install -c r MY_PACKAGE`
+      * if not `sudo /opt/anaconda2/bin/R` then `>install.packages('MY_PACKAGE')`
+    * For personal R library, install using command line R without sudo
+      * `R` then `>install.packages('MY_PACKAGE')`
   * **Python**
-    * `sudo pip install MY_PACKAGE`
-    * OR `sudo conda install MY_PACKAGE`
+    * `sudo /opt/anaconda2/bin/pip install MY_PACKAGE`
+    * `sudo /opt/anaconda2/bin/conda install -c MY_CHANNEL MY_PACKAGE`
   * **Unix/Linux**
     * updating packages
       * `sudo apt-get update`
