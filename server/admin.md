@@ -91,9 +91,11 @@
 * **Installations**
   * **R**
     * For global use on Rstudio server
-      * `sudo /opt/R/3.3.2/lib/R/bin/R`
+      * `sudo R`
       * `>install.packages('MY_PACKAGE', lib='/opt/R/3.3.2/lib/R/library')`
-    * For personal repo either install using command line R without sudo or in Rstudio. In this case, do not specify lib in install.packages command
+    * For personal repo
+      * /usr/bin/R
+      * >install.packages('MY_PACKAGE')
     * For global use in conda's version of R
       * if package can be found on anaconda cloud `sudo /opt/anaconda2/bin/conda install -c r MY_PACKAGE`
       * if not `sudo /opt/anaconda2/bin/R` then `>install.packages('MY_PACKAGE')`
