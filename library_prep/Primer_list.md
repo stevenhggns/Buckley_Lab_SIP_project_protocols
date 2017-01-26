@@ -10,6 +10,24 @@ Sam Barnett (January 2017)
 
 See **Printing protocols** in the [README](../README.md#printing-protocols-conversion-of-protocols-to-pdf)
 
+# Primer construction
+
+PCR primers are made up of 5 parts:
+
+    Illumina_adapter    Barcode(8-bases)    Pad(10-bases)   Linker(2-bases) PCR_primer
+
+For example, SA501 from Kozich et al. 2013 is made of:
+
+    AATGATACGGCGACCACCGAGATCTACAC   ATCGTACG    TATGGTAATT  GT  GTGTGCCAGCMGCCGCGGTAA
+    
+Sequencing primers are only made of the Pad, Linker and PCR_primer:
+
+    Pad(10-bases)   Linker(2-bases) PCR_primer
+    
+For example the Kozich et al. 2013 forward sequencing primer is:
+    
+    TATGGTAATT  GT  GTGTGCCAGCMGCCGCGGTAA
+
 # 16S V4 primers
 
 ## Primers 515f and 806r from Kozich et al. 2013 (MAKE LINK)
