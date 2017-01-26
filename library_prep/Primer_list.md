@@ -35,7 +35,7 @@ For examole the Kozich et al. 2013 indexing primer is:
 
 # 16S V4 primers
 
-## Primers 515f and 806r from Kozich et al. 2013 (MAKE LINK)
+## Primers 515f and 806r from Kozich et al. 2013
 
 PCR Primers:
 
@@ -142,3 +142,7 @@ to increase phylogenetic coverage:
 *  515f_01 - 515f_08 in rows A-H combined with 806r_01 - 806r_12 in columns 1-12 comprise primers 1-96
 
 *  515f_09 - 515f_16 in rows A-H combined with 806r_01 - 806r_12 in columns 1-12 comprise primers 97-192
+
+# Citations:
+
+Kozich JJ, Westcott SL, Baxter NT, Highlander SK, Schloss PD. Development of a Dual-Index Sequencing Strategy and Curation Pipeline for Analyzing Amplicon Sequence Data on the MiSeq Illumina Sequencing Platform. Applied and Environmental Microbiology. 2013;79(17):5112-5120. doi:10.1128/AEM.01043-13.
