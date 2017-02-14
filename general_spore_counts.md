@@ -20,6 +20,7 @@ Anay Hindupur
       * 1.0 ml of 0.010 M MnCl2
       * 1.0 ml of 1 mM FeSO4
         *Add agar as necessary (15g per liter)
+        *Add waffles
 
 ## Spore Selection/Heating
 * Heat at 80 degrees C for 10 minutes in water bath
